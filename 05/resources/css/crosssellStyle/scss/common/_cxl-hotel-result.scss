@@ -1,0 +1,923 @@
+.errorBooknow {
+    border: $red 1px solid;
+    font-size: 13px;
+    padding: 5px;
+    margin-bottom: 5px; 
+    color: $red;
+}
+
+.sorting-tab {
+    text-align: right;
+    li {
+        display: inline-block;
+        padding: 0 10px 10px;	
+        transition: all 0.5s ease-out;
+        a {
+            position: relative;
+            transition: all 0.5s ease-out;
+            color: $gray;
+            &:hover {
+                color: $violet;
+                transition: all 0.5s ease-out;
+                &:after {
+                    transition: all 0.5s ease-out;
+                    content: " ";
+                    position: absolute;
+                    width: 0;
+                    height: 0;
+                    border-left: 10px solid transparent;
+                    border-right: 10px solid transparent;
+                    border-bottom: 10px solid $white;
+                    bottom: -10px;
+                    left: 50%;
+                    margin-left: -10px;
+                }
+            }
+        }
+        &.active {
+            a {
+                color: #44436d;
+                &:after {
+                    transition: all 0.5s ease-out;
+                    content: " ";
+                    position: absolute;
+                    width: 0;
+                    height: 0;
+                    border-left: 10px solid transparent;
+                    border-right: 10px solid transparent;
+                    border-bottom: 10px solid white;
+                    bottom: -10px;
+                    left: 50%;
+                    margin-left: -10px;
+                }
+            }
+        }
+    }
+}
+
+
+
+.htlSearhEngine {
+    padding: 15px 15px 5px 15px;
+    margin-bottom: 25px;
+    background: $violet;
+    position: relative;
+    @include breakpoint(xs) {
+        padding: 15px 5px;
+    }
+    @include breakpoint(sm) {
+        padding: 15px 5px;
+	}
+	.htl-result-details {
+		font-size: 14px;
+		color: $white;
+		margin-bottom: 10px;
+		display: flex;
+		align-items: center;
+		margin-left: 0;
+		margin-right: 0;
+		@include breakpoint(xs) {
+			display: block;
+			margin-bottom: 0;
+		}
+		.cr-result-list {
+			margin-bottom: 0px;
+			overflow: hidden;
+			clear: both;
+			li {
+				float: none;
+				font-size: 13px;
+				padding: 5px 0;
+				margin-right: 20px;
+				&:nth-child(1) {
+					width: auto;
+				}
+				&:nth-child(2) {
+					width: auto;
+				}
+				&:nth-child(3) {
+					width: auto;
+				}
+				&:nth-child(4) {
+					width: auto;
+				}
+				&:nth-child(5) {
+					width: auto;
+				}
+				&:nth-child(6) {
+					width: auto;
+				}
+				@include breakpoint(xs) {
+					float: left;
+					font-size: 12px;
+					padding: 2px 0;
+					margin-right: 0px;
+					&:nth-child(1) {
+						width: 100%;
+					}
+					&:nth-child(2) {
+						width: 60%;
+					}
+					&:nth-child(3) {
+						width: 40%;
+					}
+					&:nth-child(4) {
+						width: 60%;
+					}
+					&:nth-child(5) {
+						width: 40%;
+					}
+					&:nth-child(6) {
+						width: 50%;
+					}
+				}
+			}
+		}
+		.data1 {
+			color: $white;
+			padding-right: 10px;
+		}
+		.data2 {
+			color: lighten($black, 60%);
+		}
+	}
+    .htl-destination-search {
+        margin-left: 0;
+        margin-right: 0;
+        margin-bottom: 0px;
+    }
+    [class*=col-sm] {
+        padding-left: 2px;
+        padding-right: 2px;
+    }
+    .form-group {
+        margin-bottom: 10;
+        @include breakpoint(xs) {
+            margin-bottom: 5px;
+        }
+        @include breakpoint(sm) {
+            margin-bottom: 5px;
+        }
+        .form-control {
+            height: 40px;
+        }
+        select,
+        input[type=text] {
+            border-radius: 0;
+            padding: 10px 13px;
+        }
+    }
+    .cr-link {
+        color: $white;
+        cursor: pointer;
+        &.customeCb {
+            span {
+                &:before {
+                    border: 1px solid $white;
+                }
+            }
+            input[type=checkbox] {
+                &:checked~span,
+                &:checked~span~label~li {
+                    color: #f08527;
+                    &:before {
+                        border: 1px solid #f08527;
+                    }
+                }
+            }
+        }
+    }
+    .guestInfo-container {
+        background: $white;
+        padding: 10px 15px;
+        width: 386px;
+        right: 2px;
+        margin-top: 5px;
+        position: absolute;
+        @include breakpoint(sm) { position: relative;}
+        z-index: 5;
+        border: 1px dotted lighten($gray, 30%);
+        @include breakpoint(xs) {
+            width: 377px;
+        }
+        .row {
+            margin: 5px 0;
+            [class*=col-sm-] {
+                padding: 0 2px;
+                .inputGroup.roomName {
+                    padding-top: 5px;
+                }
+                .form-group {
+                    margin-bottom: 0;
+                    label {
+                        font-weight: normal;
+                    }
+                    .form-control {
+                        height: 35px;
+                        &.childSelect {
+                            padding: 0 5px;
+                            height: 25px;
+                        }
+                    }
+                }
+            } // [class^="childAgeRoom"] {
+            // 	.childAgeRoom1{
+            // 		[class*=col-sm],[class*=col-xs]{
+            // 			width: 20% !important;
+            // 		}
+            // 	}
+            // }
+        }
+        [class^='childAgeRoom'] {
+            //	border: 1px solid green; 
+            [class*=col-sm] {
+                width: 20% !important;
+                .form-control {
+                    padding: 0 10px !important;
+                }
+            }
+        }
+    }
+}
+
+.hotel-repeater {
+    margin-bottom: 20px;
+    background: $white;
+    @extend .xlDesign;
+    .htl-header {
+        border-bottom: 1px dotted $graylight;
+        margin: 0;
+        position: relative;
+        overflow: hidden;
+        div.hotelName {
+            margin: 0;
+            padding: 10px 0;
+            font-size: 20px;
+            font-weight: bold;
+            @include breakpoint(xs) {
+                font-size: 16px;
+            }
+            a {
+                color: $violet;
+                @include breakpoint(xs) {
+                    margin-bottom: 5px;
+                }
+                &:hover {
+                    color: $gray;
+                }
+            }
+            small {
+                font-size: 14px;
+                font-weight: normal;
+                color: $gray;
+                @include breakpoint(xs) {
+                    font-size: 11px;
+                    color: $graylight;
+                }
+            }
+            .map-link {
+                font-size: 12px;
+                .fa {
+                    font-size: 16px;
+                }
+            }
+        }
+        .hotel-rating {
+            padding: 12px 0;
+            font-size: 14px;
+            .trip-advisor {
+                margin-top: 5;
+                @include breakpoint(xs) {
+                    margin-top: 5px;
+                }
+                &:hover {
+                    &:after {
+                        right: 100%;
+                    }
+                }
+            }
+        }
+        .price-xs {
+            color: $red;
+            text-align: right;
+            font-size: 20px;
+            display: block;
+            margin: 15px 0;
+            font-weight: bold;
+            @include breakpoint(xs) {
+                margin: 10px 0 0 0;
+            }
+            small {
+                color: lighten($gray, 10);
+                font-size: 11px;
+                font-weight: normal;
+                display: block;
+            }
+            sup{
+                top:-3px;
+            }
+            .fa{
+                font-size: 17px;
+            }
+        }
+        .col-xs-8 {
+            @include breakpoint(xs) {
+                padding-right: 0;
+            }
+        }
+        .col-xs-4 {
+            @include breakpoint(xs) {
+                padding-left: 0;
+            }
+        }
+    }
+
+    /*Offer Start*/
+        .hotel-offers {
+            position: absolute;
+            top: -25px;
+            left: -34px;
+            .offer-txt {
+                background: url(/resources/images/hotels/offer-bg.png) no-repeat;
+                text-align: center;
+                width: 87px;
+                height: 67px;
+                font-size: 14px;
+                line-height: 1.5em;
+                padding: 10px 15px;
+                color: #fff;
+        
+                    b {
+                        font-size: 20px;
+                    }
+            }
+            .offer-txt2 {
+                background: url(/resources/images/hotels/offer-bg.png) no-repeat;
+                text-align: center;
+                width: 87px;
+                height: 67px;
+                font-size: 14px;
+                line-height: 1.5em;
+                padding: 10px 15px;
+                color: #fff;
+        
+                    b {
+                        font-size: 16px;
+                    }
+            }
+        }
+    /*Offer End*/
+    .htl-body {
+        margin: 0;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        position: relative; //@extend .xlDesign;  
+        
+        @include breakpoint(xs) {
+            padding-top: 15px;
+        }
+        .location {
+            font-size: 12px;
+            margin-top: 0;
+            @include breakpoint(xs){
+                margin-top: 10px;
+                font-size: 14px;
+            }
+            p {
+                color: $gray;
+            }
+            .fCancel {
+                padding: 3px 7px;
+                display: inline-block;
+                border-radius: 10px;
+                background: $lightyellow;
+                font-size: 12px;
+                @include breakpoint(xs) {
+                    font-size: 12px;
+                }
+                .fa {
+                    color: $green;
+                }
+            }
+            .hotel-amenities {
+                margin-top: 10px;
+                padding-top: 10px;
+                border-top: 1px solid lighten($graylight, 6);
+                overflow: hidden;
+                @include breakpoint(xs) { 
+                    font-size: 12px;
+                } 
+                ul {
+                    li {
+                        color: lighten($gray, 10);
+                        float: left;
+                        margin-right: 15px;
+                        padding-left: 0;
+                        font-size: 12px;
+                        @include breakpoint(screen-xs) {
+                            margin-right: 5px;
+                            font-size: 11px;
+                        }
+                        .icon{
+                            font-size: 16px;
+                            vertical-align: middle;
+			    color:$red;
+                        }
+                    }
+                }
+            }
+        }
+
+        .trip-advisor {
+            margin-top: 5;
+            @include breakpoint(xs) {
+                margin-top: 5px;
+            }
+            &:hover {
+                &:after {
+                    left: 100%;
+                }
+            }
+        }
+        .htl-thumb-img {
+            width: 100%;
+            overflow: hidden;
+            height: 130px;
+            @include breakpoint(md) {
+              
+                height: 119px;
+            }
+            @include breakpoint(sm) {
+             
+                height: 119px;
+            }
+            @include breakpoint(xs) {
+                height: 110px;
+            }
+            img {
+                width: 100%;
+                min-height: 130px;
+                @include breakpoint(xs) {
+                    height: 110px;
+                }
+            }
+        }
+        
+        
+    }
+}
+
+.htlLeftCtrl,
+.htlRightCtrl {
+	.price-range {
+		margin-top: 10px;
+		height: 5px;
+		background: lighten($gray, 25);
+		.ui-slider-range {
+			background: $red;
+		}
+		.ui-slider-handle {
+			border: 2px solid $red;
+			height: 20px;
+			width: 20px;
+			background: $white;
+			border-radius: 50%;
+			top: -7px;
+			cursor: pointer;
+			&:first-child {
+				left: 0;
+			}
+			&:last-child {
+				left: 100%;
+			}
+		}
+	}
+    .form-group {
+        input[type=text] {
+            border-radius: 0;
+        }
+    }
+    .boxSec {
+        @extend .xlDesign;
+        .list-group {
+            border-radius: 0;
+            background: $white;
+            padding: 5px 0 10px 0;
+            .list-group-item {
+                border: none;
+                border-radius: 0;
+                padding: 8px 15px;
+                &.crBorder {
+                    position: relative;
+                }
+                &.active {
+                    background: $white;
+                    color: $violet;
+                    text-shadow: 0 0 0;
+                }
+                .htl-input {
+                    height: 35px;
+                    line-height: 35px;
+                    border: 1px solid $red;
+                }
+                .htl-btn-search {
+                    height: 35px;
+                    line-height: 35px;
+                    border: 1px solid $red;
+                    background: $red;
+                    color: $white;
+                    &:hover {
+                        background: $white;
+                        color: $red;
+                    }
+                }
+                .filter-starRating {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    li {
+                        //border: 1px solid red;
+                        width: 100%;
+                        padding: 10px 0px 10px 0px;
+                        justify-content: center;
+                        text-align: center;
+                        border: 1px solid lighten($graylight, 4);
+                        margin-right: -1px;
+                        &.active {
+                            border: 1px solid $red;
+                            position: relative;
+                            z-index: 1;
+                        }
+                        &.disabled {
+                            background: lighten($graylight, 10);
+                            .star-rating:before {
+                                border: 1px solid $graylight;
+                            }
+                        }
+                        &.customeCb span {
+                            padding-left: 0 !important;
+                            margin-left: 0 !important;
+                            width: 16px;
+                        }
+                        .checkbox-inline {
+                            padding-left: 0 !important;
+                        }
+                        .c1 {
+                            margin-top: 25px;
+                            color: $black;
+                            border-bottom: 1px solid lighten($graylight, 4);
+                        }
+                        .c2 {
+                            margin-top: 5px;
+                            display: inline-block;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .bookConf {
+        li.list {
+            position: relative;
+            padding-left: 30px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            &:before {
+                content: "\f00c";
+                position: absolute;
+                left: 10px;
+                color: $red;
+                font-family: 'FontAwesome';
+            }
+        }
+    }
+}
+
+.htlBooking-cost {
+    border-left: 1px solid lighten($gray, 48%);
+    display: flex;
+    display: -webkit-flex;
+    /* Safari */
+    -webkit-align-items: flex-start;
+    /* Safari 7.0+ */
+    padding-left: 10px;
+    min-height: 150px;
+    @include breakpoint (xs) {
+        border-top: 1px solid lighten($gray, 45%);
+        border-left: 0;
+    }
+    .flexBox1 {
+        -webkit-flex: 1;
+        /* Safari 6.1+ */
+        flex: 1;
+        -webkit-align-self: center;
+        /* Safari 7.0+ */
+        align-self: center;
+        .htlSelectPrice {
+            .price {
+                margin: 0 0 15px 0;
+                color: lighten($red, 5%);
+                font-size: 32px;
+                @include breakpoint(xs) {
+                    font-size: 22px;
+                }
+                .fa {
+                    font-size: 20px;
+                }
+                .avgNight {
+                    color: $gray;
+                    display: block;
+                    font-size: 12px;
+                    padding: 5px 0;
+                    font-weight: normal;
+                }
+            }
+            .fCancel {
+                color: $gray;
+                display: block;
+                font-size: 12px;
+            }
+            sup {
+                top: -12px;
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+.hote-details {
+    padding: 10px;
+    background: $white;
+    .htl-details-aminities{
+        display: flex;
+        flex-wrap: wrap;
+        //justify-content: center;
+        justify-content: flex-start;
+        li{
+            padding: 5px;
+            border: 1px solid #ccc;
+            text-align: center;
+            padding: 10px;
+            margin: 5px;
+            transition: all 0.38s ease-in-out;
+            @include breakpoint(xs) {
+                padding: 5px;
+            }
+            &:hover{
+                background: lighten($red, 5);
+                color: $white;
+                border: 1px solid $red;
+                .icon{
+                    transition: all 0.38s ease-in-out;
+                    color: $white;
+                }
+            }
+            .icon{
+                font-size: 20px;
+            }
+        }
+    }
+    .htl-details-row { 
+        overflow: -webkit-paged-x;
+        margin-bottom: 15px;
+        p {
+            padding: 0;
+            @include breakpoint(xs) {
+                padding: 10px;
+            }
+            &.padding {
+                padding: 0 15px;
+            }
+        }
+        .hotel-img-block {
+            .hotel-img {
+                img {
+                @include breakpoint(screen-xs) {
+                    width: 100%;
+                    margin-bottom: 12px;
+                    }
+                }
+            }
+            a {
+                background: rgba(0,0,0,0.8);
+                padding: 10px;
+                margin-top:0;
+                font-weight: bold;
+                margin-bottom: 20px;
+                font-size: 14px; 
+                &:hover {
+                    background: rgb(248, 135, 46);
+                    color: $white;
+                }
+
+                @include breakpoint(screen-xs) {
+                     margin-top:-13px;
+                }
+            }
+        }
+        .link {
+            color: $red;
+            cursor: pointer;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+        .htl-available {
+            margin-bottom: 15px;
+            border: 1px solid lighten($gray, 51%);
+            &:nth-child(even) {
+                background: lighten($graylight, 50);
+            }
+            &.active {
+                border: 1px solid $red;
+            }
+            .price {
+                font-size: 20px;
+                @include breakpoint(xs) {
+                    font-size: 18px;
+                }
+                .fa {
+                    font-size: 14px;
+                    color: $gray;
+                }
+            }
+            .include {
+                display: inline-block;
+                vertical-align: middle;
+                margin: 3px 0 0 0;
+            }
+            .hotelFare {
+                border: 1px solid $red;
+                .price {
+                    font-size: 25px;
+                    @include breakpoint(xs) {
+                        font-size: 18px;
+                    }
+                    .fa {
+                        font-size: 20px;
+                        color: lighten($gray, 20);
+                    }
+                }
+            }
+            .htl-room-img {
+                height: 55px;
+                overflow: hidden;
+            }
+            .row {
+                //border: 1px solid lighten($gray, 51%);
+                margin: 0px;
+                font-size: 13px;
+                @include breakpoint(xs) {
+                    font-size: 12px;
+                }
+                &.roomDiscription {
+                    margin-left: 1px;
+                }
+                [class*=col-sm] {
+                    padding: 10px;
+                    border-top: 0px solid $graylight;
+                    border-left: 0px solid $graylight;
+                    min-height: 40px;
+                    margin-top: 0px;
+                    @include breakpoint(xs) {
+                        border-left: 0px solid $graylight;
+                        border-top: 1px solid $graylight;
+                        margin-top: -1px;
+                    }
+                    align-items: center;
+                    &:last-child {
+                        //justify-content: flex-end;
+                        padding-right: 10px;
+                        border-right: none;
+                    }
+                    &:first-child {
+                        border-right: none;
+                    }
+                    h1,
+                    h2,
+                    h3 {
+                        margin: 0;
+                    }
+                }
+                .room-discription {
+                    p {
+                        margin: 0;
+                    }
+                }
+                .average-ngt-rate {
+                    font-size: 18px;
+                    color: $red;
+                }
+            } 
+	//Start Offer
+			.hotel-detail-offer {
+                .cancellation-data {
+                    display: none;
+                }
+				.cancellation-Policy {
+                    color:$green;
+                    &:hover .cancellation-data {
+                        width: 250px;
+                        padding: 10px;
+                        display: block;
+                        position: absolute;
+                        left: 10px;
+                        top: 47px;
+                        font-size: 12px;
+                        text-align: justify;
+                        color: #000;
+                        background: #fff;
+                        border: 1px solid #ccc;
+                        z-index: 9;
+                    }
+                }
+                
+
+                .promo-discount {
+                    .offer_policy {
+                        display: inline-block;
+                        background: $green;
+                        padding: 5px 8px;
+                        color:$white; 
+                    }
+                    .show_policy {
+                        border: 1px solid #ccc;
+                        padding: 5px 10px;
+                        margin-top: 10px;
+                        display: inline-block;
+                        background: $white;
+                        display: none;
+                        position: relative;
+
+                        .top-arrow {
+                            width: 0;
+                            height: 0;
+                            border-left: 8px solid transparent;
+                            border-right: 8px solid transparent;
+                            border-bottom: 8px solid black;
+                            position: absolute;
+                            top: -8px;
+                        }
+
+                    }
+                    &:hover .show_policy {
+                        display: block;
+                        position: absolute;
+                    }
+            }
+			}
+        }
+        .head {
+            font-size: 18px;
+            //background: $violet;
+            border-bottom: 1px solid lighten($violet, 30);
+            padding: 10px;
+            color: $violet;
+            margin-top: 0;
+            font-weight: bold;
+            small {
+                color: lighten($violet, 20);
+            }
+            @include breakpoint(xs) {
+                font-weight: normal;
+                font-size: 16px;
+                padding: 10px 0;
+                font-weight: bold;
+            }
+        }
+    }
+}
+
+.showMoreRooms {
+    font-size: 12px;
+    cursor: pointer;
+    color: $red;
+}
+
+.show-more-rooms{
+    box-shadow: 0 0 0 2000px $black;
+    .htl-carousel-inner{
+        min-height: 350px;
+        max-height: 400px;
+        overflow: hidden;
+        text-align: center;
+        transition: all 0.8s linear;
+        div{ 
+            img{
+                display: inline;
+                min-width: -webkit-fill-available;
+                min-height: 100%;
+                max-height: 100%;
+                height: 100%;
+            }
+        }
+    }
+
+    .carousel-control{
+        padding-top:20%;
+        .fa{
+            font-size: 50px;
+        } 
+    }
+}
+#closeGuestInfo{cursor: pointer;}

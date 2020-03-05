@@ -1,0 +1,50 @@
+
+.logo-change .navbar-brand img { display:none; }
+.logo-change .navbar-brand { background:url(/resources/travelopick/images/logo123.png) no-repeat; width:175px; height: 50px;   }
+.img-text { width:95%;   }
+.white {color:#e3b019; text-shadow:2px 2px 0 #000; font-size:24px; margin:0;  }    .form-group.form-group-lg label { margin-bottom:0;   }
+.bg-holder { min-height: 500px;  } 
+.table > thead > tr > th { background:#eee !important; color:#333 !important;    }
+.cheap-ticket-block .head12 { background: #3a5c78; font-size: 20px; padding:8px 10px;  }
+.table > thead > tr > th  { background: #3a5c78;  }
+.pad20 { padding:30px 20px;  }
+.table > tbody > tr > td, .table > tbody > tr > th, .table > tfoot > tr > td, .table > tfoot > tr > th, .table > thead > tr > td, .table > thead > tr > th { padding:5px; }
+.searchbtn, .btn-primary { background:#f60; border:1px solid #f60;   }
+.text-tp { margin-top:10px; color:#666;  }
+.form-group .input-icon { color:#f60; font-size:18px !important; top:23px;    }
+.btn-group-select-num > .btn:hover { color:#e3711f; border-color:#e3711f;   }
+.carousel { overflow: hidden;   }
+.form-group.form-group-lg .form-control { height:35px !important; padding:5px 16px;     }
+.fa-twitter, .fa-facebook, .fa-linkedin, .fa-google-plus, .fa-instagram, .fa-pinterest-p { font-size: 20px !important; margin: 0px !important;  }
+.carousel-inner > .item::before { background:none;  }  
+    .grp-bg { background:rgba(0, 0, 0,0.8) none repeat scroll 0 0 !important; }
+    .form-group.form-group-lg label { color:#fff; }
+    #departDate, #returnDate, #checkInDate, #checkOutDate { background:#fff !important; }
+
+
+    .section-bg { background:#e8e8e8; padding:30px 0;    }
+    .hotdeals-block { min-height:310px; border:1px solid #fff;  background: #fff; margin-bottom: 30px; font-family:roboto;   }
+    .hotdeals-block:hover { border:1px solid #ccc; box-shadow:0 0 5px #ccc;   }
+    .hotdeals-block2 { min-height:330px; border:1px solid #afc1d4;      }
+    .hotdeals-block2:hover { border:1px solid #afc1d4; box-shadow:0 0 5px #afc1d4;   }
+    .hotdeals-block img { width:100%; }
+    .hotdeals-block:hover img { width:100%;   }
+    .hotdeals-block .span3 {      }
+    .hotdeals-block .pad10 { padding:15px 10px;  } 
+    .hotdeals-block .head { font-size:17px; color:#4a8bcf; margin-bottom:5px;   }
+    .hotdeals-block .head .fa {  transform: rotate(45deg); margin:0 15px; }
+    .hotdeals-block .date { font-size: 12px; color: #999; margin-bottom: 30px;  }
+    .hotdeals-block .book-btn .fare { float: right; font-size:26px; line-height:0.3em;color:#4a8bcf; text-decoration:none;   }
+    .hotdeals-block:hover .book-btn .fare { text-decoration:underline;      }
+    .hotdeals-block .book-btn a {background: #4a8bcf; padding:10px 15px; color:#fff;       }
+    .hotdeals-block:hover .book-btn a {background: #f77f1e; padding:10px 15px; color:#fff;       }
+    .pad20 { padding:20px 0;  }
+    .banner_tagline { margin-top:100px; position:static;     }
+
+    .section { margin: 10px 0 30px; }
+    .section .heading { color: #777; font-size: 25px; font-weight: 600; line-height: 30px; margin: 0; text-align: center; text-transform: uppercase;}
+    .section .tagline { color: gray; font-family: "Roboto-Regular",arial; font-size: 15px; letter-spacing: 3px; line-height: 30px; margin-bottom:10px; text-align: center; text-transform: uppercase; }
+
+    .slick-slide img { height:180px; }
+    .city-placeholder { background:url(/resources/images/citydata/coldlake-yod-small.jpg); }
+    .airline-placeholder { background:url(/resources/images/airlines-banner/small/united-airlines-ua-small.jpg); }

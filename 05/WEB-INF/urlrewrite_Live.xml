@@ -1,0 +1,74 @@
+<urlrewrite>
+<rule match-type="regex">
+<condition type="header" operator="equal" name="X-Forwarded-Proto">^HTTP$</condition>
+<from>^.*$</from>
+<to type="permanent-redirect" last="true">https://www.verticaltrape.com</to>
+</rule>	
+<rule match-type="regex">
+<condition type="header" operator="equal" name="X-Forwarded-Proto">^HTTPS$</condition>
+<condition name="host" operator="equal">^verticaltrape.com/*</condition>
+<from>^(.*)$</from>
+<to type="permanent-redirect" last="true">https://www.verticaltrape.com$1</to>
+</rule>
+
+
+	   <rule>
+       <from>^/cheap-flights/cheap-flights-to-dubai-dxb</from>
+       <to type="permanent-redirect">/cheap-flights-to-dubai-dxb</to>
+    </rule>
+    
+     <rule>
+       <from>^/cheap-flights/cheap-flights-to-paris</from>
+       <to type="permanent-redirect">/cheap-flights-to-paris-par</to>
+    </rule>
+    
+     <rule>
+       <from>^/cheap-flights/delta-airlines-dl</from>
+       <to type="permanent-redirect">/cheap-airline/delta-airlines-dl-and-flight-deals</to>
+    </rule>
+    
+     <rule>
+       <from>^/cheap-flights/american-airlines-aa</from>
+       <to type="permanent-redirect">/cheap-airline/american-airlines-aa-and-flight-deals</to>
+    </rule>
+	
+	 <rule>
+       <from>^/cheap/flights-to-san-francisco</from>
+       <to type="permanent-redirect">/cheap-flights-to-sanfrancisco-sfo</to>
+    </rule>
+	
+	 <rule>
+       <from>^/aboutus</from>
+       <to type="permanent-redirect">/about-us</to>
+    </rule>
+	
+	 <rule>
+       <from>^/privacypolicy</from>
+       <to type="permanent-redirect">/privacy-policy</to>
+    </rule>
+	
+	 <rule>
+       <from>^/groupbooking</from>
+       <to type="permanent-redirect">/cheap-group-travel-tickets</to>
+    </rule>
+	
+	 <rule>
+       <from>^/home</from>
+       <to type="permanent-redirect">/</to>
+    </rule>
+	
+	 <rule>
+       <from>^/westjet-airlines-ws-and-flight-deals</from>
+       <to type="permanent-redirect">/cheap-airline/westjet-airlines-ws-and-flight-deals</to>
+    </rule>
+	
+	
+	
+	
+	<!--<rule>
+       <from>^/flights</from>
+       <to type="permanent-redirect">/cheap-flights</to>
+    </rule>
+	-->
+	
+</urlrewrite>

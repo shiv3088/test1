@@ -1,0 +1,120 @@
+/* banner start here */
+#footer-block .footer-top, #footer-block .footer_bottom, .chat-block { display: none!important; }
+.gift_strip { margin-top:86px; height:73px;  background: url(/resources/images/banner_strip.png) left top repeat-x; }
+.gift_strip .gift_circle { position: absolute; right: 0px; top:-26px; }
+
+.gift_head { padding:40px 0px 20px 0px; width: 100%; overflow: hidden; border-bottom: 1px dotted #a1a1a1; }
+.gift_head h2 { margin: 0px; font-family:'Roboto-Light'; font-size: 34px; color: #4e4e4e; font-weight:300; }
+.gift_head p { margin: 10px 0 0 0; font-family:'Roboto-Regular'; font-size: 16px; color: #4e4e4e; }
+
+.gift_info { width: 100%; overflow: hidden; }
+.gift_info .user_info { padding:50px 0px; width:100%; overflow: hidden; }
+.gift_info .paddingLR { padding: 0px 20px; }
+.gift_info .label { padding:0px 0 10px 0; font-size: 13px; color: #4e4e4e; font-weight:600; width:100%; display: block; text-align: left; }
+.gift_info .paading-top { padding-top: 35px; }
+.gift_info input[type="text"] { font-family:'Roboto-medium';  padding:0 10px; line-height:38px; height:38px; font-size:15px; color:#686868; width:100%; border:1px solid #909090;  }
+.gift_info input[type="text"]::-webkit-input-placeholder { color: #333;}
+.gift_info input[type="text"]::-moz-placeholder { color: #333;}
+.gift_info input[type="text"]:-ms-input-placeholder {  color: #333;}
+.gift_info input[type="text"]:-moz-placeholder {  color: #333;}
+
+
+/* banner start here */
+.gift_itenaryBox { padding: 0px 0px 70px 0px; width: 100%; overflow: hidden; border-top:28px solid #eeeeee; }
+.gift_tab { padding:50px 0px 60px 0px; width: 100%; overflow: hidden; }
+.gift_tab .tab-content {  padding : 0px 0px 0 30px;}
+.gift_tab ul.tabs { list-style: none; margin: -18px 0px 0px 0px; padding: 0px; }
+.gift_tab ul.tabs li { display: block; }
+.gift_tab ul.tabs li a { position: relative; padding:18px 0px 18px 45px; font-family:'Roboto-Light'; font-size: 24px; color: #4e4e4e; font-weight: normal; text-decoration: none; display: block; border-bottom:1px solid #cfcfcf; }
+.gift_tab ul.tabs li a .fa-long-arrow-right { position:absolute; top:25px; right:0px; display: none;  }
+.gift_tab ul.tabs li a .icon { position: absolute; left: 0px; display: block; margin-right:12px;}
+.gift_tab ul.tabs li a .lifestyle { top:23px; width:36px; height:26px; background: url(/resources/images/icon_1.png) left top no-repeat; }
+.gift_tab ul.tabs li a .food { top: 14px; width:36px; height:33px; background: url(/resources/images/icon_2.png) left top no-repeat; }
+.gift_tab ul.tabs li a .travel { top: 14px; width:36px; height:32px; background: url(/resources/images/icon_3.png) left top no-repeat; }
+
+.gift_tab ul.tabs li a:hover, .gift_tab ul.tabs li.active a { color:#50bfb0; border-bottom:1px solid #50bfb0; }
+.gift_tab ul.tabs li a:hover .fa-long-arrow-right, .gift_tab ul.tabs li.active a .fa-long-arrow-right { display: block;}
+.gift_tab ul.tabs li a:hover .lifestyle, .gift_tab ul.tabs li.active a .lifestyle{ background-position:0 -31px; }
+.gift_tab ul.tabs li a:hover .food, .gift_tab ul.tabs li.active a .food{ background-position:0 -33px; }
+.gift_tab ul.tabs li a:hover .travel, .gift_tab ul.tabs li.active a .travel{ background-position:0 -34px; }
+
+.gift_tab .tab_detail {  width: 100%; overflow: hidden;  border:1px solid #b7b7b7; }
+.gift_tab .tab_detail .head { padding:15px 20px; font-size: 16px; color: #4e4e4e;  background: #e5e5e5; }
+.gift_tab .tab_detail .head .fa-caret-down { float: right; }
+.gift_tab .tab_detail ul.list {height:240px; overflow: auto; list-style: none; margin: 0px; padding: 0px; }
+.gift_tab .tab_detail ul.list li {padding:12px 20px; font-size:16px; color: #4e4e4e; cursor:pointer; border-bottom:1px solid #e5e5e5; }
+.gift_tab .tab_detail ul.list li.active, .gift_tab .tab_detail ul.list li:hover { background:#50bfb0; border-bottom:1px solid #50bfb0; color:#fff;}
+.gift_itenaryBox .selected_iteam { padding: 48px 0px 0 0; font-size:16px;}
+.gift_itenaryBox .selected_iteam strong {  font-family:'Roboto-medium'; font-weight:normal; }
+.gift_itenaryBox  .selected {  font-family:'Roboto-medium'; color:#ff6600;}
+
+.gift_itenaryBox .submit_btn { font-size: 14px; color: #fff; font-weight:bold; float: right; width: 120px; height:50px; line-height:50px; background:#ef8527; border: none; text-transform:uppercase; }
+.gift_itenaryBox .submit_btn:hover { background:#d35800; }
+.gift_itenaryBox .text { font-size: 15px; color: #7d7d7d; font-style:italic; line-height:24px; margin-top:9px; }
+.gift_itenaryBox .fa-info { width:20px; height:20px; line-height:20px; text-align: center; border-radius:100%; color:#9f9d9e; border:1px solid #9f9d9e; }
+#update_btn { display: none; }
+
+/* thanks start here */
+.thanksBox { padding:88px 0px; overflow: hidden; width: 100%; text-align: center; }
+.thanksBox h3 { padding:50px 0px 20px 0px; margin: 0px; font-family:'Roboto-Light'; font-size: 34px; color: #4e4e4e; font-weight:300;}
+.thanksBox p { margin: 10px 0 50px 0; font-family:'Roboto-Light'; font-size: 20px; color: #7d7d7d; line-height:30px; }
+.thanksBox a { font-size: 14px; color: #50bfb0; text-decoration: underline; }
+
+/* gift page end here */
+.gift_popup_outer { width:100%; height:100%; position: fixed; left: 0px; top: 0px; z-index:5; background:rgba(0,0,0,0.5); }
+.gift_popup { padding:60px 0px; overflow: hidden; width:700px;position: absolute; left: 50%; top: 50%; margin:-200px 0 0 -350px; text-align: center; background:#fff; }
+.gift_popup h3 { padding:35px 0px 0px 0px; margin: 0px; font-family:'Roboto-Light'; font-size: 34px; color: #4e4e4e; font-weight:300;}
+.gift_popup p { margin: 10px 0 50px 0; font-family:'Roboto-Light'; font-size: 20px; color: #7d7d7d; line-height:30px; }
+.gift_popup .button { width: 116px; height:36px; line-height:34px; text-align: center; display:inline-block; font-size: 13px; color: #888888; text-decoration:none; border:1px solid #888888; }
+.gift_popup .button.active{ background:#50bfb0; color:#fff; border:1px solid #50bfb0; }
+
+.mCSB_inside > .mCSB_container { margin-right:20px;}
+.mCSB_scrollTools{ width:20px; background:#d0d0d0; }
+.mCS-light-3.mCSB_scrollTools .mCSB_draggerRail, .mCS-dark-3.mCSB_scrollTools .mCSB_draggerRail { width:20px; background:none;}
+.mCS-light-3.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar, .mCS-dark-3.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar { width:18px;}
+@media only screen and (max-width:1169px){
+
+.gift_info .user_info { padding: 30px 0px; }
+.gift_itenaryBox .text { font-size: 14px; }
+.gift_itenaryBox { border-top:15px solid #eeeeee; }
+.gift_head { padding: 30px 0px 20px 0px; }
+.gift_tab { padding: 40px 0px; }
+
+}
+
+
+@media only screen and (max-width:767px){
+/*Gift*/
+.gift_strip { height:62px; background-size:cover; }
+.gift_strip .gift_circle { width:95px; top:-13px; }
+.gift_tab ul.tabs { margin: 0px; overflow: hidden;}
+.gift_tab ul.tabs li { float:left; }
+.gift_tab ul.tabs li a { font-size: 16px; padding:18px 23px; }
+.gift_tab ul.tabs li a .lifestyle { width:20px; height:18px; background-size:100%; }
+.gift_tab ul.tabs li a:hover .lifestyle, .gift_tab ul.tabs li.active a .lifestyle { background-position:0 -19px;}
+
+.gift_tab ul.tabs li a .food { width:20px; height:18px; background-size:100%; top:19px;  }
+.gift_tab ul.tabs li a:hover .food, .gift_tab ul.tabs li.active a .food{ background-position:0 -19px;}
+.gift_tab ul.tabs li a .travel { width:20px; height:20px; background-size:100%; top:20px;  }
+.gift_tab ul.tabs li a:hover .travel, .gift_tab ul.tabs li.active a .travel {background-position:0 -19px;}
+
+.gift_tab ul.tabs li a:hover .fa-long-arrow-right, .gift_tab ul.tabs li.active a .fa-long-arrow-right  { display: none; }
+.gift_tab .tab-content { padding:20px 0px 0px 0px; }
+.gift_itenaryBox .text { padding-top:15px; width: 100%; clear:both; line-height: 22px; } 
+.gift_info .paddingLR { padding:15px 10px; }
+.gift_info .paading-top { padding-top:0px;}
+.gift_head h2 { font-size: 24px; }
+.gift_head p { font-size: 14px; }
+.gift_tab { padding: 0 0 20px 0; }
+
+.thanksBox { padding:100px 0px; }
+.thanksBox p { font-size: 16px; margin:0; }
+.gift_popup { padding:15px 0px; top:0px; left:0px; height:100%; margin: 0px; width:100%; }
+.gift_popup h3 { padding-top: 20px; font-size: 28px;}
+.gift_popup p { font-size: 17px; margin:10px 0 28px 0; }
+.gift_itenaryBox .selected_iteam { padding-bottom: 0px; }
+}
+
+@media only screen and (max-width:479px){
+.gift_head { padding: 20px 0px 10px 0px; }
+}

@@ -1,0 +1,144 @@
+.flightContent {overflow-x:auto; padding: 10px 0;}
+.outter-border { overflow:auto; margin: 0 auto; text-align:center; border-top: 2px solid #d8d8d8; border-bottom: 2px solid #d8d8d8; border-left: 1px solid #d8d8d8; border-right: 1px solid #d8d8d8; border-radius: 7px;}
+
+
+ol { list-style: none;  padding: 0;  margin: 0}
+.cabin-row { float: left; width: 25px; }
+.cabin{ overflow: hidden; text-align: center; }
+.seats { width: 100%;}
+.seat { padding: 2px; position: relative}
+.seat.v-hide label { background:none; color:#333; }
+.seat.v-hide label:hover {background:none;}
+.margin0 {margin:0px;}
+.seat span { display: block; text-align: center; font-size: 12px; background: #eee}
+.seat input[type=checkbox] { position: absolute; opacity: 0; }
+.seat input[type=checkbox]:checked+label { background: #bada55; color: #e5f1be}
+.seat input[type=checkbox]:disabled+label { background: #dddddd; text-indent: -9999px; overflow: hidden}
+.seat input[type=checkbox]:disabled+label:after {content: "X"; text-indent: 0;  position: absolute; top: 4px;  left: 50%; transform: translate(-50%, 0%);}
+.seat input[type=checkbox]:disabled+label:hover { box-shadow: none;  cursor: not-allowed;}
+.seat label { display: block; position: relative; width: 100%; text-align: center; font-size: 11px; line-height: normal; padding: 2px 0; background: #fcd3b2; border-radius: 0px 5px 5px 0px; color: #fbc599; overflow: hidden; }
+.seat label:hover { cursor: pointer; background: #f99b4f; }
+
+.tabContainer{ text-align: right; padding:0 20px; margin: 0px -20px 15px -20px; border-bottom:1px solid #ef8527; }
+.flightTab { border: 1px solid #ccc; border-bottom: none;    display: inline-block;    padding: 5px;    cursor: pointer; margin:0 2px; text-align:center;}
+.flightTab img{ vertical-align: middle;  outline: 1px solid #fff;  outline-offset: -1px;  border-radius: 8px;}
+.flightTab .flight-detail{  display: inline-block;  vertical-align: middle; font-size: 12px;}
+.flightTab.active{ border-color:#ef8527; background:#fff;}
+
+
+.seatPanal .seatPanal-list li{ list-style: none; display: inline-block;  padding: 5px 20px;}
+.available-seat, .selected-seat, .unselected-seat{ display: inline-block;  height: auto;  width: 25px;  vertical-align: middle;}
+.available-seat span, .selected-seat span, .unselected-seat span {  display: block; text-align: center;  font-size: 12px; background: #eee; }
+
+
+.available-seat input[type=checkbox],.selected-seat input[type=checkbox],.unselected-seat input[type=checkbox] { position: absolute; opacity: 0;}
+.available-seat input[type=checkbox]:checked+label,.selected-seat input[type=checkbox]:checked+label,.unselected-seat input[type=checkbox]:checked+label{  background: #bada55;    color: #e5f1be; }
+.available-seat input[type=checkbox]:disabled+label,.selected-seat input[type=checkbox]:disabled+label,.unselected-seat input[type=checkbox]:disabled+label { background: #dddddd;text-indent: -9999px; overflow: hidden; }
+.available-seat input[type=checkbox]:disabled+label:after,.selected-seat input[type=checkbox]:disabled+label:after,.unselected-seat input[type=checkbox]:disabled+label:after{    content: "X"; text-indent: 0;  position: absolute; top: 4px; left: 50%; transform: translate(-50%, 0%);}
+.available-seat input[type=checkbox]:disabled+label:hover,.selected-seat input[type=checkbox]:disabled+label:hover,.unselected-seat input[type=checkbox]:disabled+label:hover{    box-shadow: none;    cursor: not-allowed}
+.available-seat label,.selected-seat label,.unselected-seat label{    font-family: arial;    display: block;    position: relative;    width: 100%;    text-align: center;    font-size: 11px;    line-height: normal;    padding: 2px 0;    border-radius: 0px 5px 5px 0px;    overflow: hidden}
+
+.available-seat label{ background: #fcd3b2;}
+.selected-seat label{ background: #bada55;}
+.unselected-seat label{ background: #ffcc00;}
+.available-seat label:before,
+.selected-seat label:before,
+.unselected-seat label:before{ content: ""; position: absolute; width: 75%; height: 75%;    top: 1px;    right: 65%;    transform: translate(4%, 10%);    background: #fff}
+.price-updates{ text-align: center;  padding-top: 10px; padding-bottom: 10px;}
+.price-updates .col{    display: inline-block; line-height:16px;    padding: 0 25px;    border-right:1px solid #666; position: relative; }
+.price-updates .col:last-child{    border-right:none;}
+.wings{    position: relative;}
+.wings:after { content: ' '; position: absolute; left: 33px; bottom: -20px; background: #d8d8d8; height: 20px; width: 22px; transform: rotateX(12deg)}
+.wings:before {    content: ' ';    position: absolute;    left: 33px;    top: -20px;    background: #d8d8d8;    height: 20px;    width: 22px;    transform: rotateX(-12deg)}
+.seat_map_airline_name{ padding-top:10px;}
+
+
+/**/
+#seatAssgFee { position: relative;}
+
+.seat_info { display:inline-block; position: relative; }
+.seat_info a { padding:0px 20px 0px 20px; display:inline-block; color:#333; text-decoration:none; position:relative; }
+.seat_info .fa-info{ position:absolute; left: 0px; top: 0px;  border: 1px solid #ccc; color:#ef8527; border-radius: 100%; font-size:11px; height: 15px; line-height: 14px;text-align: center; width: 15px;}
+.seat_info .seat_tooltip { display: none; background: #fff; font-size:12px; padding: 14px; position: absolute; left: -24px;  top: 25px;
+    width: 360px; border:1px solid #94afc6; text-align: left;   z-index: 1;}
+.seat_tooltip .arrow { width:21px; height:11px; display: block; position:absolute; left: 20px; top: -11px; background:url(/resources/flight-result/images/fare_rule_arrow.png) no-repeat;}
+
+.seat_info:hover .seat_tooltip { display: block; }
+
+.seat_select_button { float: right; border-radius:0px; background:#ef8527; padding: 10px 15px; text-align:center; color:#fff; font-size:14px; font-weight:700; border:0; text-transform:uppercase; }
+.seat_select_button:hover { color:#fff; background:#d66d11; }
+
+#seatMapdetails .note { font-size: 11px; padding:10px 0px; color:#7d7979; }
+
+#seatMapdetails .notification { display:none; color: #008000;  font-size: 13px;}
+#seatMapdetails .notification i { font-size: 14px; }
+.seat_price { display:none; font-size:10px; position:relative; }
+.text-red { color:#f00;}
+.remove_seats { position:absolute; right:-14px;}
+
+/* Slider */
+.slick-slider { position: relative; display: block; box-sizing: border-box; -moz-box-sizing: border-box; -webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; -ms-touch-action: pan-y; touch-action: pan-y; -webkit-tap-highlight-color: transparent; }
+
+.slick-list { position: relative; overflow: hidden; display: block; margin: -1px; padding: 0; }
+.slick-list:focus { outline: none; }
+
+/* Arrows */
+.slick-prev:hover:before, .slick-prev:focus:before, .slick-next:hover:before, .slick-next:focus:before { opacity: 1; }
+.slick-prev.slick-disabled:before, .slick-next.slick-disabled:before { opacity: 0.25; }
+
+
+.slick-next:before:before {font-family: 'FontAwesome'; content: "\f105";}
+
+.seatMapslider .slick-prev:before,.seatMapslider .slick-next:before{font-size:20px;line-height:1;color:white;opacity:0.75;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;}
+
+.seatMapslider .slick-prev,.seatMapslider .slick-next{position:absolute;top:10px; width:25px;height:25px;border-radius:50%;text-align:center;z-index:1;border:none;background:#fcae7b;color:#fff;cursor:pointer;line-height:20px;}
+.seatMapslider .slick-next{right:-10px;}
+.seatMapslider .slick-prev { left:-10px;}
+.seatMapslider .slick-prev:before{content:"\f104";font-size:20px;font-family:'FontAwesome';}
+.seatMapslider .slick-next:before{content:"\f105";font-size:20px;font-family:'FontAwesome';}
+.seatMapslider .slick-prev:hover, .seatMapslider .slick-next:hover { background:#ef8527;}
+.seatMapslider .slick-prev.slick-disabled, .seatMapslider .slick-next.slick-disabled { background:#cfd9e2;}
+
+
+/* Dots */
+.slick-slider {  }
+
+
+.carousel-inner { overflow:inherit;}
+
+.close_seat_tooltip { display: none; }
+
+
+
+
+@media only screen and (max-width: 1023px) {
+.tabContainer { margin: 0px -11px;}
+.tabContainer{ padding:0 50px; }
+.slick-slide { text-align: center;}
+.price-updates .col { font-size: 12px; padding: 0px 5px;}
+.close_seat_tooltip { font-size:16px; color:#ef8527; position:absolute; right:10px; top:10px; width:16px; height:16px; display: block; text-align:center; cursor:pointer;}
+
+}
+
+@media only screen and (max-width: 767px) {
+.price-updates .col { border-right:0px; padding:5px; display: block; }
+#seatMapdetails .note { width:100%; float:left; }
+.seat_info .seat_tooltip { left:inherit; right:0px; }
+.seat_tooltip .arrow { left:inherit; right:52px; }
+
+
+
+}
+
+@media only screen and (max-width: 479px) {
+.tabContainer { padding: 0px 10px;}
+.slick-slide img { width:45px; }
+.flightTab .flight-detail { font-size: 11px; }
+.seatPanal-list { padding:8px 0 0 0px; margin: 0px;}
+.seatPanal .seatPanal-list li { padding:5px 11px;}
+.price-updates { padding:10px 0px; }
+.price-updates .col { font-size: 12px; }
+.seat_info .seat_tooltip {width:254px; }
+.slick-list { margin:-2px 0px;}
+
+}

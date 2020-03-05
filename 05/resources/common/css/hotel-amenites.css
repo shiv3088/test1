@@ -1,0 +1,161 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon.eot');
+  src:  url('../fonts/icomoon.eot') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf') format('truetype'),
+    url('../fonts/icomoon.woff') format('woff'),
+    url('../fonts/icomoon.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-casino:before {
+  content: "\e901";
+}
+.icon-bike-rental-facility:before {
+  content: "\e902";
+}
+.icon-bar:before {
+  content: "\e903";
+}
+.icon-newspaper:before {
+  content: "\e94c";
+}
+.icon-pets-allowed:before {
+  content: "\e948";
+}
+.icon-banquet-facilities:before {
+  content: "\e900";
+}
+.icon-barbeque-grills:before {
+  content: "\e90d";
+}
+.icon-bathrobe:before {
+  content: "\e90e";
+}
+.icon-breakfast:before {
+  content: "\e923";
+}
+.icon-childcare:before {
+  content: "\e924";
+}
+.icon-concierge-service:before {
+  content: "\e925";
+}
+.icon-conference-facilities:before {
+  content: "\e926";
+}
+.icon-cribs-available:before {
+  content: "\e927";
+}
+.icon-currency-exchange:before {
+  content: "\e928";
+}
+.icon-electric-kettle:before {
+  content: "\e929";
+}
+.icon-fitness-center:before {
+  content: "\e92a";
+}
+.icon-free-internet:before {
+  content: "\e92b";
+}
+.icon-wifi:before {
+  content: "\e92c";
+}
+.icon-fridge:before {
+  content: "\e92d";
+}
+.icon-gym:before {
+  content: "\e92e";
+}
+.icon-in-room-safe:before {
+  content: "\e92f";
+}
+.icon-internet:before {
+  content: "\e930";
+}
+.icon-ironing-facilities:before {
+  content: "\e931";
+}
+.icon-kitchenette:before {
+  content: "\e932";
+}
+.icon-laundry-facility:before {
+  content: "\e933";
+}
+.icon-lift-elevator:before {
+  content: "\e934";
+}
+.icon-medical-service:before {
+  content: "\e935";
+}
+.icon-meeting-room-facilities:before {
+  content: "\e936";
+}
+.icon-microwave:before {
+  content: "\e937";
+}
+.icon-minibar:before {
+  content: "\e938";
+}
+.icon-non-smoking-hotel:before {
+  content: "\e939";
+}
+.icon-parking:before {
+  content: "\e93a";
+}
+.icon-pool-bar:before {
+  content: "\e93b";
+}
+.icon-porter:before {
+  content: "\e93c";
+}
+.icon-restaurant-servicies:before {
+  content: "\e93d";
+}
+.icon-room-service:before {
+  content: "\e93e";
+}
+.icon-shuttle:before {
+  content: "\e93f";
+}
+.icon-smoking-room:before {
+  content: "\e940";
+}
+.icon-sun-umbrellas:before {
+  content: "\e941";
+}
+.icon-swimming-pool:before {
+  content: "\e942";
+}
+.icon-swimming-pool-indoor:before {
+  content: "\e943";
+}
+.icon-swimming-pool-outdoor:before {
+  content: "\e944";
+}
+.icon-tea-coffee-facilities:before {
+  content: "\e945";
+}
+.icon-toiletries:before {
+  content: "\e946";
+}
+.icon-wheelchair:before {
+  content: "\e947";
+}

@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Easing - fullPage.js</title>
+
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+	<link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
+	<link rel="stylesheet" type="text/css" href="css/examples.css" />
+	<link rel="stylesheet" type="text/css" href="css/navbar.css" />
+
+	<style>
+
+	/* Style for our header texts
+	* --------------------------------------- */
+	h1{
+		font-size: 5em;
+		font-family: arial,helvetica;
+		color: #fff;
+		margin:0;
+		padding:0;
+	}
+
+	/* Centered texts in each section
+	* --------------------------------------- */
+	.section{
+		text-align:center;
+	}
+
+
+	/* Backgrounds will cover all the section
+	* --------------------------------------- */
+	.section{
+		background-size: cover;
+	}
+	.slide{
+		background-size: cover;
+	}
+
+	/* Defining each section background and styles
+	* --------------------------------------- */
+	#section0{
+		background-image: url(imgs/bg1.jpg);
+		padding: 0 0 0 0;
+	}
+	#section1{
+		background-image: url(imgs/bg2.jpg);
+		padding: 0 0 0 0;
+	}
+	
+	#section2{
+		background-image: url(imgs/bg4.jpg);
+		padding: 0 0 0 0;
+	}
+	#section3{
+		background-image: url(imgs/bg3.jpg);
+		padding: 0 0 0 0;
+	}
+	
+
+
+ 	/*Adding background for the slides
+	* --------------------------------------- */
+	#slide1{
+		background-image: url(imgs/bg2.jpg);
+		padding: 6% 0 0 0;
+	}
+	#slide2{
+		background-image: url(imgs/bg5.jpg);
+		padding: 6% 0 0 0;
+	}
+
+
+	/* Bottom menu
+	* --------------------------------------- */
+	#infoMenu li a {
+		color: #fff;
+	}
+	</style>
+	
+	<!--[if IE]>
+		<script type="text/javascript">
+			 var console = { log: function() {} };
+		</script>
+	<![endif]-->
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+
+	<script type="text/javascript" src="js/jquery.fullPage.js"></script>
+    <script type="text/javascript" src="js/navbar.js"></script>
+
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('#fullpage').fullpage({
+				
+				anchors: ['firstPage', 'secondPage', '3rdPage', '4thPage', 'lastPage'],
+				menu: '#menu',
+
+			
+			});
+
+		});
+	</script>
+
+</head>
+<body>
+<div id="wrapper">
+<div class="overlay"></div>
+
+<nav class="navbar navbar-inverse navbar-fixed-top" id="sidebar-wrapper" role="navigation">
+	<ul class="nav sidebar-nav" id="menu">
+		<li data-menuanchor="firstPage"><a href="#firstPage">Introduction</a></li>
+        <li data-menuanchor="secondPage"><a href="#secondPage">Our Services</a></li>
+        <li data-menuanchor="3rdPage"><a href="#3rdPage">Milestones Achieved</a></li>
+        <li data-menuanchor="4thPage"><a href="#4thPage">Customer Satisfaction</a></li>
+	</ul>
+</nav>
+
+<div id="page-content-wrapper">
+    <button type="button" class="hamburger is-closed" data-toggle="offcanvas">
+        <span class="hamb-top"></span>
+        <span class="hamb-middle"></span>
+        <span class="hamb-bottom"></span>
+    </button>
+</div>
+
+<div id="fullpage">
+	<div class="section" id="section0">
+    <div style="float:left; padding-left:5%; height:auto; color:#fff; width:50%; text-align:left; font-family:'Roboto-Light'; padding-bottom:10%;">
+        <h1 style="font-size:50px; margin:0px;"> Introduction</h1>
+        <div style="height:3px; width:50px; background-color:#f99301; margin-left:3px;"></div>
+        <p style="text-align:justify; line-height:25px;font-size:18px; padding-top:20px;">travelopick is a leading brand in the world of tourism with years of experience and rich knowledge about the global destinations. Right from its inception to the present day, the company has carved its own niche with a team of committed and qualified professionals from varied backgrounds including travel, accounts, finance, marketing and customer support. They together form a passionate and dedicated team to fulfill all your travel aspirations especially in terms of cheap travel deals.  </p>
+    </div>
+	
+	
+	</div>
+	<div class="section" id="section1">
+	    
+	
+		
+		<div class="animateblock btm" style="float:left; padding-left:5%; height:auto; color:#fff; width:50%; text-align:left;font-family:'Roboto-Light';">
+	<h1 style="font-size:50px; margin:0px;"> Our Services</h1>
+	<div style="height:3px; width:50px; background-color:#f99301; margin-left:3px;"></div>
+	<p style="text-align:justify; line-height:25px;font-size:18px; padding-top:20px;">With a wide plethora of options with regards to tourist destinations, we offer you a complete package with cheap flight tickets and cheap hotel accommodation and all your needs are taken care with precision. We take care of even the minute details that are usually ignored while you are off to start your journey. Whether it’s a corporate trip, weekend holiday, family vacation or a complete leisure trip with friends, we strive to deliver the best travel experience and that too at exceptionally low prices.</p>
+	<p style="text-align:justify; line-height:25px;font-size:18px; padding-top:20px;">Book your trip with travelopick and enjoy cheap travel bookings with discounted airfares, cheap air tickets, best travel deals and discounted hotel reservations. For convenient and friendly approach to make easy and quick discounted flight bookings, we have also come up with a mobile app that is compatible across all latest mobile phones and tablets.</p>
+	
+	
+	</div>
+		
+		
+	</div>
+	<div class="section" id="section2">
+	
+	<div class="animateblock btm" style="float:left; padding-left:5%; height:auto; color:#fff; width:50%; text-align:left;font-family:'Roboto-Light';">
+	<h1 style="font-size:50px; margin:0px;"> Milestones Achieved</h1>
+	<div style="height:3px; width:50px; background-color:#f99301; margin-left:3px;"></div>
+	<p style="text-align:justify; line-height:25px;font-size:18px; padding-top:20px;">Our quality services and the way we serve our customers is mere milestones achieved in the years since we have started our operations. We operate through our website travelopick.com that prides itself on providing consistent value to our customers by offering discounts on airline tickets, hotel accommodations, travel packages and car rentals with unmatched customer service. It is our goal as a company to remove the hassle of travel and replace it with convenient prices on international and domestic flights.  </p>
+	<p style="text-align:justify; line-height:25px;font-size:18px; padding-top:20px;">Our skilled and experienced team will assist in the planning of your dream vacation, business trip or your family holiday. We take pride in a capable and experienced staff of over 200 personnel that includes sales people, IT professionals, back office professionals, travel experts, finance people and customer care personnel. The back office processing is accompanied, by ticketing, and sales via a call center. Adding to this, an in-house IT team stays attuned to latest applications and technologies that work to make travel bookings even faster and more convenient. </p>
+    <p style="text-align:justify; line-height:25px;font-size:18px; padding-top:20px;">Our website integrates seamlessly with the back office system and makes management of accounts, reservations, analysis and reporting flawless. travelopick.com Travel also provides 24 hours emergency support services for clients and airlines alike.</p>
+	
+	</div>
+	
+	</div>
+	<div class="section" id="section3">
+	
+	<div class="animateblock btm" style="float:left; padding-left:5%; height:auto; color:#fff; width:50%; text-align:left;font-family:'Roboto-Light';">
+	<h1 style="font-size:50px; margin:0px; color:#fff;"> Customer Satisfaction</h1>
+	<div style="height:3px; width:50px; background-color:#f99301; margin-left:3px;"></div>
+	<p style="text-align:justify; line-height:25px;font-size:18px; padding-top:20px;">To ensure an enriched experience and add value to your journey as you book your discounted air ticket, we have built healthy relationships with leading airlines and hotels. In association we work towards first class travel deals, business class flight deals and best airline ticket deals with a wish to go reach high level of customer satisfaction.</p>
+	<p style="text-align:justify; line-height:25px;font-size:18px; padding-top:20px;">As we function in the industry, we ensure to maintain high level of professionalism and service standards. In the process we work towards winning customers’ trust and add new benchmarks to the tourism industry. Adding to this our deep passion and dedicated efforts is what makes us one of the most counted travel agency especially when it comes to make discounted travel bookings.</p>
+	
+	
+	</div>
+	
+	</div>
+</div>
+
+</div>
+
+
+</body>
+</html>

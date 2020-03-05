@@ -1,0 +1,18 @@
+/*Nevigation Country Changes Flag Dropdown*/ 
+ .select-language .dropdown {position: relative;display: inline-block;}
+ .select-language .dropbtn .fa {pointer-events: none;}
+ .select-language .dropdown-content {display: none;position: absolute;background-color: #f1f1f1;min-width: 220px;padding: 0;box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);z-index: 5;margin-top: 10px;border-radius: 0 0 3px 3px;}
+ .select-language .dropdown-content li {list-style: none;}
+ .select-language .dropdown-content a {color: black;padding: 12px 16px;text-decoration: none;display: block;font-weight: normal;}
+ .select-language .dropdown-content .fa-sort-up {position: absolute;margin-top: -11px;left: 30%;font-size: 24px;pointer-events: none;}  
+ .select-language .dropdown a:hover {background-color: #ddd; }
+ .select-language .show {display: block; }
+ .mobile-language {color: #333;text-decoration: none;position: absolute;right: 45px;top: 10px;font-weight: bold; }  
+ .mobile-language a { color:#333;}
+
+@media (max-width:767px) {
+.select-language .dropdown-content { right: 0; margin-top: 16px; }
+.select-language .dropdown-content .fa-sort-up { margin-top: -11px; left: 70%; } 
+.navbar-brand img { width: 100px; margin: 7px 0 0 0; }
+.navbar-header { position:relative; clear:both; }
+}

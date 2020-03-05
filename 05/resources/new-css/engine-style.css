@@ -1,0 +1,166 @@
+
+/*Engine Style  #4863db (blue)  #1dcd70 (green)    */
+
+ul.engine-tab  { list-style:none; background:#fff; margin:0; padding:0; }
+.engine-tab  li { float:left; margin-right:10px; background:#fff; padding:10px 30px;  }
+.engine-tab  li.active { background:#fff; color:#4863db; padding:17px 30px 5px; font-size:16px; }
+.engine-tab  li.active a { color:#4863db; }
+.new-engine-div { clear:both; background:#fff; padding:20px 20px 10px 20px; }
+.new-engine-div .trip-type ul { list-style:none; margin:0; padding:0; }
+.new-engine-div .trip-type ul  li { display:inline-block; padding-right:30px; }
+
+.new-engine-div .engine-row { margin:0; }
+.new-engine-div .engine-row .col { padding:0 2px;  }
+.new-engine-div .engine-row .col  input { width:100%; padding:12px 0 12px 35px; height:46px; } 
+.new-engine-div .engine-row .col .date-text { padding:12px 0 12px 30px; cursor:pointer;    } 
+.new-engine-div .engine-row .input_div { height:46px;  }
+.new-engine-div .engine-row .arrow_down:before {
+    content: "\f0dd"; font-family: 'FontAwesome'; font-size: 20px; position: absolute; right: 5px; top: 4px; height: 20px; width: 20px; z-index: 3; color: #999; pointer-events: none;
+} 
+.new-engine-div .engine-row .direct-flight-option { margin-top:10px; }
+.new-engine-div .engine-row .direct-flight-option .checkbox  { margin-bottom:0; }
+	.devid-space:before {
+		    content: "-";
+    font-family: 'FontAwesome';
+    font-size: 20px;
+    position: absolute;
+    left: 0;
+    top: 7px;
+    height: 20px;
+    width: 20px;
+    z-index: 3;
+    color: #999;
+    pointer-events: none;
+}
+	 
+.main-search-btn { padding:10px; font-size:18px; background:#4863db; color:#fff; border:1px solid #4863db; width:100%; height:46px; margin-left:2px; }
+.main-search-btn:hover	{ background:#2b4bd5 ; }
+.no-margin { margin:0; }
+.no-padding { padding:0; }
+.pl10px { padding-left:10px !important; }
+.pl15px { padding-left:15px !important; }
+.pl0px { padding-left:0px !important; }
+.mt10px { margin-top:10px; }
+.bdr-r0 { border-right:0 !important; }
+.bdr-l0 { border-left:0 !important; }
+.calender-div .col-xs-12 .input.bdr-r0 { border-right:1px solid #c7c7c7 !important; }
+
+/*Traveler Block*/
+.new-engine-div .traveller-box  {  background:#fff; border:1px solid #c7c7c7; padding:10px; position:absolute; width:250px;z-index: 1; margin-top:5px; text-align:left; color:#333; font-size:14px; transition: width 2s; box-shadow: 3px 3px 10px #666;    } 
+#person { cursor:pointer; }
+.new-engine-div .traveller-box .add-traveller { clear:both;  }
+.new-engine-div .traveller-box .add-traveller label { display: inline-block;
+    margin-left: -8px;
+    color: #333;
+    font-size: 14px;
+    text-align: left;
+    font-weight: normal;
+    width: 54%; }
+.new-engine-div .traveller-box .add-traveller .content { position: relative;
+    margin-bottom: 15px;
+    width: 47%;
+    display: inline-block; }
+.new-engine-div .traveller-box .add-traveller .content .traveler-plus { width: 30px;
+    float: right;
+    padding: 0; 
+    font-size: 17px;
+    background: #fff;
+    color: #4863db;
+    border: 1px solid #4863db;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 50%;  }
+.new-engine-div .traveller-box .add-traveller .content .traveler-minus {     width: 30px;
+    float: left;
+    padding: 0;
+    height: 30px;
+    font-size: 20px;
+    background: #fff;
+    color: #4863db;
+    border: 1px solid #4863db;
+    line-height: 30px;
+    border-radius: 50%;   }
+.new-engine-div .traveller-box .add-traveller .content .traveler-plus:hover, .new-engine-div .traveller-box .add-traveller .content .traveler-minus:hover { background:#4863db; color:#fff; }
+.new-engine-div .traveller-box .add-traveller .content .count { width: 50px;
+    text-align: center;
+    padding: 4px;
+    height: 30px;
+    border: 0 !important;
+    margin-left: 25px;  }
+.new-engine-div .traveller-box .add-traveller  	.cabin-type { width:100%; padding:5px 10px; height:36px; }
+.new-engine-div  .extra_text2  { margin: 10px 0; display:block; font-size:12px; }
+.new-engine-div .traveller-box .add-traveller .content select { width:100%; padding:5px 10px; height:auto; }
+.new-engine-div .traveller-box .done { background:#1dcd70; color:#fff; font-size:16px; display:block; text-align:center; padding:6px; margin:0 -10px -10px; }
+
+/*Popup Block*/
+.information_popup {display: block; padding-bottom: 8px; position: fixed; right: 8px; top: 65px;  max-width: 285px; background: #fff; z-index: 999;     box-shadow: 3px 3px 10px #666; border-right:3px; -webkit-animation: mymove 5s; /* Safari 4.0 - 8.0 */ animation: mymove 2s; }
+.information_popup .logo-center { float:right;  margin:15px 10px 0px 7px; }
+.information_popup .logo-center img {     position: absolute; right: 10px; top: 30px;  }
+.information_popup h3 {     display: block; font-size: 15px; color: #1dcd70; padding: 20px 15px 0;} 
+.information_popup ul { list-style:none; display: block; clear: both; font-size: 13px; color: #000; padding: 15px 15px 0px; margin: 0px; line-height: 1.4;}
+.information_popup li {margin-bottom: 10px; position: relative;  padding-left: 20px;}
+.information_popup li .number {position: absolute; top: 0; left: 0; display: block; height: 24px;  width: 10px;  text-align: center;}
+.information_close-popup  { position: absolute; right: 0;  top: 0; font-weight: inherit; color: #999; width: 30px; height: 30px; font-size: 30px; text-align: center;   line-height: 30px; } 
+	
+@-webkit-keyframes mymove {
+from {top: -200px;}
+to {top: 65px;}
+}
+
+/* Standard syntax */
+@keyframes mymove {
+from {top: -200px;}
+to {top: 65px;}
+}
+
+@-webkit-keyframes mymove1 {
+    from {top: -200px;}
+    to {top:0px;}
+    }
+    
+    /* Standard syntax */
+    @keyframes mymove1 {
+    from {top: -200px;}
+    to {top: 0px;}
+    }
+
+
+.trustpilot-icon {
+  position: relative;
+  
+}
+.trustpilot-icon {
+	position: absolute;
+    right: 10px;
+    top: -80px; 
+	background: rgba(255, 255, 255,0.9);
+	padding: 10px;
+}
+.trustpilot-icon img { width:120px; }
+.trustpilot-icon img.pull-right { width:100px; }
+.trustpilot-icon .excellent { color:#1dcd70; font-size:16px; margin-left:8px; font-weight:700; }
+.trustpilot-icon .trust-score { background:#000032; color:#fff; padding:2px 10px; border-radius:2px; font-size:16px; display:inline-block; }
+
+
+@media (max-width:990px){
+
+.new-engine-div .engine-row .col { padding:3px 0; }
+.trustpilot-icon img {
+    right: 10px;
+    top: -85px;
+  }
+
+	}
+
+@media (max-width:767px) {
+    
+.information_popup {display: block; padding-bottom: 8px; position: fixed; right: 0; top: 0; font-family: Arial, Helvetica, sans-serif;  max-width: 100%; background: #1a75bc; color:#fff; z-index: 999;     box-shadow: 3px 3px 10px #666; border-right:3px; padding-left: 30px; -webkit-animation: mymove1 5s; /* Safari 4.0 - 8.0 */ animation: mymove1 2s; }
+.information_popup .logo-center { float:right;  margin:15px 10px 0px 7px; }
+.information_popup .logo-center img {     position: absolute; left: 10px; top: 15px;  }
+.information_popup h3 { display: block; font-size: 15px; color: #fff; padding: 0px 15px 0; margin: 10px 0; line-height: 1.3em; } 
+.information_popup h3 b { display: block; }
+.information_popup ul { list-style:none; display: block; clear: both; font-size: 13px; color: #fff; padding: 0 15px 0px; margin: 0px; line-height: 1.2em;}
+.information_popup li {margin-bottom: 2px; position: relative;  padding-left: 20px; font-size: 11px; }
+.information_popup li .number {position: absolute; top: 0; left: 0; display: block; height: 24px;  width: 10px;  text-align: center;}
+.information_close-popup  { position: absolute; cursor: pointer; right: 10px;  top: 10px; font-weight: 100; color: #fff; width: 30px; height: 30px; font-size: 30px; text-align: center;   line-height: 30px; } 
+}

@@ -1,0 +1,95 @@
+body {
+    font-family: sans-serif;
+
+    .no-gutter{
+        &.row{
+            margin-left:0;
+            margin-right:0;
+            [class*=col-sm]{
+                padding-left: 0;
+                padding-right: 0;
+            }
+        }
+    }
+
+    form {
+        margin: 0;
+    }
+    &.body-wrapper {
+        width: 100%;
+        max-width: 1440px;
+        margin: 0 auto;
+    }
+    .cursor {
+        cursor: pointer;
+    }
+    .error {
+        border: 1px solid red;
+        background: #ffc;
+    }
+    .truncate {
+        display: inline-block !important;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        width: 100%;
+    }
+    // default font styling and sizing
+    ul, li {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+    a {
+        text-decoration: none;
+        color: $black;
+        cursor: pointer; 
+        &:hover {
+            @include transition(all 0.3s ease-out);
+
+            text-decoration: none;
+        }
+        &:focus, &:active {
+            background: transparent;
+            text-decoration: none;
+        }
+    }
+}
+
+.starRating, .ratings {
+    //color: green;
+    &.star1 {
+        color: $yellow;
+        .fa:nth-child(1n+2) {
+            color: lighten($gray, 30);
+        }
+    }
+    &.star2 {
+        color: $yellow;
+        .fa:nth-child(n+3) {
+            color: lighten($gray, 30);
+        }
+    }
+
+    &.star3 {
+        color: $yellow;
+        .fa:nth-child(n+4) {
+            color: lighten($gray, 30);
+        }
+    }
+    &.star4 {
+        color: $yellow;
+        .fa:nth-child(n+5) {
+            color: lighten($gray, 30);
+        }
+    }
+    &.star5 {
+        color: $yellow;
+        .fa:nth-child(n+6) {
+            color: lighten($gray, 30);
+        }
+    }
+}
+.form-control[disabled], .form-control[readonly], fieldset[disabled] .form-control {
+    background: $white;
+}

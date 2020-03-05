@@ -1,0 +1,1439 @@
+.component-sightSeeing-payment{  
+    background: #eee;
+    padding: 10px 0 40px 0;
+
+    .go-back{ background: $orange; color: #fff; margin: 0 0 9px 0;}
+    .print{ 
+        z-index: 999;
+        text-align: right;
+        margin: 10px 0;
+
+
+        .print-button{
+            font-size: 13px;
+            color: #8e8c8d;
+            padding: 0 13px;
+            font-weight: bold;
+            letter-spacing: 2px;
+            background: none;
+            text-align: right;
+        }
+                
+        .devider{
+            border-right: #8e8c8d solid 1px;  
+                }
+    }
+    .cr-send-mail {
+        background: $white;  
+        padding: 10px;
+        margin-bottom: 10px;
+        h5 { text-align: left; }
+
+        input {
+            padding: 10px;
+            font-size: 14px;
+            border: 1px solid #ccc;
+        }
+        button {
+            background: $red;
+            color:$white;
+            font-size: 16px;
+            border: 0;
+            padding: 10px;
+        }
+        .crSuccess{
+            text-align: left;
+            font-size: 13px;
+            color: #038403;
+        }
+
+        .crError{
+            text-align: left;
+            font-size: 13px;
+            color: $red;
+        }
+    }
+     
+    .sightSeeing-payment{
+        padding: 20px;
+        background: #fff;
+        margin-bottom: 20px;
+        box-shadow: 0 8px 8px -8px #888;
+        @include breakpoint(screen-md){padding: 10px; margin-bottom: 10px;}
+        
+        .sightSeeing-confirmation{
+            
+         
+        .confirmation-bg{
+            background: #fff;
+            margin-bottom: 20px;
+            @include breakpoint(screen-xs) {
+                text-align: center;
+            }
+            
+            .booking-confir-icon{ 
+                margin: 10px 0;
+                @include breakpoint(xs){margin: 16px 0;}
+            }
+            
+            .congratulations{
+                color: $gray;
+                font-size: 23px;
+                font-weight: 600;
+                margin-bottom: 5px;
+                @include breakpoint(xs){font-size: 20px;}
+            }
+        p{
+                color: #6e6e6e;
+                font-size: 15px;
+                margin-bottom: 0px;
+                @include breakpoint(xs){font-size: 10px;}
+            }
+            
+            .reference{
+                margin-top: 20px;
+                
+                p{
+                color: #8c8c8c;
+                font-size: 17px;
+                margin-bottom: -4px;
+                @include breakpoint(xs){font-size: 11px;}
+                    
+            span{
+                color: $orangelight;
+                font-size: 22px;
+                font-weight: 600;
+                vertical-align: middle; 
+                @include breakpoint(xs){font-size: 15px; padding-left: 0px;}
+                    }
+            }
+                
+                
+            }
+            
+        }
+            
+            
+            
+        .activities {
+ 
+            .activity-block {
+                padding: 15px;
+                border: 1px solid #ccc;
+            } 
+            h2{
+                margin-bottom: 20px;  
+                color: $orange;
+                font-size: 18px;
+                font-weight: bold;
+                @include breakpoint(xs){font-size: 16px; margin-bottom: 10px;}
+            }
+            
+            img{width: 100%;}
+
+            
+            .prices-detail{ 
+                margin-bottom: 30px; 
+
+                h2{
+                margin-bottom: 0;
+                border-bottom: 1px dotted #929292;
+                padding-bottom: 0;
+                color: #4e4e78;
+                font-size: 22px;
+                }
+                .des-head{
+                font-size: 15px;
+                color: #5f5f5f;
+                font-weight: 600;
+                margin: 21px 0 10px 0;
+                }
+
+                .price-deta{
+                font-size: 13px;
+                color: #8a8989;
+                font-weight: 600;
+                margin-bottom: 3px;
+                }
+
+                .total-price{
+                font-size: 15px;
+                color: #4d4d77;
+                font-weight: 600;
+                margin: 6px 0;
+                }
+
+                .des-fare{
+                    text-align: right;
+                    
+                .price-deta{
+                    font-size: 13px;
+                    color: #8a8989;
+                    font-weight: 600;
+                    margin-bottom: 3px;
+                    }
+
+                .total-price{
+                    font-size: 15px;
+                    color: #4d4d77;
+                    font-weight: 600;
+                    margin: 6px 0; 
+                    }
+                    }
+               .grand-total{
+                border-top: 1px dotted #4d4d77;
+                color: #4d4d77;                    
+                padding: 12px 0;                    
+                font-size: 19px;
+                margin: 17px 0 50px 0;                   
+                font-weight: bold;
+
+                .grand-fare{text-align: right;}
+               }
+            }  
+
+            
+        .last-post {
+            border-bottom: none;
+            padding-bottom: 20px;
+            margin-bottom: 25px;
+            @include breakpoint(screen-md){padding-bottom: 10px; margin-bottom: 0;} 
+            
+                    
+              .post-name {
+
+                    color: $orange;
+                    font-size: 18px;
+                    margin: 0 0 10px 0; 
+                    @include breakpoint(xs){font-size: 12px;}
+                    
+                  
+                             a{color: $orange;}
+                             a:hover{color: $orangelight;}
+                       }
+
+              .post-location{
+                    font-size: 13px;
+                    color: #8a8989;
+                    margin: 5px 0;
+                    font-weight: 600;
+                    .icon-color {
+                        color: $orange;
+                    }
+                    @include breakpoint(xs){font-size: 11px;}
+                           }
+
+              .post-schedule {                       
+                    padding:3px 0 5px 0;
+                  
+              li {
+                    font-size: 13px;
+                    color: #848484;
+                    float: left;
+                    font-weight: 600;
+                    @include breakpoint(xs){font-size: 11px;}
+                    .icon-color{color: $orange}   
+                   
+                  &:after{ content: '|'; display: inline-block;margin: 0px 8px; line-height: 11px;}
+
+
+              &:last-child:after{
+                    content:'';
+} } }
+
+            .voucher{
+                color: #4d4d77;
+                font-size: 13px;
+                margin: 11px 0;
+                font-weight: 600;
+                span{
+                    color: #f15a5f;
+                    font-weight: 700;
+                }
+                a{
+                    color: #f15a5f;
+                    font-weight: 700;
+                    border-bottom: 2px solid #f15a5f;
+                }
+            }
+
+}
+            
+            
+            .traveller-details{
+            margin-bottom: 20px;
+            
+            h3{
+            color: $orange;
+            margin: 25px 0 10px 0;
+            font-size: 18px;
+            font-weight: bold;
+            }
+        
+        
+        .title-head {
+            color: $white;
+            background: #4e4e4e;
+            padding:10px;
+            @include breakpoint(xs){font-size: 12px;}
+
+            .text-right{text-align: right;}
+        
+        }
+        
+ 
+        .traveller-title{
+            color: #807e7e;
+            font-size: 15px;
+            margin: 0px 0;
+             border: 1px solid #ccc;
+            padding: 10px;
+            border-top: 0;
+            @include breakpoint(xs){font-size: 11px;}
+
+            .great-choice-fare{text-align: right;
+             
+                @include breakpoint(xs){font-size: 10px;}
+            }
+            
+            &:last-child{ padding:10px; margin:0; }            
+        }
+     
+
+        .traveller-price{
+            h3 {
+                color: #4d4d77;
+                margin: 25px 0;
+                font-size: 17px;
+            }
+        }
+            
+}
+ 
+        
+           
+
+            .contact-info{
+                margin-bottom: 50px;
+                
+                h3{
+                    color: $orange;
+                    margin: 25px 0 10px 0;
+                    font-size: 18px;
+                    font-weight: bold;
+                    @include breakpoint(xs){font-size: 18px;}
+                }
+                
+                p { color: #8e8e8e; font-size: 12px;}
+                
+             .contact-title{ 
+                color: $white;
+                background: #4e4e4e;
+                padding:10px;
+                 @include breakpoint(xs){font-size: 12px;}
+                }
+                
+             .contact-detail{
+                border: 1px solid #cccccc; padding:10px; margin:0; color: #807e7e;
+                 @include breakpoint(xs){font-size: 10px;}
+                }
+
+            
+            }
+            
+        }
+            
+        }
+    
+        .traveler-head{
+            margin-bottom: 10px;
+            border-bottom: 1px dotted #929292;
+            padding-bottom: 10px;
+            @include breakpoint(xs){margin-bottom: 20px;}
+                        
+             
+            .tour-name{
+                color: $orangelight;
+                font-size: 19px;
+                white-space: nowrap;
+                max-width: 100%;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                 
+                @include breakpoint(xs){font-size: 16px; white-space: normal;}
+            }
+            .post-schedule{                       
+                padding:3px 0 0 0;
+
+                @include breakpoint(xs){height: 18px;}
+              
+          li {
+                font-size: 14px;
+                color: #7e7c7c;
+                float: left;
+                @include breakpoint(xs){font-size: 11px;}
+            .icon-color{color: $orange;}   
+               
+             &:after{ content: '|'; display: inline-block;margin: 0px 8px; line-height: 11px;}
+
+
+          &:last-child:after{
+                content:'';
+} } }
+            .tour-date{
+                color: $orange;
+                font-size: 15px; 
+                text-align: right;
+                @include breakpoint(xs){margin-top: 10px; text-align: left;}
+            }
+            .post-location{ 
+                font-size: 14px;
+                color: #7e7c7c;
+                text-align: right;
+
+                @include breakpoint(xs){ font-size: 11px; text-align: left; margin-top: 5px; }
+                .icon-color{color: $orange;} 
+            }
+        }
+  
+     .discover-form {  
+          
+                         
+                .form-inline{ 
+                                     
+                   
+            .form-control{ 
+                        width: 100%; 
+                        margin-bottom: 5px; 
+                        height: 35px;
+                        font-size: 14px;
+                        color: #8e8e8e;
+                        border: 1px solid #ccc;
+                        -moz-appearance: none;
+                        padding-right: 5px;
+ 
+                    }  
+
+                    
+                    label{color: #7e7c7c;font-size: 13px;}
+                               
+                    .form-group {  
+                       display: block;
+                       @include breakpoint(xs) {  font-size:14px;  }
+
+                       .has-error {border: 1px solid $red;} 
+                        
+                        p{
+                            margin:0 0 0 0;
+                            font-size: 12px;
+                            line-height: 40px;
+                            @include breakpoint(xs) { line-height: 5px; margin-top: -10px; font-size: 9px; }
+                            @include breakpoint(sm) {font-size: 11px; }
+
+                            
+                        }
+                        .ccv-popup{
+                            @include breakpoint(xs) { 
+                                top: 0px;
+                                font-size: 9px;
+                                position: absolute;
+                                left: 130px;}
+                        }
+                        
+                        label{color: #7e7c7c;font-size: 13px;}
+                         
+                       .radio{color: #7e7c7c;
+                    
+                        span{
+                            @include breakpoint(xs) {padding-left: 20px;}
+                        }
+                    }
+                        
+                    .kg{
+                            font-size: 13px;
+                            color: #8e8e8e;
+                            border-left: 1px solid #959595;
+                            padding: 0px 12px;
+                            line-height: 27px;
+                            position: absolute;
+                            right: 44px;
+                            top: 8px; 
+                        }
+
+                        .weight-input{
+                            display: inline-block;
+                            vertical-align: top;
+                        }
+                        .weight-select{
+                            display: inline-block;
+                            vertical-align: top;
+                        }
+                        
+                    .locate-icon { position: relative; display: block; height: 35px;
+                        line-height: 35px;
+                        font-size: 13px;
+                        color: #8e8e8e;  
+                        border: 1px solid #ccc;
+                        padding: 0;
+
+                        .textfield{ width: calc(100% - 81px); float: left; border: none; height: 33px;
+                            background: none; padding: 10px;}
+                        .form-control{  float: left; background: none; border: none; padding: 6px 2px;
+                        &:focus{ box-shadow: none;}
+                        }
+                        .select { position: relative; display: block; float: right; width: 81px;
+                            &:before { content: ''; width: 1px; height: 34px; background: #ccc; display: inline-block; position: absolute; left: 0px; }
+                        .k-g{
+                            border: none;
+                            font-size: 14px;
+                            height: 32px;
+                            &:focus{ box-shadow: none;}
+                        }
+                        }
+                        
+                        &:after {
+                            font-family: 'Glyphicons Halflings';
+                            content: "\e259";
+                            color: #8e8e8e;
+                            font-size: 13px;
+                            position: absolute;
+                            top: 0;
+                            right: 0;
+                            prevent-default: none;
+                            pointer-events: none;
+                            background: #fff;
+                            height: 100%;
+                            width: 20px;
+                            text-align: center;
+                        }
+                        }
+                    
+                    .select-class{ position: relative; display: block;
+                        
+
+                            &:after {font-family: 'Glyphicons Halflings'; content: "\e259"; color:#8e8e8e; font-size:13px; position: absolute; top: 7px;  right: 7px; prevent-default:none; pointer-events: none; background: #fff; }
+                        }
+                        
+                        
+                    .header{
+                        margin-bottom: 30px;
+                        border-bottom: 1px dotted #929292;
+                        padding: 0 0 5px 0;
+                        
+                        
+                        h3{
+                            color: #4e4e78;
+                            font-size: 19px;
+                            margin-top: 0
+                        }
+                        
+                        }
+                        
+                    .mob-star {
+                        color: red;
+                        position: absolute;
+                        top: 15px !important;
+                        left: 20px;
+                    }
+                       
+                        
+                        
+        
+    .container-fluid{
+              padding: 0; 
+                    
+                    .spnCardImg {
+                        .pvisa {
+                            background: url(/resources/assets/card-sprite.png) no-repeat scroll 0 center;
+                            display: inline-block;
+                            height: 32px;
+                            width: 43px;
+
+                            @include breakpoint(xs) {
+                                background-size: cover;
+                                height: 22px;
+                                width: 32px;
+                                margin-top: -9px;
+                            }
+                        }
+
+                        .pmaster,
+                        .MS,
+                        .CA {
+                            background: url(#{$assetPath}/card-sprite.png) no-repeat scroll -54px 0;
+                            display: inline-block;
+                            height: 32px;
+                            width: 43px;
+
+                            @include breakpoint(xs) {
+                                background-size: cover;
+                                height: 22px;
+                                width: 30px;
+                                background-position: -42px 0;
+                            }
+                        }
+
+                        .pamerican,
+                        .AX {
+                            background: url(#{$assetPath}/card-sprite.png) no-repeat scroll -112px 0;
+                            display: inline-block;
+                            height: 32px;
+                            width: 43px;
+
+                            @include breakpoint(xs) {
+                                background-size: cover;
+                                height: 22px;
+                                width: 30px;
+                                background-position: -83px 0;
+                            }
+                        }
+
+                        .pdiners,
+                        .DC {
+                            background: url(#{$assetPath}/card-sprite.png) no-repeat scroll -172px 0;
+                            display: inline-block;
+                            height: 32px;
+                            width: 43px;
+
+                            @include breakpoint(xs) {
+                                background-size: cover;
+                                height: 22px;
+                                width: 28px;
+                                background-position: -130px 0;
+                            }
+                        }
+
+                        .pdiscover,
+                        .DS {
+                            background: url(#{$assetPath}/card-sprite.png) no-repeat scroll -230px 0;
+                            display: inline-block;
+                            height: 32px;
+                            width: 43px;
+
+                            @include breakpoint(xs) {
+                                background-size: cover;
+                                height: 22px;
+                                width: 32px;
+                                background-position: -168px 0;
+                            }
+                        }
+
+                        .pcarte,
+                        .CR {
+                            background: url(#{$assetPath}/card-sprite.png) no-repeat scroll -286px 0;
+                            display: inline-block;
+                            height: 32px;
+                            width: 43px;
+
+                            @include breakpoint(xs) {
+                                background-size: cover;
+                                height: 22px;
+                                width: 32px;
+                                background-position: -210px 0;
+                            }
+                        }
+
+                        @include breakpoint(sm) {
+                            margin-top: 0; line-height: 20px;
+                        }
+
+
+                        
+                    }
+
+                      .ccv-card {
+                        position: relative;
+                        cursor: pointer;
+                        text-decoration: underline;
+                        margin-top: 25px;
+                        padding-left: 10px;
+                        color: #000;
+
+                        @include breakpoint(xs) {
+                            text-decoration: none;
+                            cursor: default;
+                        }
+
+
+                        &:hover {
+                            text-decoration: none;
+
+                            .cardImg {
+                                background: url(/resources/assets/card.gif) no-repeat;
+                                position: absolute;
+                                z-index: 12;
+                                height: 270px;
+                                width: 700px;
+                                right: 20%;
+                                top: 22px;
+                                background-size: 100%;
+
+                                @include breakpoint(md) {
+                                    right: 0;
+                                    width: 600px;
+                                }
+
+
+                                @include breakpoint(sm) {
+                                    right: 0;
+                                    width: 600px;
+                                }
+
+
+                                @include breakpoint(xs) {
+                                    right: -7px;
+                                    width: 300px;
+            }
+        }
+    }
+}   
+
+.card-border {
+    box-shadow: 0 0 4px #f00;
+}
+                }
+                               
+                        
+           }
+                                    
+                     
+                    .see-plan { width:13%; height: 45px;
+                        line-height: 45px;
+                        font-size: 16px; background:$red; color:$white; padding:0 !important; letter-spacing: 2px;font-weight: 600; 
+                     @include breakpoint(xs) { font-size:14px; }
+                    }
+                    
+                    
+                    
+                    
+                } 
+                
+                @include breakpoint(sm) { width:100%;  }
+                @include breakpoint(xs) { width:100%;  } 
+                
+                }
+        
+        
+        
+        .no-padding{padding: 0;}             
+                        
+            .last-post {
+                border-bottom: 1px dotted #b1b1b1;
+                padding-bottom: 20px;
+                margin-bottom: 25px;
+                        
+                  .post-name {
+    
+                    color: $orange;
+                    font-size: 14px;
+                    margin: 0 0 9px 0;
+                        
+                      
+                                 a{color: $orange;}
+                                 a:hover{color: $orangelight;}
+                           }
+
+                           .traveler-fee{
+            
+                            .traveler{
+                                font-size: 14px;
+                                color: #848484;
+                                margin-bottom: 7px;
+                                                
+                                        }
+
+                                .easy-cancellation{
+                                            color: #038403;
+                                            font-size: 12px;
+                                            text-align: left;
+                                            font-weight: bold;
+                                            margin: 4px 0; 
+                                        
+                                                    .fa-credit-card{font-size: 13px; margin-right: 9px;}
+                                        
+                                                    .policy-detail {
+                                                        position: relative;
+                                                        display: inline-block;
+                                                        font-weight: normal;
+                                                        color: #4d4c4c;
+                                                    }
+                                                    
+                                                    .policy-detail a {
+                                                        color: #038403;
+                                                        cursor: default;
+                                                    }
+                                                    
+                                                    .info-icon {
+                                                        line-height: 12px;
+                                                        font-size: 12px;
+                                                        &.black {
+                                                            border-color: #000;
+                                                        }
+                                                    }
+                                                    
+                                                    .policy-detail .show_policy {
+                                                        display: none;
+                                                        background: #fff;
+                                                        padding: 10px;
+                                                        position: absolute;
+                                                        left: -34px;
+                                                        top: 32px;
+                                                        width: 200px;
+                                                        border: 1px solid #94afc6;
+                                                        z-index: 1;
+                                                        
+
+                                                        &.show_policy.payment-tooltip {
+                                                            left: inherit;
+                                                            right: -18px;
+                                                            .arrow {
+                                                                left: inherit;
+                                                                right: 12px;
+                                                            }
+                                                        }
+                                                    }
+                                                    
+                                                    .show_policy .arrow {
+                                                        width: 21px;
+                                                        height: 11px;
+                                                        display: block;
+                                                        position: absolute;
+                                                        left: 28px;
+                                                        top: -11px;
+                                                        background: url(/resources/assets/fare_rule_arrow.png) no-repeat;
+                                                    }
+                                                    
+                                                    .policy-detail:hover .show_policy {
+                                                        display: block;
+                                                    }
+                                                    
+                                                    .policy-detail p {
+                                                        margin: 0px;
+                                                        font-size: 11px;
+                                                    }
+                                        
+                                                    
+                                                    }           
+                                        
+                            .traveler-fare{
+                                font-size: 14px;
+                                color: #848484;
+                                text-align: right;
+                                margin-bottom: 7px;
+                                
+                                        }
+                            
+                        }
+
+                   } 
+        
+        .total-fare{
+            font-size: 16px;
+            color: $orange;
+            margin-bottom: 7px;
+            font-weight: 600;
+            
+
+        .service-fees{
+            font-size: 14px;
+            color: #848484;
+            margin-bottom: 7px;
+            font-weight: normal;
+
+            .Bookingfee-detail {
+                position: relative;
+                display: inline-block;
+                font-weight: normal;
+                color: #4d4c4c;
+            }
+            
+            .Bookingfee-detail a {
+                color: #666666;
+                cursor: default;
+            }
+            
+            .info-icon {
+                line-height: 12px;
+                font-size: 12px;
+                &.black {
+                    border-color: #000;
+                }
+            }
+            
+            .Bookingfee-detail .Bookingfee_policy {
+                display: none;
+                background: #fff;
+                padding: 10px;
+                position: absolute;
+                left: -34px;
+                top: 32px;
+                width: 200px;
+                border: 1px solid #94afc6;
+                z-index: 1;
+                @include breakpoint(md) {left: -82px;}
+                @include breakpoint(xs) {left: -56px;}
+                @include breakpoint(sm) {left: -100px;}
+                
+    
+                &.Bookingfee_policy.payment-tooltip {
+                    left: inherit;
+                    right: -18px;
+                    .arrow {
+                        left: inherit;
+                        right: 12px;
+                    }
+                }
+            }
+            
+            .Bookingfee_policy .arrow {
+                width: 21px;
+                height: 11px;
+                display: block;
+                position: absolute;
+                left: 28px;
+                top: -11px;
+                background: url(/resources/assets/fare_rule_arrow.png) no-repeat;
+                @include breakpoint(md) {left: 75px;}
+                @include breakpoint(xs) {left: 50px;}
+                @include breakpoint(sm) {left: 94px;}
+            }
+            
+            .Bookingfee-detail:hover .Bookingfee_policy {
+                display: block;
+            }
+            
+            .Bookingfee-detail p {
+                margin: 0px;
+                font-size: 11px;
+            }
+        }
+    
+        .service-fare{ 
+            font-size: 14px;
+            color: #848484;
+            margin-bottom: 7px;
+            text-align: right;
+            font-weight: normal;
+        }
+        
+        .fare{
+            color: $orange;
+            text-align: right;
+            sup{top: -0.3em;}
+                            
+                    }
+                            
+                    }
+        
+           
+      } 
+
+      .my-activity{
+        background: #4e4e4e none repeat scroll 0 0;
+        color: #ffffff;
+        padding: 8px 10px;
+        font-size: 16px;
+      }
+
+      .sightSeeing-payment-right{
+        padding: 20px;
+        background: #fff;
+        margin-bottom: 45px;
+        box-shadow: 0 8px 8px -8px #888;
+        overflow: auto;
+        max-height: 550px;
+        min-height: auto;
+        @include breakpoint(xs){padding: 10px;}
+        @include breakpoint(sm){padding: 10px; margin-bottom: 30px;}
+
+        .last-post {
+            border-bottom: none;
+            margin-bottom: 5px;
+            clear: both;            
+                    
+              .post-name {
+
+                    font-size: 14px;
+                    color: $orange;
+                    margin: 0 0 0 0;
+                    font-weight: bold; 
+                    line-height: 1.5em;
+                    letter-spacing: 1px;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    cursor: pointer;
+                    width: 100%;
+                    white-space: nowrap;
+
+                    @include breakpoint(screen-md){
+                        line-height: 1.2em;
+                        font-size: 13px;
+                        font-weight: bold;
+                        margin-bottom: 20px;
+                    }
+                    
+                  
+                             a{color: $orange;}
+                             a:hover{color: $orangelight;}
+                       }
+
+              .post-location{
+                    font-size: 11px;
+                    color: #9f9e9e;
+                    margin: 5px 0;
+                    font-weight: 600;
+                           }
+
+              .post-schedule {                       
+                    padding:3px 0 5px 0;
+                  
+              li {
+                    font-size: 11px;
+                    color: #9f9e9e;
+                    float: left;
+                    font-weight: 600;
+                    margin-right: 16px;
+                    height: 20px;
+                 .icon-color{color: $orange;}  
+                   
+                //   &:after{ content: '|'; display: inline-block;margin: 0px 8px; line-height: 11px;}
+
+
+              &:last-child:after{
+                    content:'';
+} } } }
+
+.traveler-fee{
+            
+    border-bottom: 1px dotted #cacaca;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+    margin-top: 10px;
+   
+    @include breakpoint(sm){
+        padding-bottom: 15px;
+        margin-bottom: 5px;
+        margin-top: -15px;
+        line-height: 1.3em;
+    }
+    
+    .traveler{
+        font-size: 14px;
+        font-weight: bold;
+        color: #666;
+        margin-bottom: 5px;
+        @include breakpoint(screen-sm) {
+            margin-bottom: 0;
+            font-size: 13px;
+        }
+                        
+                }
+    .easy-cancellation{
+            color: #038403;
+            font-size: 12px;
+            text-align: left;
+            font-weight: bold;
+            margin: 4px 0; 
+        
+                    .fa-credit-card{font-size: 13px; margin-right: 9px;}
+        
+                    .policy-detail {
+                        position: relative;
+                        display: inline-block;
+                        color: #4d4c4c;
+                        font-weight: normal;
+                    }
+                    
+                    .policy-detail a {
+                        color: #038403;
+                        cursor: default;
+                    }
+                    
+                    .info-icon {
+                        line-height: 12px;
+                        font-size: 12px;
+                        &.black {
+                            border-color: #000;
+                        }
+                       
+                    }
+                    
+                    .policy-detail .show_policy {
+                        display: none;
+                        background: #fff;
+                        padding: 10px;
+                        position: absolute;
+                        left: -34px;
+                        top: 32px;
+                        width: 200px;
+                        border: 1px solid #94afc6;
+                        z-index: 1;
+                        @include breakpoint(md){left: -90px;}
+
+                        &.show_policy.payment-tooltip {
+                            left: inherit;
+                            right: -18px;
+                            .arrow {
+                                left: inherit;
+                                right: 12px;
+                            }
+                        }
+                    }
+                    
+                    .show_policy .arrow {
+                        width: 21px;
+                        height: 11px;
+                        display: block;
+                        position: absolute;
+                        left: 28px;
+                        top: -11px;
+                        background: url(/resources/assets/fare_rule_arrow.png) no-repeat;
+                        @include breakpoint(md){left: 85px;}
+                    }
+                    
+                    .policy-detail:hover .show_policy {
+                        display: block;
+                    }
+                    
+                    .policy-detail p {
+                        margin: 0px;
+                        font-size: 11px;
+                    }
+        
+                    
+                    }
+                
+    .traveler-fare{
+        font-size: 14px;
+        color: #848484;
+        text-align: right;
+        margin-bottom: 2px;
+        @include breakpoint(screen-sm) {
+            margin-bottom: 0;
+        }
+        
+                }
+    
+}
+
+.enter-promotion-code{
+    border-bottom: 1px dotted #b1b1b1;
+    padding-bottom: 19px;
+    margin-bottom: 15px;
+
+    .col-xs-8 { padding-right: 0; }
+    .col-xs-4 { padding-left: 0; }
+    
+    .promotion-code{ 
+        color: #5f5f5f;
+        font-size: 16px;
+        margin-bottom: 13px;
+        
+        span{ color: #848484;}
+    }
+    
+    .enter-code{font-size: 12px;}
+    .apply{font-size: 14px; height: 34px; line-height: 34px; color:$white; background: $orange; cursor: pointer; text-align:center;
+    
+        .fa-angle-right{font-size: 17px;   font-weight: bold;  vertical-align: sub;}
+    }
+    
+    
+    
+    }
+
+.total-fare{
+        font-size: 16px;
+        color: $orange;
+        margin-bottom: 4px;
+        font-weight: 600;
+        @include breakpoint(md){font-size: 13px;}
+
+    .service-fees{
+        font-size: 14px;
+        color: #848484;
+        margin-bottom: 4px;
+        font-weight: normal;
+
+        .Bookingfee-detail {
+            position: relative;
+            display: inline-block;
+            font-weight: normal;
+            color: #4d4c4c;
+        }
+        
+        .Bookingfee-detail a {
+            color: #666666;
+            cursor: default;
+        }
+        
+        .info-icon {
+            line-height: 12px;
+            font-size: 12px;
+            &.black {
+                border-color: #000;
+            }
+        }
+        
+        .Bookingfee-detail .Bookingfee_policy {
+            display: none;
+            background: #fff;
+            padding: 10px;
+            position: absolute;
+            left: -34px;
+            top: 32px;
+            width: 200px;
+            border: 1px solid #94afc6;
+            z-index: 1;
+            @include breakpoint(md) {left: -82px;}
+            @include breakpoint(xs) {left: -56px;}
+            @include breakpoint(sm) {left: -100px;}
+            
+
+            &.Bookingfee_policy.payment-tooltip {
+                left: inherit;
+                right: -18px;
+                .arrow {
+                    left: inherit;
+                    right: 12px;
+                }
+            }
+        }
+        
+        .Bookingfee_policy .arrow {
+            width: 21px;
+            height: 11px;
+            display: block;
+            position: absolute;
+            left: 28px;
+            top: -11px;
+            background: url(/resources/assets/fare_rule_arrow.png) no-repeat;
+            @include breakpoint(md) {left: 75px;}
+            @include breakpoint(xs) {left: 50px;}
+            @include breakpoint(sm) {left: 94px;}
+        }
+        
+        .Bookingfee-detail:hover .Bookingfee_policy {
+            display: block;
+        }
+        
+        .Bookingfee-detail p {
+            margin: 0px;
+            font-size: 11px;
+        }
+    }
+
+    .service-fare{
+        font-size: 14px;
+        color: #848484;
+        margin-bottom: 2px;
+        text-align: right;
+        font-weight: normal;
+    }
+    
+    .fare{
+        color:$orange;
+        text-align: right;
+        sup{top: -0.3em;}
+                        
+                }
+                        
+                }
+      }
+
+        .term-condition {
+                color: #979797;
+                @include breakpoint(xs){font-size: 12px; margin-top:25px;}
+                a{
+                    color: $orange;
+                    border-bottom: 1px solid $orangelight;
+                    font-weight: bold;
+                    font-size: 12px;
+                }
+        }
+        .book-now button {
+                padding:20px 50px;
+                font-size:14px;
+                width:auto;
+                letter-spacing:4px !important;
+                text-transform:uppercase;
+                font-weight:bold;
+                background: $orange;
+                border: 1px solid $orange;
+                color: #fff;
+                box-shadow: 0 8px 8px -8px #888;
+
+                @include breakpoint(screen-md) {
+                    margin:30px 0 10px 0;
+                }
+}
+
+}
+
+
+.sessionTimeOut {
+    background: #ffe1e7; 
+    padding: 0 20px;
+    display: inline-block;
+    width: 350px;
+    text-align: center;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    z-index: 9999 !important;
+    border: 5px solid rgba(0,0,0,0.5);
+
+    h2 {
+        font-size: 22px;
+        mark {
+            color: #ff565c;
+            background: transparent;
+        }
+    }
+
+    h3 {
+        font-size: 13px;
+        mark {
+            color: #ff565c;
+            background: transparent;
+        }
+    }
+
+    .cancel {
+        margin: 20px 0;
+        font-size: 18px;
+        position: relative;
+        z-index: 11;
+        button {
+            padding: 10px 30px;
+            background: #ff565c;
+            color: #fff;
+            border: 0;
+        }
+    }
+
+    
+}
+
+.popup-product {
+    position: absolute;
+    left: 0;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+
+    #fadebackground {
+        background: rgba(0,0,0,0.5);
+        z-index: 7;
+        position: fixed;
+        left: 0px;
+        top: 0px;
+        display: none;
+        width: 100%;
+        height: 100%;
+    }
+
+    .session-exp {
+        padding: 20px;
+        width: 480px;
+        position: fixed;
+        top: 180px;
+        left: 50%;
+        margin-left: -240px;
+        box-shadow: 1px 0 5px 0 rgba(0,0,0,0.75);
+        z-index: 9999;
+        background: #fff;
+
+        .clock_tym {
+            font-size: 50px;
+            padding: 20px 0px;
+            color: #868686;
+        }
+
+        .searchbtn {
+            background: $orange;
+            border-color: $orangelight;
+            border-radius: 0px;
+            padding: 10px;
+            font-size: 14px;
+        }
+    }
+}
+
+.help-block { 
+    color: red; font-size: 12px;
+} 
+
+.has-error{
+    input {
+        background: rgba(0, 0, 0, 0) url(#{$assetPath}/invalid-form.png) no-repeat scroll 95% 7px !important; border: 1px solid #f00 !important;
+    }
+
+ 
+        
+} 
+.has-error{border: 1px solid #f00 !important;
+}
+.valid   input{
+    background: rgba(0, 0, 0, 0) url(#{$assetPath}/valid-form.png) no-repeat scroll 95% 7px !important; 
+} 
+ 
+ 
+
+.has-error .locate-icon input, .has-error .locate-icon select { border:none!important;  background: rgba(0, 0, 0, 0) url(#{$assetPath}/invalid-form.png) no-repeat scroll 95% 7px !important;}
+.has-error .locate-icon .select select { background:none !important; }
+
+#sightSeeingPaymentController input.has-error {
+    background: rgba(0, 0, 0, 0) url(#{$assetPath}/invalid-form.png) no-repeat scroll 95% 7px !important; border: 1px solid #f00 !important;
+}
+
+#sightSeeingPaymentController input.valid {
+    background: rgba(0, 0, 0, 0) url(#{$assetPath}/valid-form.png) no-repeat scroll 95% 7px !important; 
+}
+
+
+.divprogressbar {
+    padding: 10px 20px 10px;
+    position: fixed;
+    left: 50%;
+    top: 170px;
+    transform: translateX(-50%);
+    z-index: 999;
+    text-align: center;
+    h3 {
+        font-size: 20px;
+        color: #fff;
+    }
+
+    .loader {
+        display: none;
+        border: 3px solid #ddd;
+            border-top-color: rgb(221, 221, 221);
+            border-top-style: solid;
+            border-top-width: 3px;
+            border-right-color: rgb(221, 221, 221);
+            border-right-style: solid;
+            border-right-width: 3px;
+        margin: 0 auto;
+        border-radius: 100%;
+        border-top: 3px solid #ff565c;
+        border-right: 3px solid #ff565c;
+        width: 40px;
+        height: 40px;
+        -webkit-animation: spin 1s linear infinite;
+        animation: spin 1s linear infinite;
+    }
+}
+
+.fadable-bg {
+    background: rgba(0,0,0,0.5);
+    width: 100%;
+    height: 100vh;
+    z-index: 998;
+    position: fixed;
+    left: 0;
+    top: 0;
+    display: block;
+}
+

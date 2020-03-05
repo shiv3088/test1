@@ -1,0 +1,291 @@
+.addedInItinerary{
+	position: fixed;
+	top:0;
+	right: 0;
+	background: $green;
+	padding: 25px;
+	z-index: 9;
+	color: $white;
+}
+.promoError{ 
+	color: red;
+	font-size: 12px;
+	padding: 3px;
+}
+.promoSuccess{
+	color: #3c763d;
+	font-size: 12px;
+	padding: 3px;
+	border: 1px solid #3c763d;
+}
+// .total-amt{
+// 	background: $green;
+// }
+
+.cr-driver-details{
+	position: relative;
+	z-index: 1;
+	cursor: pointer;
+	.cr-driver-details-hover{
+		display: none;
+		position: absolute;
+		top: 15px;
+		right: -50px;
+		border: 1px solid lighten($black, 20);
+		padding: 10px;
+		background: $white;
+		color: lighten($black, 20);
+		font-family: 'roboto', arial;
+		z-index: 1;
+		width: 250px;
+	}
+	&:hover{
+		.cr-driver-details-hover{
+			display: block;
+		}
+	}
+}
+
+
+.mt0{margin-top: 0}
+ 
+.flight-itinerary, .added2trip-itinerary, .hotel-itinerary, .car-itinerary, .book-itinerary{
+	
+	.link{
+		//font-size: 12px;
+		color: $red;
+		position: relative;
+		&:hover:after{
+			content: attr(data-on-hover);
+			position: absolute;
+			left: 0;
+			top: 20px;
+			min-width: 200px;
+			border: 1px $graylight solid;
+			border-radius: 3px;
+			background-color: #eee;
+			padding: 7px;
+			color: $black;
+			font-size: 11px; 
+			z-index: 1;
+		}
+	}
+	.itinerary-head{
+		background: $violet;
+		padding: 10px 15px;
+		font-size: 14px;
+		color: $white;
+		clear: both;
+	}
+	.itinerary-body{
+		background: $white;
+		padding:0px 20px;
+		&.bdr-top{
+			border-top:1px solid $graylight;
+		}
+		&:hover{
+			.removeTrip{
+				color: $red;
+				border: 1px solid $red;
+			}
+		}
+		
+		.itinerary-destination-btns{
+			padding-top: 10px;
+			li{
+				display: block;
+				padding: 5px 10px; 
+			}
+		}
+
+		.itinerary-body-list, .travelProtection-body-list, .airportTransfers-body-list, .brb-body-list{
+			&.total-amount-trip{
+				background: $red;
+				margin-left: -20px;
+				margin-right: -20px;
+				padding-left: 20px;
+				padding-right: 20px;
+				.f-total{
+					padding-top:3px !important; color: $white !important;
+				}
+				.p-total{
+
+					span, .fa{
+						color: $white !important;
+					}
+				}
+			}
+			> li{
+				display: block;
+				padding: 10px 0; 
+				border-bottom:1px dashed lighten($graylight, 10%); 
+				font-size: 16px;
+				&:last-child{
+					border-bottom:none; 
+				}
+				&.space{
+					>.row{
+						padding-top:3px; 
+						padding-bottom:3px; 
+					}
+				}
+				div{
+					&.head-total{
+						font-size:15px;
+						padding-top: 5px;
+						color: lighten($gray, 10%);
+						font-weight: bold;
+					}
+					&.head{
+						font-size:15px;
+						//padding-bottom: 10px;
+						color: lighten($violet, 10);
+					}
+					&.booking-number{
+						font-size: 14px; 
+						@include breakpoint(xs){
+							font-size:12px;
+						}
+						span{
+							color: $red;
+							font-size: 20px; 
+							@include breakpoint(xs){
+								font-size:16px;
+							}
+						}
+					}
+					&.type1{
+						font-size:16px;
+						margin-bottom: 5px;
+						color: $gray;
+						@include breakpoint(xs){
+							font-size:14px;
+						}
+					}
+					&.type2{
+						font-size:13px;
+						color: $gray;
+						.card{
+							display: inline-block;
+							border: 1px solid $red;
+							background: url(#{$assetPath}/crosssell-images/cxl-card.png) no-repeat; 
+							height: 30px;
+							width: 47px;
+							vertical-align: middle;
+							&.visa {
+								background-position: 0 center;
+							}
+							&.master-card {
+								background-position: -52px 2px;
+							}
+							&.american-express {
+								background-position: -110px 2px;
+							}
+							&.diners-club {
+								background-position: -170px 2px;
+							}
+							&.discover {
+								background-position: -228px 2px;
+							}
+							&.carte-blanche {
+								background-position: -284px 2px;
+							}
+						}
+						@include breakpoint(xs){
+							font-size:12px;
+						}
+						.details-link, .vehicle-provider{
+							display: inline;
+							font-size: 12px;
+							color: $red;
+							// &:hover{
+							// 	text-decoration: underline;
+							// }
+						}
+					}
+					&.total-price{
+						font-weight: bold; 
+						font-size: 20px;
+						color: $red;
+						@include breakpoint(xs){
+							font-size: 20px;
+						}
+					}
+					&.btn-policy{
+						padding-top:10px;
+						font-size: 13px;
+						a{
+							display: inline;
+						}
+					}
+				}
+				.trip-type{
+					border-bottom: 1px dotted $gray;
+					padding-bottom: 4px;
+					margin-bottom: 4px;
+				}
+				.alert{
+					padding: 5px 10px;
+					font-size: 12px;
+				}
+				.couponErrorMsg{
+					color: $red;
+					font-size: 12px;
+					padding: 0 5px;
+				}
+			}
+			.final-amount{
+				
+				padding-top: 5px;  
+				.f-total{
+					font-size:18px;
+					padding-top: 7px;
+					color: $violet;
+					font-weight: bold;
+					@include breakpoint (xs){
+						font-size: 16px;
+					}
+				}
+				.p-total{
+					font-weight: bold; 
+					font-size: 20px;
+					color: $red;
+					@include breakpoint (xs){
+						font-size: 18px;
+					}
+					.fa{
+						font-size: 20px;
+					}
+				}
+			}
+			.flight-destination{
+				margin-top: 25px;
+				display: -webkit-box;
+				display: -moz-box;
+				display: -ms-flexbox;
+				display: -webkit-flex;
+				display: flex;
+				-webkit-flex-flow: row wrap;
+				justify-content: space-between;
+
+				li{
+					display: inline-block;
+					align-self: center;
+					small{
+						font-size: 14px;
+						&:first-child{
+							color: $red; 
+						}
+					}
+					h2{ 
+						font-weight: bold;
+						font-size: 25px;
+						margin:10px 0 0 0;
+					}
+					
+				}	
+			}
+		}
+		
+	}
+}

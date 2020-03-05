@@ -1,0 +1,671 @@
+.component-header-sightSeeing {
+    margin-bottom: 0px;
+    background: url(/resources/assets/sightSeeing/petra-jordan.jpg) $violet no-repeat center;
+    height: 450px;
+        
+
+        @include breakpoint(xs) {
+            height: 250px;
+            margin-bottom:20px;
+        }
+
+
+        img {
+             
+            margin-top: 0; 
+        }
+
+        /*Engine Start*/
+        .static-head {
+            padding-top: 150px;
+            color: #fff; 
+            @include breakpoint(xs) {
+                padding-top:120px; 
+            } 
+            
+            .discover-form {  width: 800px; margin: 0 auto; position: relative;z-index: 1;     
+                @include breakpoint(screen-md) {
+                    width: 100%;
+                }   
+                h1 {
+                    font-size: 40px; font-weight: bold; margin: 0; text-align: center; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; color:$white;
+                    &:hover {
+                        -webkit-mask-image: linear-gradient(-75deg, rgba(0,0,0,.6) 30%, #000 50%, rgba(0,0,0,.6) 70%);
+                        -webkit-mask-size: 200%;
+                        animation: shine 2s infinite;
+                    }
+                    @include breakpoint(xs) {
+                        display: none;
+                    }
+                }
+                
+                @-webkit-keyframes shine {
+                    from {
+                    -webkit-mask-position: 150%;
+                    }
+                    
+                    to {
+                    -webkit-mask-position: -50%;
+                    }
+                }
+                
+                .subline { text-align: center; font-size: 22px; margin: 10px 0 30px 0;  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; 
+                    @include breakpoint(xs) {
+                        display: none;
+                    }
+                }
+                .col-xs-9{ padding: 0;
+                    
+                    @include breakpoint(xs) {
+                        padding-left:15px; padding-right:0; 
+                    }
+
+                }
+                .col-xs-3 { padding: 0;
+                    
+                    @include breakpoint(xs) {
+                        padding-left:0; padding-right:15px; 
+                    }
+
+                }
+                  
+                 input { padding:17px 15px 17px 40px; font-size: 16px; color:#666; border: 0; width: 100%;  height: 56px;  }
+                .glyphicon-map-marker { color:$orangelight; position: absolute; font-size: 25px; padding: 14px 10px; }
+                    button {
+                        background: $orange; color:$white; font-size: 20px;  padding:13px; text-align: center; width: 100%; height: 56px; 
+                       
+                    }
+                }
+            
+        }
+
+         /*Engine End*/
+    
+    }
+
+.component-mid-sightSeeing{  
+    
+    padding: 60px 0 80px 0;
+
+    @include breakpoint (screen-sm) {
+        padding: 40px 0 60px 0;
+    }
+
+    @include breakpoint (screen-xs) {
+        padding: 10px 0 20px 0;
+    }
+    
+    h3{      
+            font-size: 35px;
+            line-height: 30px;
+            font-weight: 500;
+            margin-top: 0;
+            margin-bottom: 10px;
+            letter-spacing: -1px;
+            text-align: center;
+             
+    
+        @include breakpoint (screen-xs) {
+            font-size: 20px;
+            margin-bottom: 35px;
+            font-weight: 700;
+        }
+
+        @include breakpoint (screen-sm) {
+            font-size: 25px;
+            margin-bottom: 0;
+            padding-bottom: 10px;
+        }
+    }
+    
+    .sub-heading {
+        font-size: 16px;
+        color: #999;
+        font-weight: 300;
+        margin: 0;
+        text-align: center;
+        margin-bottom: 95px;
+
+        @include breakpoint (screen-xs) {
+            margin-bottom: 60px;
+        }
+
+        &:before{
+            width: 150px;
+            background: url(/resources/assets/sightSeeing/border-heading.png) no-repeat bottom;
+            content: "";
+            position: absolute;
+            height: 1px;
+            left: 0;
+            right: 0;
+            margin: auto;
+            bottom: 65px;
+
+            @include breakpoint (screen-xs) {
+                bottom: 40px;
+            }
+        }
+
+        &:after {
+            width: 25px;
+            background: $orange;
+            content: "";
+            position: absolute;
+            height: 1px;
+            left: 0;
+            right: 0;
+            margin: auto;
+            bottom: 65px;
+
+            @include breakpoint (screen-xs) {
+                bottom: 40px;
+            }
+        }
+    }
+    
+
+    h5{ font-size: 25px; color: #4d4d77; margin-bottom: 10px; }
+    p { margin: 0 0 18px; color: #787676; line-height: 22px; text-align: justify;}
+    
+    .show-mor{ font-size: 15px; color: #4d4d77; margin-bottom: 10px; font-weight: 700; }
+
+    .snip1325 { 
+        position: relative;
+        overflow: hidden;
+        min-width: 100%;
+        height: 230px;
+        cursor: pointer;
+        border-radius: 5px;
+
+        @include breakpoint(screen-xs){
+            margin-bottom: 25px;
+        }
+
+        .hotel-content {
+            position: absolute;
+            top: 50%;
+            margin-top: 30px;
+            width: 100%;
+            height: 100%;
+            -webkit-transition: all .3s ease 0s;
+            -o-transition: all .3s ease 0s;
+            transition: all .3s ease 0s;
+            
+            &:before {
+                background: linear-gradient(180deg,hsla(0,0%,100%,0) 0,hsla(8,84%,65%,0) 0,rgba(240,47,23,0) 0,#000);
+                transition: all .3s ease 0s;
+                bottom: 0;
+                top: auto;
+                height: 100%;
+                opacity: 0.9;
+                content: "";
+                position: absolute;
+                width: 100%;
+                 
+    
+            }
+    
+            .opalhotel-hotel-stars {
+                margin-left: 30px;
+                position: static; 
+    
+                 li {
+                    display: inline-block;
+                    float: left;
+                    font-size: 13px;
+                    color: $white;
+                }
+            }
+    
+            .hotel-wrap-title {
+                position: relative;
+    
+                h4.hotel-title {
+                    margin-top: 25px;
+                    margin-bottom: 8px;
+                    color: $white;
+                    padding-left: 30px;
+                    font-size: 14px;
+                    font-weight: 600;
+                }
+                .address {
+                    font-weight: 300;
+                    font-size: 12px;
+                    margin-left: 30px;
+                    margin-right: 30px;
+                    color: #e0dddd;
+                    margin-bottom: 10px;
+                }
+    
+                .opalhotel-price {
+                    text-align: left;
+                    position: absolute;
+                    top: 0;
+                    right: 25px;
+                    width: auto;
+    
+                    .price-value {
+                        line-height: 20px;
+                        ins {
+                            color: #fff;
+                            font-size: 20px;
+                            font-weight: 500;
+                        }
+                    }
+                    .unit {
+                        color: #999;
+                        font-size: 12px;
+                    } 
+                }
+    
+                .includes {
+                    margin-left: 30px;
+                    margin-right: 30px;
+                    font-size: 12px;
+                    line-height: 24px;
+                    display: block;
+                    min-height: 50px;
+                    color: #fff;
+                    margin-top: 15px;
+                }
+        
+            }
+    
+            
+            &:hover{
+                top: 0;
+                transition: 1s;
+            }
+        }
+         
+        img { height: 100%; position: absolute; right: 0; -webkit-transition: all 2s ease-out; transition: all 2s ease-out;
+        
+            @include breakpoint(xs) {
+                
+                width: 100%;
+                 
+            }
+        }
+        
+  &:hover img, &.hover img {  -webkit-transform: translateX(90px); transform: translateX(90px);
+    @include breakpoint(xs) {
+        -webkit-transform: translateX(0px); transform: translateX(0px);
+    }
+
+    @include breakpoint(sm) {
+        -webkit-transform: translateX(70px); transform: translateX(70px);
+    }
+    
+}
+}
+.activity{
+    background: #f3f3f3; 
+    padding: 5px 0;
+     margin-bottom: 30px;
+
+    h4{ 
+        font-size: 20px;
+        color: #4d4d77;
+        margin: 0 0;
+        padding: 10px;
+
+    span{ 
+    font-size: 14px;
+    color: #636262;
+    margin: 10px 0;
+    font-weight: normal;
+    }
+    }
+    
+}
+}
+
+.destination-mid-sightSeeing{  
+ padding: 20px 0 80px 0;
+    
+ .destination {
+    padding: 25px 0;
+    border-bottom: 2px dotted #979696;
+       
+    h3{ font-size: 16px; color: #424141;  margin-bottom: 23px; font-weight: 600; padding-bottom: 10px;}
+    
+    h4{ font-size: 15px; color: #7d7d7d; margin: 0 0; 
+        a{ color: #7d7d7d; border-bottom: 1px solid #fff; display: inline-block;}
+    
+        a:hover{ color: #ff565c; border-bottom: 1px solid #ff565c;}
+    }
+    
+   }
+}
+
+
+//Secure Panbel
+.secure-panel{
+    background:transparent url(/resources/assets/sightSeeing/bg-1.jpg) top center no-repeat;
+    text-align: center;
+    margin-bottom: 70px;
+    padding-top: 50px;
+    padding-bottom: 30px;
+
+    @include breakpoint(screen-sm) {
+        padding-top: 0;
+        margin-bottom: 40px;
+    }
+
+    @include breakpoint(screen-md) {
+        text-align: center;
+    }
+
+    .secure-sec{
+        width: 300px;
+        padding: 35px 25px 45px 25px;
+        border-radius: 5px;
+        text-align: center;
+
+        @include breakpoint(screen-sm){
+            width: auto;
+            padding: 35px 15px 10px 15px;
+        }
+
+        img {
+            margin: 10px 0; 
+            @include breakpoint(screen-md) {
+               float: none;
+               text-align: center;
+            }
+        }
+            .secure-head {
+                font-size: 21px;
+                color: $black;
+                font-weight: normal;
+                margin: 30px 0 5px 0;
+                text-transform: capitalize;        
+            }
+
+        &:hover{
+            background: $white;
+        }
+    }
+    
+
+    span {
+        font-size: 20px;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; 
+        font-weight: bold;
+        display: inline-block;
+    } 
+
+ 
+
+}
+
+
+
+// City Section Start
+
+.city-section {
+     font-size: 16px; 
+     padding: 0 0 30px 0;
+     @include breakpoint(xs) {
+         padding: 10px 0;
+     }
+
+     
+
+     .head { margin: 0 0 10px 0; font-size: 35px; text-align: center; color: #333333; font-weight: 100; 
+        @include breakpoint(xs) {
+            font-size: 25px;
+            font-weight: 600;
+        }
+    }
+     .subhead {
+        font-size: 16px;
+        color: #999;
+        font-weight: 300;
+        margin: 0;
+        text-align: center;
+        margin-bottom: 95px;
+
+         @include breakpoint(screen-xs) {
+            font-size: 14px;
+            margin-bottom: 60px;
+        }
+
+        &:before{
+            width: 150px;
+            background: url(/resources/assets/sightSeeing/border-heading.png) no-repeat bottom;
+            content: "";
+            position: absolute;
+            height: 1px;
+            left: 0;
+            right: 0;
+            margin: auto;
+            margin-top: 72px;
+
+            @include breakpoint(screen-xs) {
+                margin-top: 75px;
+            }
+        }
+
+        &:after {
+            width: 25px;
+            background: $orange;
+            content: "";
+            position: absolute;
+            height: 1px;
+            left: 0;
+            right: 0;
+            margin: auto;
+            margin-top: 50px;
+
+            @include breakpoint(screen-xs) {
+                margin-top: 35px;
+            }
+        }
+     }
+
+
+     .last-minute-activity {
+        .head1{
+            text-align: center;
+            background: linear-gradient(rgba(0, 0, 0, 0.40), rgba(0, 0, 0, 0.40)), transparent url(/resources/assets/sightSeeing/last-minute-activity.jpg) 0% 0%/auto no-repeat scroll;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+            color: #ffffff;
+            font-size: 24px;
+            font-weight: 700;
+            line-height: 24px;
+            letter-spacing: 0px;
+            text-align: center;
+            padding: 28px 28px 28px 28px;
+            margin: 0px 0px 0px 0px;
+            background-size: cover;
+        }
+
+        .head2{
+            text-align: center;
+            background: linear-gradient(rgba(0, 0, 0, 0.40), rgba(0, 0, 0, 0.40)), transparent url(/resources/assets/sightSeeing/top-activity.jpg) 0% 0%/auto no-repeat scroll;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+            color: #ffffff;
+            font-size: 24px;
+            font-weight: 700;
+            line-height: 24px;
+            letter-spacing: 0px;
+            text-align: center;
+            padding: 28px 28px 28px 28px;
+            margin: 0px 0px 0px 0px;
+            background-size: cover;
+        }
+
+        .deal {
+            padding: 30px 0 0;
+            margin-bottom: 0;
+
+            .activity-deal {
+                padding-bottom: 18px;
+                margin-bottom: 18px;
+                border-bottom: 1px solid #ebebeb;
+                cursor: pointer;
+
+                .deal-title {
+                    font-size: 13px;
+                    line-height: 18px;
+                    font-weight: 600;
+                    margin: 0;
+                    color: #3f4550;
+                }
+
+                .activity-star{
+                    line-height: 22px;
+
+                    .stars {
+                        position: static; 
+            
+                         li {
+                            display: inline-block;
+                            float: left;
+                            font-size: 13px;
+                            color: $orangelight;
+                        }
+                    }
+                }
+
+                .location {
+                    font-weight: 300;
+                    font-size: 11px;
+                    color: #2b3335;
+                    clear: both;
+                }
+
+               
+            }
+        }
+     }
+    
+     figure {
+         overflow: hidden;
+         cursor: pointer;
+         position: relative;
+         border-radius: 7px;
+
+        .over-txt {
+            position: absolute;
+            top:50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            color:$white;
+            font-size: 22px;
+            text-transform: uppercase;
+            text-shadow: 1px 1px 2px #333;
+            z-index: 1;
+            pointer-events:none;
+        } 
+        
+        img { 
+            background-color: green;
+            transition: transform .5s;
+            width: 100%;
+            margin: 0 auto; 
+             
+
+            &:hover {
+                -ms-transform: scale(1.2); /* IE 9 */
+                -webkit-transform: scale(1.2); /* Safari 3-8 */
+                transform: scale(1.2); 
+             }
+        }
+        .overlay {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.35);
+            pointer-events: none;
+        }
+     }
+
+     .city-title-bg{
+        position: absolute;
+        top: 20px;
+        right: 25px;
+
+        .citytitle{
+            font-size: 51px;
+            color: #fff;
+            font-weight: 600;
+            text-shadow: 2px 2px #98792f;
+        }
+
+        .tagline{
+            margin-top: -15px;
+            color: #faed85;
+            font-size: 23px;
+            font-weight: 600;
+            font-family: auto;
+            text-shadow: 2px 2px #98792f;
+        }
+
+
+     }
+
+} 
+
+
+
+.bnr-panel{
+    background:url(/resources/assets/sightSeeing/sightSeeing-bg1.jpg) #333;  
+    text-align: center;
+    margin-bottom: 30px;
+    position: relative;
+    .txt-overlay { 
+        background: rgba(0,0,0,0.55);
+        color:$white;
+        pointer-events: none;
+        padding: 25px;
+    
+
+        .head {
+            font-size: 20px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; 
+            font-weight: bold; 
+            text-align: center;
+            color:#fff;
+            
+        } 
+    }
+
+}
+
+.content-section {
+    margin-bottom: 30px;
+    padding-top:40px;
+    @include breakpoint(xs) {
+        padding-top: 5px;
+    }
+
+    img { width: 100%; margin: 15px 0;  }
+    .head {
+        font-size: 30px;
+        font-weight: 100;
+        color:$violet;
+        @include breakpoint(xs) {
+            font-size: 18px;
+            margin-top: 15px;
+        }
+    }
+    .content p {
+        text-align: justify; margin-bottom: 15px;
+    }
+}
+
+#sightSeeingListController .footer-hide, #sightSeeingDetailController .footer-hide, #sightSeeingPaymentController .footer-hide, .cart-section .footer-hide  {
+    display: none;
+}
+
+#sightSeeingListController .innerlink-nav, #sightSeeingDetailController .innerlink-nav, #sightSeeingPaymentController .innerlink-nav, .cart-section .innerlink-nav {
+    display: none;
+}  
+
+ 

@@ -1,0 +1,1 @@
+<div>Privacy and policy</div>

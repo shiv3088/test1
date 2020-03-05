@@ -1,0 +1,37 @@
+$assetPath: "../../../assets";
+
+$black:        #000000;
+ 
+$violet: #4e4d77;   
+$cffred: #f35a5f;   
+$red: #f35a5f;   
+$orange : #d35800;
+$orangelight:#ef8527;
+$yellow: #fece00;
+$gray :  #535353;   
+$graylight : #939292; 
+$white:  #ffffff;
+$cffgreen: #52beaf;
+$green: #52beaf;
+
+
+
+$label-one-bg: rgba(0,0,0, 0.3);  
+
+.violet{color: $violet}
+.crOrange, .orange{color: $orange}
+.crGreen, .green{color: $green} 
+.cffGreen{ color: $cffgreen}
+.cffRed, .red{color: $cffred}
+.cffBlue, .blue {color: #0073c3}
+
+// Main Colors  
+
+$gray:         lighten(#000, 33.5%); // #
+$gray-light:   lighten(#000, 46.7%); // #
+$gray-lighter: lighten(#000, 93.5%); // #
+$gray-dark:    lighten(#000, 20%);   // #
+$gray-darker:  lighten(#000, 13.5%); // #
+
+$search-bg:    rgba(0, 0, 0, 0.6);
+

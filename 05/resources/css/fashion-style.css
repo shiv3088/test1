@@ -1,0 +1,24 @@
+.flex-price12 {font-size: 22px;color:#fff;text-shadow:1px 1px 3px #333;line-height: 18px;padding: 80% 60% 0 0%; line-height:1; text-align:left; text-transform:uppercase; }
+.big-slider12 {color: #fff;font-size: 48px;font-weight: normal;padding: 0px 0 0 0%; text-align: right; text-shadow:2px 2px 3px #333; line-height:1; text-transform:uppercase;}
+.fashion-text{padding:0px; font-family:Arial; line-height:1.5; float:left; width:100%;}.fashion-text p{ margin-bottom:0px; padding-bottom:10px;text-align:justify;} .fashion-text h5{margin-top:10px; color:#000; font-size:20px;font-weight:500;}
+ .pl5{padding-left:3px; padding-right:0px;} .pb5{margin-bottom:3px;}
+.banner-head{text-align:center; width:100%; font-size:34px; padding:5px 15% 5px 15%;line-height:1.2; float:left; }
+.place-head{color:#000; font-size:26px; font-weight:600; width:100%; float:left;} .fashion-mean{margin:30px 0px; position:relative;} .fashion-mean img:hover{opacity:0.7;}
+.city-best-time{padding-right:0px;} .dropdown-menu{ margin-top:18px!important;} .plf{padding-right:3px; padding-left:0px; padding-bottom:0px; padding-top:0px} .fashion-bg {
+    position: relative; 
+	width:100%;
+	float:left;
+	min-height:550px;
+	background-size: cover; margin-bottom:10px;}
+	
+} 
+
+
+@media only screen and (min-width : 320px) and (max-width : 767px)
+
+{
+	
+	.fashion-mean{margin:3px 0px;} .pb5{margin-bottom:5px;}  .pl5{padding-left:3px; padding-right:0px;} 
+	.big-slider12{padding:0px;} .place-head{margin-top:40px;}	
+	
+}

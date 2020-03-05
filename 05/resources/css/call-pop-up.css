@@ -1,0 +1,52 @@
+
+.caros{background:rgba(14,26,34,1) !important; opacity:1 !important; border-radius:50%; color:#fff; width:30px; height:30px;  position:absolute; right:-15px; top:-15px;}
+#mask {
+  position:absolute;
+  left:0;
+  top:0;
+  z-index:9000;
+  background-color:#000;
+  display:none;
+  opacity:0.3 !important;
+}  
+#boxes .window {
+  position:absolute;
+  left:0;
+  top:0;
+  width:50px;
+  height:200px;
+  display:none;
+  z-index:9999;
+  padding:20px;
+}
+#boxes #dialog {
+  width:750px; 
+  height:460px;
+  padding:10px;
+  background-color:#ffffff;
+}
+.caros {
+    background: rgba(255, 255, 255, 1) none repeat scroll 0 0 !important;
+    border: 1px solid #333;
+    border-radius: 50%;
+    color: #333;
+    font-size: 25px;
+    height: 30px;
+    opacity: 1 !important;
+    position: absolute;
+    right: -15px;
+    top: -15px;
+    width: 30px;
+}
+.pop-bg{background-color:#fff; min-height:100px; height:auto; float:left; width:100%;} .pop-bod{border:10px solid #337ab7; background-color:#fff; min-height:200px; height:auto; float:left; width:100%;}
+.pop-img{width:275px; float:left; min-height:200px; height:auto;} .pop-right{width:435px; float:left; min-height:200px; height:auto; color:#0e1a22;} .pop-hd{font-size:26px; width:100%; float:left; font-weight:600; padding:20px 0px;}
+.pop-inf{font-size:20px; width:100%; float:left; padding-bottom:20px;} .pop-inf_1{font-size:15px; width:100%; float:left; padding-bottom:15px;} .pop_cupon{width:270px; float:left; min-height:50px; height:auto; padding:10px 0px;} .pop_cupon_1{width:50%;float:left; border:1px dotted #000;border-radius:5px 0px 0px 5px; }
+.pop_cupon_text{text-align:center; font-size:17px; padding-top:5px;} .pop_cupon_code{text-align:center; font-size:26px; color:#337ab7; font-weight:600; padding:10px;} .pop_cupon_price_bg{width:50%;float:left; border-radius:0px 5px 5px 0px; background:#337ab7; } .pop_cupon_price{text-align:right; font-size:45px; padding-top:5px; color:#fff; width:63%; padding-top:13px; float:left;}
+.pop_cupon_get{text-align:left; float:left; padding-left:4px; font-size:16px; padding-top:2px; color:#fff; width:30%;} .pop_coupon_text{text-align:center; font-size:18px; color:#337ab7; padding-bottom:3px; color:#fff; letter-spacing:1.5px;} .call_now{ width:100%; float:left; font-size:28px; color:#000; padding-top:20px;} .call_no{font-size:60px; color:#ff6600; padding-top:20px; padding-bottom:20px; float:left; width:100%; font-weight:600;}
+
+/* review css start here */
+
+.review-heading{color:#333333; font-weight:600; font-size:30px;} .review-bg{background-color:#e6e6e8; float:left; min-height:40px; height:auto; padding:30px;border-radius:10px; width:100%;} .review-rating{color:#555555; font-size:20px; font-weight:600;} .review-title{color:#555555; font-size:20px; font-weight:600;} .review-input{width:100%;border:1px solid #888888; padding:8px;}
+.review-textare{width:100%;border:1px solid #888888; padding:8px; resize:none; height:250px;}
+
+/* review css end here */

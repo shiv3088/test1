@@ -1,0 +1,551 @@
+.sold-out--msg {
+    padding: 10px 15px;
+    background: lighten(#ffcc00, 30);
+    color: $red;
+}
+
+.pns {
+    font-size: 13px;
+    color: green;
+	padding-top:10px;
+}
+ 
+.cr-hidden-cam {
+    font-size: 10px;
+    color: $white;
+    font-weight: normal;
+}
+
+.customeCb { 
+    span {
+        display: inline-block;
+        cursor: pointer;
+        position: relative;
+        margin-left: -20px;
+        padding-left: 25px;
+        line-height: 15px;
+        font-size: 13px;
+        &:before {
+            content: "";
+            display: inline-block;
+            width: 16px;
+            height: 16px;
+            position: absolute;
+            left: 0;
+            border: 1px solid lighten($black, 20);
+            text-align: center;
+        }
+    }
+    input[type=checkbox] {
+        display: none;
+        &:checked~span {
+            color: $red;
+            &:before {
+                font-family: 'FontAwesome';
+                content: "\f00c";
+                font-size: 11px;
+                border: 1px solid $red;
+            }
+        }
+    }
+}
+
+.carSearhEngine {
+    padding: 15px 15px 5px 15px;
+    margin-bottom: 25px;
+    background: $violet;
+    position: relative;
+    @include breakpoint(xs) {
+        padding: 15px 15px 5px 15px;
+    }
+    .cr-result-details {
+        font-size: 14px;
+        color: $white;
+        margin-bottom: 10px;
+        display: flex;
+        align-items: center;
+        margin-left: 0;
+        margin-right: 0;
+        @include breakpoint(xs) {
+            display: block;
+        }
+        .cr-result-list {
+            margin-bottom: 0px;
+            overflow: hidden;
+            clear: both;
+            li {
+                float: none;
+                font-size: 13px;
+                padding: 5px 0;
+                margin-right: 20px;
+                &:nth-child(1) {
+                    width: auto;
+                }
+                &:nth-child(2) {
+                    width: auto;
+                }
+                &:nth-child(3) {
+                    width: auto;
+                }
+                &:nth-child(4) {
+                    width: auto;
+                }
+                &:nth-child(5) {
+                    width: auto;
+                }
+                &:nth-child(6) {
+                    width: auto;
+                }
+                @include breakpoint(xs) {
+                    float: left;
+                    font-size: 12px;
+                    padding: 2px 0;
+                    margin-right: 0px;
+                    &:nth-child(1) {
+                        width: 100%;
+                    }
+                    &:nth-child(2) {
+                        width: 60%;
+                    }
+                    &:nth-child(3) {
+                        width: 40%;
+                    }
+                    &:nth-child(4) {
+                        width: 60%;
+                    }
+                    &:nth-child(5) {
+                        width: 40%;
+                    }
+                    &:nth-child(6) {
+                        width: 50%;
+                    }
+                }
+            }
+        }
+        .data1 {
+            color: $white;
+        }
+        .data2 {
+            color: lighten($black, 60%);
+        }
+    }
+    .cr-destination-search {
+        margin-left: 0;
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+    [class*=col-sm] {
+        padding-left: 2px;
+        padding-right: 2px;
+    }
+    .form-group {
+        margin-bottom: 0;
+        @include breakpoint(xs) {
+            margin-bottom: 5px;
+        }
+        @include breakpoint(sm) {
+            margin-bottom: 5px;
+        }
+        .form-control {
+            height: 40px;
+        }
+        select,
+        input[type=text] {
+            border-radius: 0;
+            padding: 10px 13px;
+        }
+    }
+    .cr-link {
+        color: $white;
+        cursor: pointer;
+        &.customeCb {
+            span {
+                &:before {
+                    border: 1px solid $white;
+                }
+            }
+            input[type=checkbox] {
+                &:checked~span {
+                    color: #f08527;
+                    &:before {
+                        border: 1px solid #f08527;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.car-repeater {
+    margin-bottom: 20px;
+    background: $white;
+    @extend .xlDesign;
+    .cr-header {
+        border-bottom: 1px solid $red;
+        margin: 0;
+        position: relative;
+        overflow: hidden;
+        div.carName {
+            margin: 0;
+            padding: 10px 0;
+            font-size: 22px;
+            font-weight: bold;
+            overflow: hidden;
+            @include breakpoint(xs) {
+                font-size: 18px;
+            }
+            small {
+                font-size: 14px;
+                font-weight: normal;
+                @include breakpoint(xs) {
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+    .cr-body {
+        margin: 0;
+        padding-top: 20px;
+        padding-bottom: 0px;
+        position: relative;
+        @include breakpoint(xs) {
+            padding-top: 10px;
+            padding-bottom: 10px; 
+        }
+        .cr-d-itinarary-list { 
+            margin-top: 5px;
+            li {
+                float: left;
+                margin-right: 5px;
+                padding: 0;
+                
+                .fa{
+                    //font-size: inherit;
+                    vertical-align: middle;
+                    @include breakpoint(xs){
+                        font-size: 14px;
+                    }
+                    &.icon-transmission-a, &.icon-transmission-m{
+                        font-size: 16px;
+                    }
+                }
+
+
+            }
+
+        }
+        // .mobile-button {
+        //     border: 1px solid $white;
+        //     position: absolute;
+        //     left: 0;
+        //     top: 0;
+        //     bottom: 0;
+        //     width: 100%;
+        //     z-index: 5;
+        // }
+        p {
+            font-size: 12px;
+            color: lighten($black, 20);
+        }
+        // .crSelectPrice {
+        //     padding-top: 5px;
+        //     padding-bottom: 5px;
+        //     font-size: 40px;
+        //     .fa-usd {
+        //         font-size: 20px;
+        //         @include breakpoint(xs) {
+        //             font-size: 20px;
+        //         }
+        //     }
+        //     .price {
+        //         margin: 0;
+        //         font-size: 34px;
+        //         color: lighten($red, 5%);
+        //         @include breakpoint(xs) {
+        //             font-size: 30px;
+        //         }
+        //         .total-charge {
+        //             font-size: 16px;
+        //             color: $gray;
+        //             .fa {
+        //                 font-size: 14px;
+        //             }
+        //         }
+        //     }
+        //     small {
+        //         color: lighten($gray, 30);
+        //         display: inline-block;
+        //         padding-bottom: 5px;
+        //         font-size: 12px;
+        //         margin-left: -23px;
+        //         @include breakpoint(xs) {
+        //             font-size: 12px;
+        //         }
+        //     }
+        //     sup {
+        //         top: -13px;
+        //         font-size: 14px;
+        //         @include breakpoint(xs) {
+        //             font-size: 12px;
+        //         }
+        //     }
+        // }
+
+        .crSelectPrice {
+            padding-top: 5px;
+            padding-bottom: 5px;
+            font-size: 40px;
+            .fa-usd {
+                font-size: 20px;
+                @include breakpoint(xs) {
+                    font-size: 20px;
+                }
+            }
+            .price {
+                margin: 0;
+                font-size: 34px;
+                color: lighten($red, 5%);
+                @include breakpoint(xs) {
+                    font-size: 30px;
+                }
+                .total-charge {
+                    font-size: 16px;
+                    color: lighten($gray, 20);
+                    .fa {
+                        font-size: 14px;
+                    }
+                }
+            }
+            small {
+                color: $red;
+                display: inline-block;
+                padding-bottom: 5px;
+               // font-size: 12px;
+                //margin-left: -23px;
+                // @include breakpoint(xs) {
+                //     font-size: 12px;
+                // }
+            }
+            sup {
+                top: -13px;
+                font-size: 14px;
+                @include breakpoint(xs) {
+                    font-size: 12px;
+                }
+            }
+        }
+
+        .car-images {
+            overflow: hidden; //height: 95px;
+            height: auto;
+            width: 100%;
+            padding-top: 5px; //background: url(#{$assetPath}/crosssell-images/car-images/no-image.jpg) no-repeat center center;  
+            @include breakpoint(sm) {
+                height: auto;
+            }
+            @include breakpoint(xs) {
+                height: auto;
+              
+            }
+            .cr-mobile-supplier {
+                position: absolute;
+                color: $black;
+                z-index: 2;
+            }
+            img {
+                transform: scale(1);
+                transition: all 0.3s linear;
+                @include breakpoint(xs) {width:150px;}
+                &:hover {
+                    transform: scale(1.1);
+                }
+            }
+        }
+        .cr-itinerary {
+            width: auto;
+            text-align: left;
+            margin-top: 0px;
+            color: lighten($gray, 35%);
+            position: absolute;
+            top: 0;
+            z-index: 1;
+            @include breakpoint(xs) {
+                position: static;
+                margin-bottom: 10px;
+            }
+            li {  
+                padding: 6px 0px;
+                display: block;
+                cursor: pointer;
+                @include breakpoint(xs) {
+                    display: inline-block;
+                    padding: 5px 10px;
+                }
+                i {
+					&.icon-transmission-a {
+					font-size: 20px;
+					}
+                }
+                [class*=icon-]{
+                    &:before{
+                        color: $red;
+                    }
+                    &:hover{
+                        &:before{
+                            color: $gray;
+                        }
+                    }
+                }
+            }
+        } // .cr-itinerary{
+        // 	width: auto;
+        // 	text-align: left;
+        // 	margin-top: 20px;
+        // 	margin-bottom: 20px;
+        // 	color: lighten($gray , 35%);
+        // 	&.row{
+        // 		margin-right: 0;
+        // 		margin-left: 0;
+        // 		[class*=col-sm]{
+        // 			padding: 0 0px;
+        // 		}
+        // 	}
+        // 	li{
+        // 		padding: 5px 12px;
+        // 		display: inline-block;
+        // 		cursor: pointer;
+        // 		&.listData{
+        // 			position: relative;
+        // 			&:hover{
+        // 				&:before{
+        // 					content: attr(data-hover);
+        // 					top:-60px;
+        // 					position: absolute;
+        // 					border: 1px solid lighten($gray, 35%);
+        // 					padding: 5px 10px;
+        // 					background: $white;
+        // 					z-index: 1;
+        // 					margin-left:-20%; 
+        // 				}
+        // 				&:after {
+        // 					content: "";
+        // 					position: absolute;
+        // 					display: block;
+        // 					width: 0;
+        // 					height: 0;
+        // 					border: 8px solid transparent;
+        // 					border-top-color: lighten($gray, 35%);
+        // 					top: -9px;
+        // 					left: 50%;
+        // 					margin-left: -10px;
+        // 					z-index: 2;
+        // 				  }
+        // 			}
+        // 		}
+        // 		.fa{
+        // 			font-size: 20px;	
+        // 		}
+        // 	}
+        // }
+    }
+}
+
+.carLeftCtrl,
+.carRightCtrl {
+    .form-group {
+        input[type=text] {
+            border-radius: 0;
+        }
+    }
+    .boxSec {
+        @extend .xlDesign;
+        .list-group {
+            border-radius: 0;
+            background: $white;
+            padding-top: 5px;
+            padding-bottom: 10px;
+            .list-group-item {
+                border: 0;
+                background: transparent;
+                border-radius: 0;
+                padding-top: 5px;
+                padding-bottom: 5px;
+                &.ac-sepration{
+                    border-top: 1px dotted $graylight; 
+                    margin-top:5px;
+                    padding-top:8px;  
+                }
+                &.crBorder {
+                    position: relative;
+                }
+                &.active {
+                    background: $white;
+                    color: $violet;
+                    text-shadow: 0 0 0;
+                    font-size: 16px;
+                }
+                .checkbox-inline{
+                    display: block!important;
+                }
+                .cxl-badge{
+                    font-style: normal;
+                    border-radius: 10px;
+                    background: lighten($graylight, 9);
+                    padding:1px 5px;
+                    font-size: 10px;
+                    height: 15px;
+                    width: 22px;
+                }
+            }
+        }
+    }
+    .bookConf {
+        li.list {
+            position: relative;
+            padding-left: 30px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            &:before {
+                content: "\f00c";
+                position: absolute;
+                left: 10px;
+                color: $red;
+                font-family: 'FontAwesome';
+            }
+        }
+    }
+}
+
+.crBooking-cost {
+    border-left: 1px solid lighten($gray, 45%);
+    padding-left: 15px;
+    margin-bottom: 20px;
+    @include breakpoint (xs) {
+        border-top: 1px solid lighten($gray, 45%);
+        border-left: 0;
+        padding-left: 0px;
+        margin-bottom: 10px;
+    }
+    .flexBox1 {
+        // -webkit-flex: 1; /* Safari 6.1+ */
+        // flex: 1;
+        // -webkit-align-self: center; /* Safari 7.0+ */
+        // align-self: center;
+        // .crSelectPrice{
+        // 	.price{
+        // 		margin: 0;
+        // 		font-weight: bold;
+        // 		color: lighten($red , 5%);
+        // 	}
+        // 	small{
+        // 		color: $gray;
+        // 		font-weight: bold;
+        // 		display: block;
+        // 	}
+        // 	sup{
+        // 		top: -7px;
+        // 		font-size: 14px;
+        // 	}
+        // }
+    }
+}

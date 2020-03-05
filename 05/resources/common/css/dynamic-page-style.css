@@ -1,0 +1,285 @@
+/*.ppc_container .headerBox { position: static; transition:all 0.7s ease-in; }
+.ppc_container .header_main { height:94px; }
+.ppc_container .header_fixed.shrink{ position:fixed; left: 0px; top: 0px; width:100%; z-index:9; box-shadow:0 0 5px rgba(0,0,0,.5); transition:all 0.7s ease-in;}
+.ppc_container .ppc-coupon-bg{background:#4bbead; color:#ffffff; padding:5px 0px; font-size:16px; height:auto; width:100%; z-index:9; position:relative;}
+.ppc_container .ppc-coupon-bg p { margin: 0px; text-align: center; }
+.ppc_container .ppc-coupon-bg .cupon-close{ cursor:pointer; font-size:13px; color:#fff; float: right; position: relative; top:4px; }
+.ppc_container .ppc-coupon-bg .icon {width:19px; height:19px; position:relative; top:-2px; border-radius:50%; background:#000000; font-size:15px; line-height:16px; color:#ffffff; display:inline-block; text-align:center;}
+.ppc_container .search_engine { margin:20px 0;}
+.ppc_container .banner_tagline { top:25px; }
+.ppc_container .ppc-coupon-bg p a{color:#ffffff; white-space:nowrap;}*/
+
+/* today flight fare start*/
+.banner_tagline {position :absolute;right :10px;top :65px;text-shadow :1px 1px 2px #333;color :#fff;text-align :right;text-transform :capitalize}
+.banner_tagline .heading {font-size :30px}
+.banner_tagline .sub-heading {font-size :22px}
+.banner_tagline .sub-heading span {font-size :28px}
+.promo-header {text-align :center;padding-top :20px;display :block;color :#191919}
+.promo-header h1 {text-align :center;padding :20px 0;font-size :35px}
+.promo-header h2 {padding :20px 0;font-size :30px;display :inline-block}
+.promo-code {overflow :hidden;border :1px solid #ccc;width :100%}
+.promo-code .use-code {font-size :17px;padding :25px 10px 0 10px;color :#000;font-weight :600}
+.promo-code .code-name {color :#ff5400;font-size :26px;padding :5px 5px 25px 5px;font-weight :600}
+.promo-code .off-bg {background-color :#f7f7f7;padding-bottom :30px}
+.promo-code .instant-off {font-size :20px;padding :20px 0 10px 10px;color :#000;font-weight :600}
+.promo-code .instant-off span {font-size :30px}
+.promo-code .class {font-size :16px;padding :5px 0 10px 10px;color :#333;font-weight :600}
+.promo-code .class span {color :#333;padding-left :5px}
+.promo-code .apply {color :#767676;padding :0 10px 10px 10px;font-size :12px;line-height :15px}
+.promo-code .book-now {display :inline-block;margin-top :15px;padding :0 15px;border-radius :5px;line-height :35px;background :#f60;font-size :18px;color :#fff;text-decoration :none}
+.promo-code .no-coupon {padding :25px 0 70px 0;font-size :16px;font-weight :600}
+.content {display :block;text-align :justify}
+.content h3,.content h4 {color :#333;font-size :18px;padding :5px 0 5px 0;margin :0; font-weight: 500;}
+/* today flight fare End*/
+.airline-section .select-airline {display:none;}
+.airline-section .hide-airline .checkbox{ display:none;}
+.airline-section .airline-cabin{width:48%; float:left;}
+.airline-section .airline-cabin .col-xs-6{width:100%;}
+.airline-section .hide-airline{width:50%; padding-top:8px;}
+.airline-section .hide-airline .col-xs-12{width:100%;}
+/* Smm Head start*/
+.smm-head{padding: 10px 0 20px; margin:10px 0px 30px 0px;} .smm-head h2{font-size:28px; margin:0px; padding:10px 0px;} .smm-head p{padding-bottom:5px; margin:0px;} .smm-bg{padding-left:40px; width:280px; float:left;} .smm-text{background: #f18628 none repeat scroll 0 0;border-radius: 10px;color: #fff;padding: 20px 15px;position: absolute;top: 148px;width: 240px;} .smm-text h1{ color: #ffffff;font-size: 26px;text-shadow: none;} .smm-text i{border: 2px solid #fff;border-radius: 50%;font-size: 18px;height: 24px;line-height: 18px;text-align: center;text-shadow: none;width: 24px;}
+
+/* Circle deal on banner section start*/
+.discountPriceBox{bottom:0;position:absolute;right:0;display:block; cursor:pointer;}.discountPrice{background:rgba(0,0,0,.7);border-radius:50%;width:280px;height:280px;line-height:28px;text-align:center;text-transform:uppercase;padding:35px 20px;box-shadow:0 0 1px 5px rgba(255,255,255,.2)}.discountPrice:hover{box-shadow:0 0 30px #fff}.discount_top_text{color:#9c9b9b}.discount_flight{color:#fff;font-size:20px}.discount_best_price{font-size:16px;color:#eaeaea;margin-bottom:10px}.discount_price{color:#fdb72f;font-size:50px;font-weight:700}.discount_date{color:#fff;font-size:12px;font-weight:700;letter-spacing:1px;line-height:23px;text-align:center;text-transform:uppercase;width:100%}.body-bg-gray{background:#fff; clear:both; padding-top:10px;}.hand-pointer{cursor:pointer!important}
+/* ppc Promo Code start*/
+.ppc_tagline{position:absolute;right:10px;top:80px;color:#333;text-align:left; background:#ffffff; padding:15px; border-radius:10px;}.ppc_tagline .heading{font-size:22px; border-bottom:1px dashed #ccc; padding-bottom:5px;}.ppc_tagline .sub-heading{font-size:16px; color: #f60; padding:10px 0px 0px 5px;}
+.review{font-size:13px; padding-top:5px; position:relative; display:inline-block;}  .review sup{color:#f60;}
+.review a{color:#f60;text-decoration:underline;}
+.review .promo-detail { display: none; background: #fff; font-size:12px; padding: 14px; position: absolute; left: 0px;  top: 30px; width: 400px; border:1px solid #94afc6; z-index: 1; color:#000; text-align:justify;}
+.promo-detail .arrow { width:21px; height:11px; display: block; position:absolute; left: 15px; top: -11px; background:url(/resources/flight-result/images/fare_rule_arrow.png) no-repeat;}
+.review:hover .promo-detail { display: block; }
+.review a:hover { text-decoration:none; }
+
+/* ppc Promo Code end*/
+
+
+/* breadcrumbs section start*/
+.breadcrumbs{padding:10px 0}.breadcrumbs a{padding:0 5px}.cityline_head{padding-bottom:20px}.cityline_head h2{margin:0}.deal_block{ width:calc(50% - 10px);font-size:15px;background:#fff;padding:9px;overflow:hidden;margin-bottom:10px;border-radius:5px;margin-right:10px; float:left;}.deal_date{color:#0065b8}.deal_block .arrow{position:relative;top:10px}.city_name{color:#616161;font-size:16px;text-transform:uppercase;font-weight:700}.city_name_full{text-transform:capitalize;font-weight:400;display:block}.deal_trip{color:#999;display:block;white-space:nowrap}.deal_book_btn{margin-top:5px;background:#f60;float:right;color:#fff;border:1px solid #f60;border-radius:1px;display:block;padding:4px;white-space:nowrap}.deal_block img{-moz-outline-radius:4px;outline:1px solid rgb(255,255,255);outline-offset:-1px;border-radius:8px}.deal_block:hover{box-shadow:0 0 4px 2px rgba(0,0,0,.1)}.deal_block:hover .deal_book_btn,.deal_book_btn:hover{background:#fff;color:#f60}.city_content_bg{margin-top:20px}.city_content_bg,.content_bg{background:#fff;overflow:hidden;padding:10px 15px;position:relative;margin-bottom:10px}.city_content_bg p{text-align:justify} .city_content_bg strong{ font-family:'Roboto-bold',arial; font-weight:600;} .cityline__sub_text{color:#414040;font-size:22px;margin-bottom:15px}.city_left_image{width:415px;float:left;padding:0 15px 15px 0}.city_right_image{float:right;padding:0 0 15px 15px}.city_content_bg ul{padding:0 0 0 20px}.content_subtitle{font-size:16px;font-weight:500;margin-top:5px;text-transform:capitalize}.banner_tagline{position:absolute;right:10px;top:65px;text-shadow:1px 1px 2px #333;color:#fff;text-align:right;text-transform:capitalize}.banner_tagline .heading{font-size:30px}.banner_tagline .sub-heading{font-size:22px}.banner_tagline .sub-heading span{font-size:28px}.city-slid-content{padding-bottom:5px}.city-slid-content:before{position:absolute;width:20px;content:"";height:2px;left:0;bottom:0;background:#f97001;transition:all 0.5s ease 0s;-webkit-transition:all 0.5s ease 0s}.thumbnail_effect:hover .city-slid-content:before{width:40px}.save-text{background:rgba(255,255,255,.2) none repeat scroll 0 0;color:rgb(255,255,255);font-size:30px;margin:0 -15px;padding:15px;text-align:center;text-shadow:1px 1px 2px #333}.question-block .accordion-toggle{color:#010101;font-size:16px;line-height:20px;text-decoration:none}.question{color:#ff9741;font-size:24px;margin-right:5px;position:relative;top:4px}.question-block .detail{width:100%;padding:5px 0 0 26px;font-size:14px;color:#333;line-height:20px}.flights-list ul{margin:0;padding:0}.flights-list li{padding:3px 0;width:100%;overflow:hidden;position:relative}.flights-list li a{font-family:'Roboto-Regular',arial;color:#333}.flights-list li a:hover{color:#f60}.flights-list li img{margin-right:10px}.flights-list li a.fa-plane:before{transform:rotate(45deg)}.flights-list li a.fa-plane:before{padding-right:5px;font-family:FontAwesome;position:absolute;left:0;top:5px}ul.flight_list li{padding-left:20px}ul.airline-list li{width:50%;float:left}.submit-review{width:100%}.submit-review .label{margin-bottom:10px;color:#5c5c5c;display:block;float:left;font-size:15px;font-weight:400;line-height:20px;padding:0;text-align:left;width:75px}.label2{font-size:15px;font-weight:400}.rate_row{margin:2px auto;text-align:left;float:left}.rate_star{color:#ccc;cursor:pointer;font-size:20px;padding-right:8px}.rate_star.over{color:#c24700}.rate_star.checked{color:#c24700} .rate_star.disable{cursor:default;pointer-events:none;color:#9C9B9B}.submit_stars{padding:3px 14px;background:#801513;border:1px solid #801513;color:#fff;cursor:pointer;outline:none;font-size:16px;margin-top:5px;margin-left:30px}.submit_stars:hover{background:#D41715;border:1px solid #D41715}.customer-review .rating{color:gray;font-size:13px}.form-group{margin-bottom:10px}.form-control .review-textarea{height:110px;resize:none}.btn.submit{background:#f60;border-radius:0;float:right;margin-top:10px;color:#fff}.btn.submit:hover{background:#fff;border:1px solid #f60;color:#f60}.customer-review ul{margin:0;padding:0}.customer-review ul li{list-style:none;width:100%}.viewmore{position:absolute;right:20px;bottom:20px}.customer-review{margin-bottom:35px;position:relative;width:100%}.customer-review .next,.customer-review .prev{z-index:999;right:0;cursor:pointer;position:absolute;font-size:20px;color:#5c5c5c;text-align:center;text-decoration:none;line-height:20px;display:block;width:20px;height:20px;display:block;background:#e7e7e7}.customer-review .prev{right:25px}.expire{font-size:15px;padding:0 0 20px 0;border-bottom:1px solid #ccc;text-align:center}.fare-box{width:100%;overflow:hidden;background:#fff}.fare-hd{background:rgb(204,204,204);padding:15px 10px}.table th{background:#333;color:#fff;text-align:center}.table td{text-align:center;font-size:14px}.get-fare{color:#f60;font-size:20px}.fare-red{padding:20px 0;color:#fb0000;font-size:13px}.eng-close{color:rgba(255,255,255,.8);font-size:20px;position:absolute;right:7px;top:3px;text-align:center;z-index:2}.eng-close:hover{color:#fff}.small_engin{display:none;width:330px;margin-top:22px;background:#17222b}.small_engin .arrow_up{position:absolute;left:75%;top:-21px;font-size:30px;color:#17222b}.small_engin .location{font-size:16px;color:#fff;font-weight:700}.small_engin .btn-div{font-size:18px;padding:6px 15px}.blueHead2{padding-top:20px;padding-bottom:15px;margin:0}.confidance h2{font-size:28px}.confidance img{padding-top:0px}.ppc-slider-text{padding-bottom:10px}.confidance .minimize{padding:10px 0 0 0}.confidance .rev{padding-bottom:10px}.city_thumbnails .span3{margin:0 10px 0 0;position:relative}.ppc_container .ppc-hide{display:none!important}.deal-price2{position:absolute;right:10px;bottom:40px;font-size:20px;padding:5px 10px;color:rgb(255,102,0);border-radius:5px 5px 0 0;background:#fff}
+
+.add-airline-banner{padding-top:15px;}
+/* ppc pop up start */
+
+#fvpp-blackout {display: none;z-index: 12;position: fixed;width: 100%;height: 100%;top: 0;left: 0;background: #000;opacity: 0.8;}
+#my-welcome-message {display: none;z-index: 13;position: fixed;width: auto;left: 50%;top: 50%; margin-top:-250px; margin-left:-300px;}
+#fvpp-close {position:absolute;right:-13px;top:-13px; font-size:12px; text-shadow:none;opacity:1; background:#000000 !important; height:26px; width:26px; border-radius:50%; color:#fff; z-index:14;line-height:26px; text-align:center;cursor: pointer;}
+#fvpp-close:hover{text-decoration:none;}
+
+/* PPC pop up end */
+
+.airline_content_bg{background: #fff none repeat scroll 0 0;margin-bottom: 10px;overflow: hidden;padding: 10px 15px;position: relative;}
+.airline-heading{ color:#000;font-size: 24px;margin-top: 0; padding-left:15px;text-transform: capitalize; padding-bottom:10px;}
+.airline-content{font-size:16px; text-align:justify; padding-right:15px;} 
+.airline-content img{float:left;width:294px; padding:0px 20px 0px 15px;}
+.airline-content p{padding-top:10px; margin:0px;}
+
+/*Dubai festival*/
+
+#clock-show{font-size: 26px;display: inline-block;color: #f60; font-weight:600;}
+#othersblock .fa-clock-o{font-size: 26px;color: #f60;}
+/*ORM Page*/
+.orm-page-sec{width;100%; height:auto; position: relative;}
+.orm-banner-sec{ padding-top:80px; margin-top:60px; display:block; color:#ffffff; position: relative;}
+.orm-banner-sec h1{ font-size:30px; font-weight:600; padding:30px 0px 20px 0px;} .orm-banner-sec .add-review{font-size:18px; background:#f77f1e; padding:10px 40px; color:#fff; display:inline-block;; margin:50px 0px 30px 0px; border:0px;}
+.orm-banner-sec p{font-size: 18px;}
+.orm-banner-sec a{margin-bottom:100px; display:inline-block; cursor:pointer;}
+.orm-banner-sec .banner-sec-vid {width:80%;}
+#video .orm-banner-video{width:568px; height:100%; display:inline-block; cursor:pointer;}
+#video .modal-header{border-bottom:0px;} 
+#video .modal-header p {margin-top:20px;}
+#video .close{margin-top: 0px;position: absolute;top: -12px;right: -15px;background: #000;width: 30px;height: 30px;border-radius: 50%;opacity: 1;color: #fff;font-size: 22px;}
+.orm-banner-botom-sec{ margin:40px 0px 80px 0px;display:inline-block; border-right:1px solid #9e9e9e; text-align:center;}
+.orm-banner-botom-sec:first-child{ text-align:left;} .orm-banner-botom-sec:last-child{ border-right:none;}
+.orm-banner-botom-sec h2{font-size:35px;color:#4d4d77; margin:0px; line-height:30px;} .orm-banner-botom-sec h2 i{font-size:15px;vertical-align: middle;}  .orm-banner-botom-sec span{font-size:13px; padding-left:15px; color:#6e6e6e;}
+.orm-page-sec h3{color:#6c6c6c; font-size:28px; text-align:center; font-weight:600; padding-bottom:10px;}
+
+
+#review-slider .slick-slide {transition: all ease-in-out .3s;opacity: .2;} 
+#review-slider .slick-center {opacity: 1;}
+#review-slider .video-slider .slick-slide { margin: 0px 1px;}
+#review-slider .video-slider .slick-center .video-sec {visibility: visible; font-size:16px; padding:6px 0px; text-align:left; color:#47476e;box-shadow: 0px 3px 20px -0px rgba(0, 0, 0, 0.2); border: 1px solid #d6d6d6 !important;}
+#review-slider .video-slider .video-sec {visibility: hidden;}
+#review-slider {width:100%;float:left; text-align:center;} #review-slider .col-sm-4{padding:0px 5px;} #review-slider h4{ font-size:30px; font-weight:600; color:#666565; padding-bottom:30px; padding-top: 50px;}
+#review-slider a{color: #4a4a4a;font-size: 13px;position: absolute;font-weight: normal;text-decoration: underline;right: 0px;top: 70px;}
+#review-slider .slick-prev{ position:absolute; top:125px; background:transparent; left:-25px;}
+#review-slider .slick-next{position:absolute; top:125px; background:transparent; right:-25px;}
+#review-slider .slick-prev:before, #review-slider .slick-next:before{color:#9e9d9d; font-size:36px;}
+#review-slider video{width:364px;cursor: pointer;height:205px;} #review-slider .video-sec, #review-slider .video-review-sec{margin:-6px 0px 20px 0px; border:none; padding:2px 10px;}
+#review-slider .client-name{ font-size: 18px;font-weight: 600;color: #666565;padding: 5px 0px 5px 0px;}
+#review-slider .video-review-sec p{color:#47476e; text-align:left;}
+.hover_bkgr_fricc{display:none;text-align:center;width:500px;z-index:3; position: absolute; top:105px;}
+.hover_bkgr_fricc .helper{display:inline-block;height:100%;}
+.hover_bkgr_fricc > div {background-color: #fff;display: inline-block;padding: 10px; border:1px solid #cccccc;}
+ #triangle-up { width: 0; height: 0; position: absolute; top:5px; border-left: 10px solid transparent; border-right: 10px solid transparent; border-bottom: 15px solid #ccc; left:60%;}
+.popupCloseButton {cursor: pointer;display: inline-block;font-weight: bold;position: absolute;bottom: 5px;right: 5px;text-align: center; color:#ff575c;}
+.trigger_popup_fricc {cursor: pointer;font-size: 20px;margin: 20px;display: inline-block;font-weight: bold;}
+.hover_bkgr_fricc p{ padding:0px; font-size:14px;}
+
+.customer-reviw-sec{ width:100%; float:left; height:100%; padding:40px 0px;position: relative;}
+.customer-reviw-sec h4{ font-size:30px; text-align:center; font-weight:600; padding-bottom:50px;color:#666565; }
+.customer-reviw-sec a{color:#4a4a4a; font-size:13px; position: absolute; font-weight:normal; text-decoration:underline; right:0px; top:60px;}
+.customer-reviw-col{ border-right :1px solid #ccc; text-align: left; margin-bottom: 20px; float:left;}
+.customer-reviw-col .review-pic{width:80px; float:left;}
+.customer-reviw-col img{width:70px; height:70px; border-radius: 50%;}
+.customer-reviw-col .right-sec{ float:left; width:77%; padding-left:5px;}
+.customer-reviw-col .right-sec h5{font-size:18px; font-weight: 600; margin:0px 0px 5px 0px; color:#666565;}
+.customer-reviw-col .right-sec span{color:#47476e; font-size:16px; padding-bottom:5px; display: inline-block;}
+.customer-reviw-col .right-sec p{text-align:left; padding: 0px; font-size:14px;}
+.customer-reviw-col .right-sec a{color:#56a4ed; display:inline; position: static; text-decoration: none;}
+.star{width:100px;height:19px;background:url(/resources/images/orm/star.png) 0px -22px repeat-x; margin-bottom:5px;}
+.star span{background:url(/resources/images/orm/star.png) 0px -1px repeat-x; display: block; height:19px;}
+.location-date{ font-size:12px !important; color:#707070 !important; display: inline-block;}
+.customer-reviw-col:last-child{border-right:none;}
+
+.review-tab{float:left;width:100%; padding-top:50px;}
+.review-tab .nav-tabs{border-bottom: none; font-size:16px; }
+.review-tab .nav-tabs li a{color:#6a6a6a; margin :0px 0px 0px 10px; border: none; position: relative; padding:0px 10px 0px 0px; border-radius: 0px;}
+.review-tab .nav-tabs > li.active > a{border:none; color:#ff575c;}
+.review-tab .nav-tabs > li > a:hover{background:#ffffff; border-color:#ffffff;}
+.review-tab .nav-tabs > li.active > a:after{ border-bottom: 2px solid #ff575c; position :absolute; top:25px; content: ""; width:93%; left:0px;}
+.review-tab .nav-tabs li:first-child{ border-right:1px solid #c9c9c9;}
+.review-section{width:100%; padding-top:40px; margin-bottom: 50px; display: inline-block;}
+.review-section label{display: block; color:#8e8e8e; font-size:13px; font-weight: normal; text-align: left;}
+.review-section input[type=text]{width:100%; border:1px solid #a1a1a1; padding: 8px;}
+.review-section select{ border:1px solid #a1a1a1; padding:8px; width:100%; -moz-appearance: none; -webkit-appearance: none;}
+.review-section .arrow{ position: relative;}
+.review-section .arrow:after{content: "\f0dd";font-family: 'FontAwesome';font-size: 20px;position: absolute;right: 5px;top: 0px;height: 20px;width: 20px;color: #999;pointer-events: none;}
+.review-section .star-rating{ display:inline-block; margin:10px 0px; border:none;}
+.rating {   border: none;  float: left;}
+.rating > input { display: none; } 
+.rating > label:before {  margin: 0px 3px; font-size: 20px; font-family: FontAwesome; display: inline-block; content: "\f005";}
+.rating > label { color: #ddd; float: right; cursor: pointer; }
+.rating > input:checked ~ label, .rating:not(:checked) > label:hover, .rating:not(:checked) > label:hover ~ label { color:#ff575c;  }
+.rating > input:checked + label:hover, .rating > input:checked ~ label:hover, .rating > label:hover ~ input:checked ~ label, .rating > input:checked ~ label:hover ~ label { color:#ff575c;  } 
+.review-section #upload-file {padding: 5px 10px;height: 37px;width: 60%;background: #ffffff;border:1px solid #cccccc; margin-bottom:5px;}
+.review-section .file-upload {border: 1px solid #4d4d77;border-radius: 0px;background: #4d4d77;color: #ffffff;font-size: 14px;padding: 7px 20px;vertical-align: top;width: 38%; margin:0px;}
+.file-upload input.upload {position: absolute;top: 27px;right: 11px;margin: 0;padding: 0;font-size: 20px;cursor: pointer;opacity: 0;filter: alpha(opacity=0); width:37%;}
+.review-section textarea{ width:100%; float: left;border:1px solid #cccccc; padding: 8px; resize: none;}
+.review-section button{ background:#ff575c; color:#ffffff; font-size: 15px; padding:5px 20px; border: 0px; float:right; margin: 20px 0px; font-weight: bold;}
+.search_engine .sub-heading{font-size: 14px;background: #f60;padding: 2px;text-shadow: none;margin: 5px -20px; color:#fff; text-align: center;}
+/* Text orm page section */
+
+.orm-review-page-sec{ margin-top:60px; width:100%; text-align: cepnter;}
+.orm-review-page-sec .customer-reviw-col{border: none; width:50%;}
+.load-more button{background:#ffffff; border: 1px solid #d7d7d7; color:#a3a3a3; padding:5px 40px; margin:30px 0px;}
+.orm-review-page-sec .heading{padding:40px 0px; width: 100%; float:left;}
+.orm-review-page-sec .heading h1{ font-size:30px; color:#666565; font-weight:600;}
+
+.video-review-sec{width: 100%;float:left; border:1px solid #d6d6d6; padding:10px;text-align: left; margin-top: -7px;}
+.video-review-sec .client-name{color:#4d4d77; font-size:14px; width:100%; padding-bottom :8px; font-weight: 600; }
+.play-icon{position: absolute; top:145px; left: 145px;}
+.video-review-sec p{ color:#707070; padding: 8px 0px; margin: 0px;}
+.video-sec{margin-bottom: 50px;}
+.video-sec video {width:100%; height:215px;}
+
+
+/*airline pages*/
+.attractionBox { padding-bottom: 50px; width: 100%}
+.attractionBox h4 { font-weight: 700; }
+.attractionBox .block { border: 1px solid #ccc; height: 100%; padding: 15px; }
+
+
+
+/*new-autosugguest*/ 
+.new-autosugguest { padding: 10px; background: #fff; border: 1px solid #ccc; position: absolute; z-index: 4; margin: 6px 15px 0 0;  }
+.new-autosugguest .content { max-height:300px; overflow: auto; padding: 10px; }
+.new-autosugguest .content .checkbox span { color:#333 !important;  }
+.new-autosugguest .close {     position: absolute;
+    right: 10px;
+    top: 10px;
+    font-size: 13px;
+    background: #000;
+    color: #fff;
+    opacity: 1;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    cursor: pointer; z-index:1; }
+.new-autosugguest label { display: block;  }
+.new-autosugguest ul, .new-autosugguest ul li { padding: 0; margin: 0;  display: flex; align-items: stretch; flex-flow: row wrap; }
+.new-autosugguest ul li { width: 20%; float: left; list-style: none; margin-bottom: 10px; }
+.from-errow { position:absolute;top: -11px;left: 120px; } 
+.to-errow { position:absolute;top: -11px;left: 400px; } 
+
+
+.checkbox{margin-top:0px;}
+.checkbox span{display:inline-block;cursor:pointer;position:relative;font-size:13px;padding-left:22px;margin-right:9px;line-height:16px;text-transform:capitalize;}
+.checkbox input[type=checkbox]{display:none}
+.checkbox span:before{content:"";display:inline-block;width:16px;height:16px;margin-right:5px;position:absolute;left:0;top:0px;border:1px solid #ccc;text-align:center;line-height:16px;}
+.checkbox input[type=checkbox]:checked~span:before{font-family:'FontAwesome';content:"\f00c";color:#4863db;}
+.checkbox label, .radio label{padding-left:0;}
+.arrow_down{position:relative;}
+.arrow_down select{background-color:#fff;-moz-appearance:none;border:none;-webkit-appearance:none}
+.arrow_down:before{content:"\f0dd";font-family:'FontAwesome';font-size:20px;position:absolute;right:5px;top:0px;height:20px;width:20px;z-index:3;color:#999;pointer-events:none;}
+
+
+.autosugguest-head {padding: 0 0 10px 0;font-size: 16px;color: #4863db;font-weight: bold;}
+
+
+/* Media query start here */
+@media only screen and (max-width:1169px){
+.banner_tagline .heading{font-size:26px}
+#cyberMon { right: -163px; padding: 9px;top:22px;}
+#cyberMon h2 { font-size: 15px; }
+#cyberMon .tagline { font-size: 14px; }
+.banner_tagline .heading{font-size:26px}
+.customer-reviw-col .right-sec{width:72%;}
+#review-slider video{width:300px;}
+.video-sec video {height:175px;}
+#clock-show, #othersblock .fa-clock-o{font-size:21px;}
+}
+@media only screen and (max-width:979px){
+
+#cyberMon { right: -208px; top: 0px; }
+#cyberMon h2 { font-size: 18px; }
+.slick-slider{padding:0 15px}.discountPrice{width:256px;height:256px;padding:15px 25px}.discount_flight{font-size:18px;line-height:22px}
+.discount_top_text{line-height:26px}.discount_price{font-size:40px} .banner_tagline {width:240px;} .banner_tagline .heading{font-size:28px}.promo-code .class{font-size:14px;} .promo-code .apply{font-size:11px;}
+.ppc_container .ppc-coupon-bg p{font-size:13px; line-height:18px; padding:5px 0px; text-align:left;}
+.ppc_tagline{width:240px;} .review .promo-detail{width:225px;}
+.orm-banner-sec{padding-top:20px;} .orm-banner-sec .banner-sec-vid{width:95%;}
+.orm-banner-sec h1{font-size:25px; padding: 10px 0px;} .orm-banner-sec p{font-size: 14px;}
+.orm-banner-sec .add-review{margin: 20px 0px 30px 0px;}
+.customer-reviw-col .right-sec{width:100%;}
+.review-section .file-upload{padding:7px;} .review-section .star-rating{margin-top:15px;}
+.video-sec{margin-bottom: 20px;}
+
+ .new-autosugguest ul li {
+     width: 33%;
+ }
+ .new-autosugguest { top:95px; }
+ .from-errow { position:absolute;top: -11px;left: 180px; } 
+.to-errow { position:absolute;top: -11px;left: 520px; }
+
+}
+
+@media only screen and (max-width:767px){
+.attractionBox .row.row-flex { display: block; }
+#cyberMon{ position:static; margin-bottom:10px; text-align:center;} .ppc_container .navbar-toggle{ display:none;} #my-welcome-message{width:100%; margin-left:0px; margin-top:0px; left:0px; padding:10px; top:25%;} #fvpp-close{top:-6px; right:0px;} .ppc_container .ppc-coupon-bg{ font-size:15px; line-height:20px;} .text-white{display:block}.deals-container{display:block}.city-heading{font-size:23px}.cityline__sub_text{font-size:18px;margin-bottom:10px}.cityline_head h2{font-size:23px}.discountPriceBox{display:none}.cityline_head h1{font-size:28px}h4.city-heading{margin-bottom:48px}.city_left_image{width:100%;padding-right:0}.city_right_image{width:100%;padding-left:0}.discalmer{padding:0}.deal_block{margin:0px 0px 10px 0px;width:100%; float:none;}.form-group{margin-bottom:20px}.input_div{width:100%}
+.heading-h1 .sub-heading{font-size: 14px;background: #f60;padding: 2px;text-shadow: none;margin: 5px -20px;}
+.ppc_tagline .heading{font-size:20px;} .ppc_tagline .sub-heading{ font-size:14px;}
+.orm-banner-sec .banner-sec-vid, #review-slider video {width:100%;} .orm-banner-sec{padding-top:0px;} .orm-banner-sec p{padding-bottom: 30px;} .orm-banner-sec .add-review{width:100%; text-align: center;}
+.orm-banner-botom-sec{margin: 40px 0px 0px; text-align: center !important; border: none;}
+#review-slider a, .customer-reviw-sec a{position: static;} .customer-reviw-col .right-sec{width:70%;}
+.review-tab .nav-tabs{font-size:13px;}
+.hover_bkgr_fricc{width:294px;top:150px;} .customer-reviw-col{ border: none;}
+.review-section .file-upload{font-size: 12px; padding: 8px 10px;}
+.airline-section .airline-cabin{width:100%;}
+.orm-review-page-sec .customer-reviw-col{width:100%;}
+
+
+.new-autosugguest ul li { width:100%; }
+
+.new-autosugguest { top:95px; }
+.from-errow { position:absolute;top: -11px;left: 150px; } 
+.to-errow { position:absolute;top: -11px;left: 150px; } 
+.as-return { top:140px; }
+
+}
+
+
+@media only screen and (max-width:479px){ 
+.ppc_container .ppc-coupon-bg { padding:0px; }.ppc_container .ppc-coupon-bg .icon { position:absolute; right:0px; top:6px; }
+.cityline_head h1{font-size:23px}.deal_book_btn{font-size:13px}.deal_block{font-size:14px}.city_name{font-size:15px}.city-heading{font-size:20px;margin-bottom:5px}
+}

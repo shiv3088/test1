@@ -1,0 +1,1099 @@
+ 
+.fs12{font-size: 12px;}
+.fs14{font-size: 14px;}
+a.inline{
+	display: inline;
+}
+   
+ body {
+     font-family: 'Roboto', sans-serif, Arial;
+     font-size: 12px;
+     background: lighten($graylight, 12);
+     @include breakpoint(xs) {
+		font-size: 12px;  
+		
+		
+	}
+	.header-component {
+		.navbar-default { 
+			background: $white;
+			border: 0;
+		} 
+	}
+	.guest-link{
+		color: $white;
+	} 
+	.cxl-mid-screen{
+		padding-top: 40px;
+		padding-bottom: 40px;
+		position: fixed;
+		z-index: 9999;
+		left: 50%;
+		top: 20%; 
+		bottom: auto;
+		right: auto;
+		margin-left: -400px;
+		width: 800px;
+		text-align: center;
+		background: $white;
+		box-shadow: 0 0 0 2000px rgba(0,0,0,0.8);
+		@include breakpoint (xs){
+			width: 100%;
+			left: 0;
+			right: 0;
+			top: 0;
+			bottom: 0;
+			margin-left:0;
+		}
+         h1 {
+             font-size: 35px;
+             color: $red;
+             @include breakpoint(xs) {
+                 font-size: 26px;
+             }
+         }
+         h2 {
+             font-size: 20px;
+             color: $red;
+         }
+         .guest,
+         .duration {
+             font-size: 16px;
+             letter-spacing: 1;
+             @include breakpoint(xs) {
+                 font-size: 14px;
+             }
+         }
+         .text {
+             color: $green;
+             font-size: 16px;
+             letter-spacing: 1;
+		}
+		
+	}
+
+
+	.trip-advisor{
+		color: #3a8e1c;
+		position: relative;
+		display: inline-block;
+		//transition: all 0.8s linear;
+		&:after{
+			content:  attr(data-trip);
+			position: absolute;
+			top: -4px;
+			z-index: -1;
+			color: $gray;
+			padding: 5px;
+			color: #3a8e1b;
+			white-space: nowrap;
+			//transition: all 0.8s linear;
+			opacity: 0;
+			&:hover{
+				display: inline-block;
+			}
+		}
+		&:hover{
+			&:after{
+				opacity: 1;
+				z-index: 1;
+			}
+		}
+		
+		.trip-icon{
+			cursor: pointer;
+			background: url(/resources/images/crosssell-images/ratings-v2.png) no-repeat;
+			display: inline-block;
+			width: 101px;
+			height: 18px;
+			vertical-align: middle;
+
+			&.five{
+				background-position: -119px 0px;
+			}
+			&.four{
+				background-position: -119px -36px;
+			}
+			&.three{
+				background-position: -119px -72px;
+			}
+			&.two{
+				background-position: -119px -108px;
+			}
+			&.one{
+				background-position: -119px -144px;
+			}
+			&.zero{
+				background-position: -119px -180px;
+			}
+		}
+	}
+
+	.fbp-show-more{
+		
+		overflow: hidden;
+		position: relative;
+		transition: all .3s linear;
+		.fa{
+			position: absolute;
+			font-family: 'roboto';
+			top: 2px;
+			right: 0;
+			color: $red;
+		}
+	}
+
+}
+
+
+.car-price, .hotel-price, .parknfly-price{
+	font-size: 22px;
+	color: $red;
+	margin-bottom: 10px;
+	sup{
+		font-size: 14px;
+		top: -6px;
+	}
+	small{
+		font-size: 13px;
+		display: block;
+		color: lighten($black, 20);
+		&.car{
+			font-size: 15px;
+			display: inline-block;
+			color: $red;
+		}
+	}
+	.fa{
+		font-size: 16px;
+	}
+}
+
+
+.car-search-component, .hotel-search-component{
+	background: darken($violet, 5%);
+	color: $white;
+	padding: 20px 10px;
+	position: absolute;
+	z-index: 15;
+	width: 100%;
+	.row{
+		margin: 0;
+		[class*=col-sm]{
+			padding:0 5px;
+			.form-group{
+				margin-bottom: 10px;
+				.showRoom{
+					font-weight: normal;
+					color: $white;
+					font-size: 14px;
+					text-decoration: underline;
+					cursor: pointer;
+					&:hover{
+						text-decoration: none;
+					}
+				}
+				label{
+					font-weight: normal;
+				}
+			}
+		} 
+	}
+
+	.showRoomDiv{
+		.added-room{
+			border-top:1px solid #61608a;
+			padding-top: 10px;
+			margin-bottom: 10px; 
+		}
+	}
+}
+
+
+/*Search filter icons start */
+.fa-C, .fa-A, .fa-L {
+    position: absolute;
+    left: 5px;
+    top: 11px;
+    color:#666; 
+    font-size: 16px !important;
+}
+
+.fa-C:before {
+    font-family: 'FontAwesome';
+    content: "\f0f7";
+}
+
+.fa-A {
+    width: 16px; 
+    height: 16px;
+    display: block;
+    background: url(/resources/images/search-fl.png) no-repeat 0px 0px;
+}
+
+.fa-L:before {
+    font-family: 'FontAwesome';
+    content: "\f041";
+}
+ 
+
+.crosssell-container{
+	.congratulations-msg{
+		margin-top: 10px;
+		margin-bottom: 0px;
+		text-align: left;
+		font-size: 24px;
+		@include breakpoint(sm){
+			font-size: 18px;
+		}
+		@include breakpoint(xs){
+			margin-top: 0px;
+			margin-bottom: 10px;
+             text-align: center;
+             font-size: 15px;
+         }
+		.fa-circle{
+			border-radius: 50%;
+			background: $red;
+			padding: 8px;
+			color: $white; float:left; margin-right:10px;
+		}
+		
+		.text1{font-weight: bold; color: $violet; 
+			}
+		.text2{
+			font-size: 16px; color: $gray;
+			@include breakpoint(sm){
+				font-size: 18px;
+			}
+			@include breakpoint(xs){
+				font-size: 14px;
+			}
+		}
+		.text3{color: $violet;} 
+
+	}
+
+	.protection-component{
+		.protection-header{
+			background-color: $violet;
+			color: $white;
+			padding:10px 10px 10px 10px;
+			font-size: 14px;
+			.pnf-logo{
+				position: absolute;
+				right: 13px;
+				top: 3px;
+			}
+			.brb-icon{
+				background: url(#{$assetPath}/crosssell-images/hotel-images/brb.png) no-repeat 0 0; 
+				height: 36px;
+				width: 68px;
+				float: right;
+				position: absolute;
+				top: -8px;
+				right: 13px;
+			}
+			.protection-list{
+				font-size: 13px;
+				li{
+					display: inline;
+				}
+			}
+		}
+		.protection-body{
+			background: $white;
+			border-top: none;
+			padding: 0 15px; 
+			.inputSet2.radio{
+				margin-top: 10px !important;
+				margin-bottom: 0 !important;
+			}
+			.inputSet2 label input[type="radio"] + span::after {
+				border: 2px solid lighten($black, 20);
+			}
+			.inputSet2 label input[type="radio"]:checked + span::after {
+				border: 2px solid $red;
+			}
+			.protection-separator{
+				border-top: 1px dotted $violet;
+			}
+			.protection-baggage-body{
+				background: $white;
+				.protection-body-list{
+					margin: 15px 0;
+					&.border{
+						position: relative;
+						&:after{
+							content: ' ';
+							position: absolute;
+							border-right: 1px solid $graylight;
+							height: 100%;
+							top: 0;
+							right: -15px;
+						}
+					}
+					li{
+						padding: 1px 0;
+						&.type{
+							font-size: 18px;
+							color: $black; 
+						}
+						&.pay{
+							font-size:13px; 
+						} 
+						&.price{
+							font-size: 24px;
+							color: $violet;
+							.fa{
+								font-size: 18px; 
+							}
+						}
+						&.pass{ 
+							font-size: 14px;
+						}
+						&.radioBtn{
+							font-size: 14px;
+						}
+					}
+				}
+			}
+
+			.other-option-airport{
+				padding:20px 0px;
+				border-bottom:1px solid $graylight;
+				font-size: 16px;
+                 @include breakpoint (xs) {
+                     border-top: 1px solid $graylight;
+                     font-size: 14px;
+                 }
+			}
+			.travel-protection{
+				padding: 10px 0;
+				.insurance-icon{
+					position: absolute;
+					right: 20px;
+					top: 8px;
+				}
+				.header{
+					font-size: 16px;
+					color: $violet;
+					margin-bottom:10px;
+					font-weight: 600; 
+				}
+				.travel-protection-list{
+					li{
+						padding: 5px 0;
+						display: block;
+						.fa{
+							color: $red;
+						}
+					}
+				}
+				.protection-option{
+					margin-top: 10px;
+					font-size: 14px;
+					[class*=col-sm]{
+						padding-right: 0;
+					}
+				} 
+			}
+             .attractions,
+             .airport {
+                 padding: 15px 0;
+                 border-bottom: 1px solid $graylight;
+                 .attractions-list,
+                 .airport-list {
+                     li {
+                         padding: 3px 0;
+						display: block; 
+						h4{
+							margin-top: 0;
+						}
+						p{
+							color: lighten($gray, 20);
+						}
+						.fa{
+							color: $red;
+						}
+					}
+				}
+			} 
+		}
+		.cff-info{
+			font-size: 14px;
+			padding-top: 10px;
+			overflow: hidden;
+			margin-left: 15px;
+			a{
+				display: inline;
+				color: $red;
+				&:hover{
+					text-decoration: underline; 
+				}
+			}
+		}
+	}
+}
+
+.cxl-car-component{
+	position: relative;
+	
+	.car-header{
+		background: $violet;
+		color: $white;
+		padding: 10px;
+         font-size: 14px;
+         hr {
+			margin: 10px 0;
+			border-top-color:lighten($gray, 10); 
+		}
+		.car-header-row{
+			margin: 0;
+			[class*=col-sm]{
+				padding: 0;
+			}
+			&.flexM{
+				display: flex;
+				[class*=col-sm]{
+					font-size:16px;
+					display: flex;
+					align-items: center; 
+				}
+				.flexDir{
+					justify-content: flex-end;
+				}
+			}
+		}
+	}
+	.car-body{
+		border-top:none; 
+		background: $white;
+		padding: 0 10px;
+		@include breakpoint(xs){
+			padding:0;
+		} 
+         .car-itinarary-list-mobile {
+                margin-top: 56px;
+		position: absolute;
+		left: -55%;
+		font-size: 14px;
+		@include breakpoint(screen-sm) { 
+			left: 10px;
+			margin-top: 15px;
+             }
+             @include breakpoint(xs) {
+                 margin-top: 15px;
+                 position: static;
+                 width: 300px;
+                 margin-left: -70px;
+             }
+             li {
+                 padding-left: 0;
+                 padding-right:3px;
+                 i {
+                     color: $red;
+                     &.icon-transmission-a {
+                         font-size: 17px;
+				position:relative;
+				top:3px;
+				}
+				}
+			}
+			@include breakpoint(xs){
+				bottom: 10px;	
+			}
+		}
+		.car-result{
+			margin: 0;
+			padding: 20px 0;
+			border-bottom: 1px solid $graylight;
+			position: relative;
+			min-height: 161px;
+			line-height:2em;
+	     @include breakpoint(xs) {
+                         min-height: 120px;
+						 padding: 20px 0;
+						 line-height:auto;
+                     }
+             &.row {
+                 [class*=col-sm] {
+                     padding-right: 0px;
+					@include breakpoint(sm){
+						padding-right:10px;
+					}
+				}
+			}
+			.car-result-image{
+				padding-right:15px;
+			}
+			&:last-child{
+				border-bottom:none;
+				margin-bottom: 0;
+			}
+			.link{
+				font-size: 14px; 
+				color: $red;
+				&:hover{
+					text-decoration: underline;
+				}
+			}
+			
+			.car-sec-2{
+				.car-type{
+					font-size: 18px;
+					color: $violet;
+					small{
+						display: block;
+						font-size: 13px;
+						color: #4d4d4d;
+					}
+				}
+				
+				.car-details{
+					cursor: pointer;
+					display: inline-block;
+					position: relative;
+					font-size: 12px;
+					color: $red;
+					
+					.car-itinarary-list{
+						border:1px solid lighten($gray, 10);
+						padding: 8px;
+						display: none;
+						
+						li{
+							display: block;
+							padding: 0px 0;
+							color: lighten($black, 20);
+							.fa{
+								color: $red;
+								font-size: 12px;
+							}
+						}
+					}
+
+					&:hover{
+						.car-itinarary-list{
+							display: block;
+							position: absolute;
+							width: 150px;
+							background: $white;
+							z-index:2;
+							font-size: 13px;
+						}
+					}
+
+				}
+			}
+			.car-sec-3{
+				// .car-price{
+				// 	font-size: 22px;
+				// 	color: $red;
+				// 	margin-bottom: 10px;
+				// 	small{
+				// 		font-size: 13px;
+				// 		display: block;
+				// 		color: lighten($black, 20);
+				// 	}
+				// }
+			}
+		}
+	}
+}
+
+
+
+.cxl-hotel-component{
+	position: relative;
+	background: $white;
+	@include breakpoint(screen-sm) {
+		margin-bottom: 30px;
+	}
+	.hotel-header{
+		background: $violet;
+		color: $white;
+		padding: 10px;
+		font-size: 14px;
+		hr{
+			margin: 10px 0;
+			border-top-color:lighten($gray, 10);
+		}
+		.htl-header-row{
+			margin: 0;
+			[class*=col-sm]{
+				padding: 0;
+			}
+			&.flexM{
+				display: flex;
+				[class*=col-sm]{
+					font-size:16px;
+					display: flex;
+					align-items: center;
+				}
+				.flexDir{
+					justify-content: flex-end;
+					//flex-direction: row-reverse;
+				}
+			}
+		}
+	}
+     .hotel-body {
+         border-top: none;
+         background: $white; 
+         @include breakpoint(xs) {
+             padding: 0;
+		 }
+		 .slick-prev, .slick-next {
+			 z-index: 10; 
+		 }
+		 .slick-slide:nth-child(odd) {
+			background: #d5fbf6;
+		}
+		
+		.slick-slide:nth-child(even) {
+			background:#f7eee7;
+		}
+         .hotel-result {
+             margin: 0; 
+             border-bottom: 1px solid $graylight;
+             position: relative;
+			 min-height: 140px; 
+
+             .htl-thumb-img {
+                 overflow: hidden;
+				height: 80px;
+				width: 100%;
+			}
+			@include breakpoint(xs){
+				padding: 10px 0;
+			}
+			&.row{
+				[class*=col-sm]{
+					padding-right:0px;
+					@include breakpoint(sm){
+						padding-right:10px;
+					}
+				}
+			}
+			&:last-child{
+				border-bottom:none;
+				margin-bottom: 0;
+			}
+			
+			.hotel-sec-2{
+				.hotel-type{
+					font-size: 18px;
+					color: $violet;
+					margin-top:15px;
+					@include breakpoint(xs){
+						font-size: 16px;
+					}
+					small{
+						display: block;
+						font-size: 13px;
+						color: $gray;
+						@include breakpoint(xs){ 
+							font-size: 12px;
+						}
+					}
+				}
+                 .hotel-itinarary {
+                    .star-rating.star3 {
+                        margin:3px 0;
+                    }
+                     .trip-advisor {
+                         &:hover:after {
+							left: 100%;
+							font-weight:bold;
+							font-size: 12px; 
+						}
+					}
+				
+				}
+			}
+			.hotel-sec-3{
+				padding-left:0px;
+				.hotel-price{
+					font-size: 22px;
+                     color: $red;
+                     margin-bottom: 10px;
+                     .fa {
+                         font-size: 16px;
+                     }
+                     small {
+                         font-size: 12px;
+                         color: lighten($black, 20);
+                         font-weight: 400;
+                         display: block;
+                     }
+                     &.offer {
+                            text-align: right; 
+							padding-right: 10px;
+							margin-top:10px;
+                            del {
+                                font-size: 14px; 
+                            }
+                            .save10 {
+                                background: $offer;
+                                width: 105px;
+                                height: 30px;
+                                color: $white;
+                                font-size: 17px;
+                                float: right;
+                                padding-right: 11px;
+								margin-right: -10px;
+								position: relative;
+								line-height: 28px;
+                                .corner {
+                                    width: 0;
+                                    height: 0;
+                                    border-top: 14px solid transparent;
+                                    border-right: 16px solid $offer;
+                                    border-bottom: 16px solid transparent;
+                                    margin-top: 0;
+                                    position: absolute;
+                                    left: -16px;
+                                }
+                            }
+                     }
+                 }
+             }
+         }
+         .offer-block {
+             background: #61608a; 
+             color: #fff;
+             padding: 10px;
+         }
+         .carousel-indicators {
+             li {
+                 border: 1px solid #666;
+             }
+            .active {
+                background: #4e4e4e;
+            }
+         }
+     }
+ }
+ /*Car Details section*/
+ 
+ .car-detail-component,
+ .show-popup-component,
+ .htl-detail-component {
+     border: 0px solid $red;
+     padding: 25px;
+     background: $white;
+     margin: 5% 15% 5% 15%;
+     position: fixed;
+     z-index: 99;
+     left: 0;
+     right: 0;
+     top: 0;
+     bottom: 0;
+     min-height: 400px;
+     box-shadow: 0 0 0 2000px rgba(0, 0, 0, 0.8);
+     &::before {
+         display: block;
+         position: absolute;
+         z-index: -1;
+         left: -30%;
+         top: -20%;
+         bottom: -20%;
+         right: -30%;
+         border: 1px solid yellow;
+     }
+     @include breakpoint(xs) {
+         margin: 5% 0% 0 0%;
+         width: 100%;
+         min-height: auto;
+     }
+     hr {
+         margin: 10px 0;
+         border-top: 1px dotted lighten($violet, 20%);
+     }
+     .cr-tab>.carLink {
+         &.active {
+             background: $gray !important;
+             border: $gray !important;
+         }
+     }
+     .cr-closeBtn {
+         background: $red;
+         border-radius: 50%;
+         height: 40px;
+         width: 40px;
+         position: absolute;
+         right: -15px;
+         top: -15px;
+         z-index: 1;
+         font-size: 20px;
+         text-align: center;
+         line-height: 27px;
+         display: block;
+         color: $white;
+         @include breakpoint(xs) {
+             height: 30px;
+             width: 30px;
+             position: absolute;
+             right: 5px;
+             top: 5px;
+             z-index: 1;
+             font-size: 18px;
+             text-align: center;
+             line-height: 18px;
+             padding: 6px 5px 6px 6px;
+         }
+     }
+     .carousel-show-image {
+         // img{
+         // 	width: 100%;
+         // 	@include breakpoint(xs){
+         // 		width: 100%;
+         // 	}
+         // }
+         .cxl-iceportal {
+             border: 0;
+         }
+     }
+     .carDetails {
+         h2 {
+             margin-top: 0;
+             font-weight: bold;
+             color: $violet;
+             font-size: 16px;
+         }
+         .view-details {
+             display: inline;
+             color: $red;
+         }
+         div {
+             color: lighten($gray, 10);
+             .head {
+                 color: $violet;
+             }
+             &.type1 {
+                 font-size: 20px;
+                 margin-bottom: 5px;
+                 color: lighten($gray, 10);
+             }
+             &.type2 {
+                 font-size: 14px;
+                 color: lighten($gray, 10);
+             }
+             &.total-price {
+                 font-weight: bold;
+                 font-size: 24px;
+                 color: $red;
+             }
+         }
+     }
+     .crPayble-continer {
+         h1 {
+             margin-top: 0;
+             font-weight: bold;
+             color: $violet;
+             font-size: 20px;
+         }
+         .text1 {
+             color: lighten($gray, 10);
+         }
+     }
+     .crTotal-continer {
+         h2 {
+             margin-top: 0;
+             font-weight: bold;
+             color: $violet;
+             font-size: 16px;
+         }
+         div {
+             color: lighten($gray, 10);
+         }
+         .cr-total-price {
+             color: $red;
+             font-size: 25px;
+             padding-top: 15px;
+         }
+     }
+ }
+ 
+ .session-timeout-container {
+     background: rgba(0, 0, 0, 0.8);
+     position: fixed;
+     width: 100%;
+     top: 0;
+     left: 0;
+     right: 0;
+     bottom: 0;
+     z-index: 900;
+     .session-body {
+         background: $white;
+         padding: 15px;
+         height: 200px;
+         width: 456px;
+         position: fixed;
+         top: 50%;
+         left: 50%;
+         margin-top: -100px;
+         margin-left: -228px;
+         @include breakpoint(xs) {
+            left: 0;
+            width: 100%;
+            margin-left: 0;
+            margin-right: 10px;
+            height: auto;
+         }
+		h3{
+			margin-top: 10px;
+			.fa{
+				font-size: 25px;
+				color: $red;
+				vertical-align: middle;
+			}
+		}
+		.session-body-para{
+			padding: 15px 0; 
+		}
+	}
+	// .session-clock-icon{
+		
+	// }
+}
+
+
+
+.loading {
+	position: relative;
+	background-color: #E2E2E2;
+	border-radius: 15px;
+	
+	&.loading-image {
+	  border-radius: 0;
+	}
+	
+	&::after {
+	  display: block;
+	  content: '';
+	  position: absolute;
+	  width: 100%;
+	  height: 100%;
+	  transform: translateX(-100%);
+	  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, .2), transparent);
+	  animation: loading 1.5s infinite;
+	}
+  }
+  @keyframes loading {
+	100% {
+	  transform: translateX(100%);
+	}
+  }
+  .loading {
+	height: 2rem;
+  }
+  .loading {
+	height: 80px;
+  }
+
+/*Bottom tab for mobile*/
+.mobile-link-tab{
+	background: #FECDC1;
+	position: fixed;
+	z-index: 9999;
+	bottom: -100px;
+	left: 10px;
+	right: 10px;
+	li{
+		padding: 10px 8px;
+		border-right:1px solid darken(#FECDC1, 5);
+		&.gotoTop{
+			background-color:rgba($red,0.9); 
+			padding: 13px 10px;
+			width: 33px;
+			a{
+				font-size: 14px;
+				color: $white;
+			}
+		}
+		&:last-child{
+			border-right: 0;
+		} 
+		a{
+             font-size: 14px;
+             color: darken($yellow, 35);
+             @include breakpoint(xs) {
+                 font-size: 12px;
+             }
+         }
+     }
+ }
+ 
+ .no-result-found {
+	background: $white;
+	.text-1{
+		font-size: 40px;
+		color: $violet;
+	}
+	.text-2{
+		font-size: 18px;
+		margin-bottom: 15px;
+	}
+	.call-now{
+		font-size: 16px;
+		a{
+			font-size: 30px;
+		}
+	}
+}
+/*hotel Strip on cross-sell home page*/
+ 
+ .hotel-strip {
+          font-size: 18px;
+	 color: $red;
+	 @include breakpoint(sm){margin-top:10px;}
+	 @include breakpoint(xs){ font-size:16px;}
+     img {
+		 margin-top: -5px;
+		 width:60px;
+		 @include breakpoint(xs){width:45px; margin-top: 0px;}
+     }
+     p {
+         padding-left: 10px;
+         overflow: hidden;
+         line-height: 24px;
+     }
+ }
+ 
+ .ui-datepicker .ui-state-active {
+     background: $red;
+ }
+ 
+ .ui-datepicker td span,
+ .ui-datepicker td a {
+     line-height: 20px;
+ }
+ /*Mid screen*/
+ 
+ .confor-mid-sec {
+     width: 500px;
+     position: fixed;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+     height: 250px;
+     box-shadow: 0px 30px 50px rgba(221, 221, 221, 1);
+     z-index: 2;
+     background: #ffffff;
+     text-align: center;
+     margin:0;
+     
+     .logo {
+         padding: 33px 0px;
+     }
+     .wait {
+         color: #f07d20;
+         font-size: 20px;
+         padding: 20px 0px 30px 0px;
+         margin-top: 30px;
+         font-family: 'Roboto', sans-serif;
+         line-height: 20px;
+     }
+ }

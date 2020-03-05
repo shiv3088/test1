@@ -1,0 +1,338 @@
+.city_content_bg p,.cityline_head p {text-align :justify}
+.affilate-block p,.affilate_thumbnails,.deal_block,.fare-box,.flights-list li,.offer .promo {overflow :hidden}
+.body-bg-white {background :#fff;padding-top :10px}
+.body-bg-gray {background :#eee;padding :0px 0}
+.cityline_head {padding :10px 0 20px}
+.cityline_head p {margin :0}
+.cityline_head h2 {margin :0;padding :10px 0px;}
+.deal_date {color :#0065b8}
+.deal_block .arrow {position :relative;top :10px}
+.city_name {color :#616161;font-size :16px;text-transform :uppercase;font-weight :700}
+.city_name_full {text-transform :capitalize;font-weight :400;display :block}
+.deal_trip {color :#999;display :block}
+.deal_book_btn {margin-top :5px;background :#f60;float :right;color :#fff;border :1px solid #f60;border-radius :1px;display :block;padding :4px;white-space :nowrap}
+.deal_block img {-moz-outline-radius :4px;outline :#fff solid 1px;outline-offset :-1px}
+.deal_block:hover {box-shadow :0 0 4px 2px rgba(0,0,0,.1)}
+.deal_block:hover .deal_book_btn,.deal_book_btn:hover {background :#fff;color :#f60}
+.city_content_bg,.content_bg {background :#fff;overflow :hidden;padding :10px 15px;position :relative;margin-bottom :10px}
+.cityline__sub_text {color :#414040;font-size :22px;margin-bottom :15px}
+.banner_tagline,.save-text {color :#fff;text-shadow :1px 1px 2px #333}
+.city_left_image {width :415px;float :left;padding :0 15px 15px 0}
+.city_right_image {float :right;padding :0 0 15px 15px}
+.city_content_bg ul {padding :0 0 0 20px}
+.content_subtitle {font-size :16px;font-weight :500;margin-top :5px;text-transform :capitalize}
+.offer .offer1,.offer .promo span small {letter-spacing :1px;text-transform :uppercase}
+.banner_tagline {position :absolute;right :0;top :65px;width :58%}
+.banner_tagline h1 {font-size :36px}
+.banner_tagline h4 {font-size :24px}
+.save-text {background :rgba(255,255,255,.2);font-size :30px;margin :0 -15px;padding :15px;text-align :center}
+.deal-price2 {float :right;font-size :20px;padding :10px;margin-top :-40px;color :#f60;border-radius :5px 5px 0 0;background :rgba(255,255,255,.8);margin-right :-10px}
+.question-block .accordion-toggle {color :#010101;font-size :16px;line-height :20px;text-decoration :none}
+.question {color :#ff9741;font-size :24px;margin-right :5px;position :relative;top :4px}
+.question-block .detail {width :100%;padding :5px 0 0 26px;font-size :14px;color :#333;line-height :20px}
+.label2,.submit-review .label {font-size :15px;font-weight :400}
+.flights-list ul {margin :0;padding :0}
+.flights-list li {padding :3px 0;width :100%;position :relative}
+.flights-list li a {font-family :'Roboto-Regular',arial;color :#333}
+.flights-list li a:hover {color :#f60}
+.flights-list li img {margin-right :10px}
+.flights-list li a.fa-plane:before {transform :rotate(45deg);padding-right :5px;font-family :FontAwesome;position :absolute;left :0;top :5px}
+ul.flight_list li {padding-left :20px}
+ul.airline-list li {width :50%;float :left}
+.submit-review {width :100%}
+.submit-review .label {margin-bottom :10px;color :#5c5c5c;display :block;float :left;line-height :20px;padding :0;text-align :left;width :75px}
+.rate_row {margin :2px auto;text-align :left;float :left}
+.rate_star {color :#ccc;cursor :pointer;font-size :20px;padding-right :8px}
+.rate_star.checked,.rate_star.over {color :#c24700}
+.rate_star.disable {cursor :default;pointer-events :none;color :#9C9B9B}
+.submit_stars {padding :3px 14px;background :#801513;border :1px solid #801513;color :#fff;cursor :pointer;outline :0;font-size :16px;margin-top :5px;margin-left :30px}
+.submit_stars:hover {background :#D41715;border :1px solid #D41715}
+.customer-review .rating {color :grey;font-size :13px}
+.form-group {margin-bottom :10px}
+.form-control .review-textarea {height :110px;resize :none}
+.btn.submit {background :#f60;border-radius :0;float :right;margin-top :10px;color :#fff}
+
+.btn.submit:hover {background :#fff;border :1px solid #f60;color :#f60}
+.customer-review ul {margin :0;padding :0}
+.customer-review ul li {list-style :none;width :100%}
+.viewmore {position :absolute;right :20px;bottom :20px}
+.customer-review {margin-bottom :35px;position :relative;width :100%}
+.customer-review .next,.customer-review .prev {z-index :999;right :0;cursor :pointer;position :absolute;font-size :20px;color :#5c5c5c;text-align :center;text-decoration :none;line-height :20px;width :20px;height :20px;display :block;background :#e7e7e7}
+.customer-review .prev {right :25px}
+.expire {font-size :15px;padding :0 0 20px;border-bottom :1px solid #ccc;text-align :center}
+.fare-box {width :100%;background :#fff}
+.fare-hd {background :#ccc;padding :15px 10px}
+.affilate_thumbnails {padding :20px 0 30px;width :100%}
+.affilate-bg {width :100%;float :left;height :100%;padding-bottom :15px}
+.user-review{width:100%; float:left;border-top:1px solid #b7b7b7; border-bottom:1px solid #b7b7b7; padding:15px 0px; margin-bottom:20px; margin-right:30px; }
+.user-review .sm-4{ width: calc(33% - 0px); overflow:hidden; float:left; position:relative;}
+.user-review h1{ text-align:center; font-size:26px; color:#ef8527; margin-top:5px; margin-bottom:25px;}
+.user-review .star{ display:block;}
+.user-review .heading{font-size:18px; color:#333333; padding:20px 0px; display:inline-block;}
+.user-review p{font-size:14px; color:#787878;}
+.user-review .author{font-size:14px; color:#787878; float:left; font-style: italic;}
+.user-content{width:100%;float:left; padding-bottom:30px; text-align:center; } .user-content h3{color:#ef8527; font-size:26px; margin:10px 0px 20px 0px; padding-top:10px;}
+.user-content-new{width:100%;float:left; padding-bottom:30px; text-align:left; } .user-content-new h3{color:#ef8527; font-size:26px; margin:10px 0px 20px 0px; padding-top:10px;}
+.user-content p{color:#787878; font-size:14px;}
+.affilate-block.fare:before,.affilate-block.macp:before,.affilate-block.insur:before,.affilate-block.call:before {height :50px;top :0;left :0;content :""}
+.affilate-block {position :relative}
+.affilate-block.macp:before {background :url(/resources/travelopick/images/macp.svg) left center no-repeat;width :50px;position :absolute}
+ .affilate-block.insur:before {background :url(/resources/images/colarge.gif) 0px -10px no-repeat;width :60px;position :absolute}
+ .affilate-block.call:before {background :url(/resources/images/call.png) 0px 7px no-repeat;width :60px;position :absolute}
+ .affilate-block.hotel:before {content :"\f236";position :absolute;font-family :'FontAwesome';font-size :40px;top :8px;color :#f60;}
+ .affilate-block.lock:before {content :"\f023";position :absolute;font-family :'FontAwesome';font-size :40px;top :8px;color :#f60;}
+.affilate-block span {font-size :16px;color :#000;padding-left :60px;line-height :50px;opacity :1}
+.call span {font-size :16px;color :#000;padding-left :35px;line-height :50px;opacity :1}
+.easy-cancelation:hover span {opacity :0}
+.affilate-block p {background :#fff;position :absolute;width :100%;min-height :50px;height :auto;padding :10px;top :0px;left :0;font-size :14px;opacity :0;transition :all .5s}
+.affilate-block:hover p {opacity :1;cursor :default}
+.affilate-block.fare:before {background :url(/resources/travelopick/images/lowest-fare.svg) left center no-repeat;width :60px;position :absolute}
+.affilate-block.fare span {padding-left :75px}
+.offer {position :relative}
+.offer .offer1 {background :#50bfb0;color :#fff;font-size :14px;padding :3px 8px 3px 20px;position :absolute;top :50%;left :90px;margin-top :-15px}
+.offer .offer1:after {width :0;height :0;border-top :13px solid transparent;border-bottom :13px solid transparent;border-left :13px solid #fff;position :absolute;left :-1px;top :0;content :""}
+.offer .promo b,.offer .promo span {font-size :13px}
+.offer .promo span small {color :#f60;padding-left :4px;font-weight :600;font-size :16px}
+.offer .promo p {color :#8e8e8e;font-size :11px; text-align:justify;}
+.information {z-index :2;display :none;background-color :#fff;padding :10px;border :1px solid #ccc;position :absolute;top :50px;right :0}
+.information p {font-size :12px!important;padding-bottom :5px;margin :0}
+.info-open {color :#8e8e8e}
+.info-close {text-align :right;display :inline-block;float :right}
+.cityline_head ul {padding-left :20px}
+.cityline_head ul li {list-style :decimal;padding-bottom :5px}
+.footer-top,.footer_bottom,.secureBox.certified {display :none!important}
+.secureBox {padding :25px 0 13px!important}
+.search-block p {margin-bottom :4px}
+.search-block {padding :10px 15px;}
+.search_engine {margin :70px 0 13px!important; max-width:500px;}
+.missout{padding:0px; margin-bottom:15px;} 
+.missout h3{color:#ef8527; font-size:26px; margin:0px 0px 10px 0px;} .missout p{font-size:13px;}
+.missout a{color:#ef8527;}
+/* affiliate deal section start */
+.affliate-deal-col{ margin-top:80px;}
+.afflilate-deal{background:#ef8527; font-size:20px; color:#ffffff; padding:10px 0px; line-height:20px; text-align:center;}
+.affliate-deal-col .deals{background:#ffffff; padding:1px 15px;}
+.deals .table > tbody > tr > td{color:#4e4e4e;}
+.deals .deal-list{ cursor:pointer;}
+.affliate-deal-col .deals th{color:#4e4e4e; font-size:13px;font-family :'Roboto-Bold',arial;}
+.affliate-deal-col .deal-fare{color:#ef8527 !important; font-size:20px;}
+.affliate-deal-col .rules{background:rgba(0,0,0,0.6); padding:10px; color:#ffffff; font-size:11px;}
+.affliate-deal-col .rules span, .rules a{color:#ef8527;}
+/* affiliate deal section end */
+/* affiliate group page start */
+
+.affliate-group-bg {padding-left :60px;}
+.affilate-group-text-bg {background :#ffffff none repeat scroll 0 0;border-radius :10px;padding :20px 15px;position :absolute;top :20%;width :240px;color :#fff;}
+.affilate-group-text {font-size :22px;text-shadow :none;color :#f66a15; text-transform:none; line-height:30px; border-bottom:1px solid #fddac4; padding-bottom:10px;} .affilate-group-text span{font-weight:700; font-size:25px;}
+.affilate-group-text1 {font-size :20px;text-shadow :none;color :#f66a15; text-transform:none; line-height:30px; padding:10px 0px;} .affilate-group-text1 span{font-weight:700; font-size:25px;}  
+
+/* affiliate group page end */
+
+/* affiliate pop up start */
+
+.pop-close{position:absolute;right:7px;top:7px; font-size:30px; text-shadow:none;opacity:1;}
+.modal.fade.in{ background:rgba(0, 0, 0, 0.5); }
+.popup-meta{ max-width:500px; top:10%;}
+.popup-meta .modal-content { background:#ffffff; overflow:hidden; text-align: center; }
+.popup-meta img { display: inline-block; }
+/* affiliate pop up end */
+
+/* Affiliate sign up page start */
+.row-flex{ align-iteams:stretch; display:flex; flex-flow:row wrap; justify-content:flex-start;}
+.banner-image {background: url(/resources/images/affiliate/affilate-banner.jpg) no-repeat center;height: 276px;margin-top: 50px;}
+.banner-image .container {height: 100%;}
+.banner-image .row {position: relative;height: 100%;}
+.banner-image .affiliate-text {position: absolute;left: 0;top: 50%;margin-top: -100px}
+.banner-image .heading {color: #282e36;font-size: 31px;margin-top: 95px; font-weight:700;}
+.banner-image p {color: #282e36;font-size: 19px; margin:0px;font-family: 'Roboto-Medium',arial;}
+.banner-image p:before{width:100px; height:2px; background:#ef8527; position:absolute; content:""; bottom:-15px; left:8px;}
+.respo-img{ max-width:100%; height:auto;}
+
+.pramotion-section {padding:35px 0px 15px; ;width: 100%;overflow: hidden;color: #636363;}
+.pramotion-section h2 {margin:0; font-size: 28px;text-align: center;}
+.pramotion-section p{font-size:21px; text-align:center;color: #838383;}
+.pramotion-section .row{overflow:hidden; margin:30px 0px; margin-left:0px;}
+.pramotion-section .col{width:calc(33.3% - 10px); text-align:center; float:left;  position:relative; margin-right:10px;}
+.pramotion-section .col:before{position:absolute; right:0; background:#bdbdbd; width:1px; height:90px; content:"";top:50%; margin-top:-50px;}
+.pramotion-section .col:last-child:before{background:none;}
+.pramotion-section .col span{display:block; font-size:17px; padding:20px 0px 0px 0px;font-family: 'Roboto-Medium',arial; color:#636363;}
+.pramotion-section .col p{display:block; font-size:17px; font-weight:300; color:#636363;}
+
+.sign-up{width:100%; border-top:1px solid #d1d1d1; border-bottom:1px solid #d1d1d1; padding:30px 0px; margin:0px 0px 30px 0px;}
+.sign-up .row{ overflow:hidden; margin-right:-20px; margin-left:0px;}
+.sign-up .col{width:calc(50% - 20px); float:left;position:relative;  margin-right:20px; padding-left:30px;overflow:hidden;}
+.sign-up .col h3{color:#ef8527; font-size:21px; margin:0px 0px 20px 0px;}
+.sign-up .col p{color:#636363; font-size:17px; position:relative; padding-bottom:30px; margin-bottom:30px;}
+.sign-up .col p:before{ position:absolute; left:0px; background:#bdbdbd; width:390px; height:1px; content:""; bottom:0px; }
+.sign-up .col ul{ padding-left:15px;}
+.sign-up .col ul li{ font-size:15px; color:#636363; padding-bottom:23px; list-style-type: disc;}
+
+
+.login{padding:0px 0px 20px 0px; width:100%;}
+.login h4{color:#636363; font-size:28px; margin:0px 0px 20px 0px; text-align:center; margin-bottom:40px;}
+.login .row{overflow:hidden; margin-right:0px; margin-left:0px;}
+.login .col{width:calc(33.3% - 0px); text-align:center; float:left;  position:relative; margin-right:0px;overflow:hidden;}
+.login .col .cj{padding:14px; border:1px solid #bdbdbd; height:80px; width:225px; display:inline-block;}
+.login .col .raku{padding:15px; border:1px solid #bdbdbd; height:80px; width:225px;display:inline-block;}
+.login .col .share{padding:20px; border:1px solid #bdbdbd; height:80px; width:225px;display:inline-block;}
+.login .col:before{position:absolute; right:0; background:#bdbdbd; width:1px; height:196px; content:"";top:50%; margin-top:-99px;}
+.login .col:last-child:before{background:none;}
+.login .col p{color:#636363; font-size:13px; position:relative; padding:20px 0px;}
+.login .col .button{width:220px; margin:0 auto;}
+.login .col .sign {margin-bottom:15px; padding:8px 0px; width:100px; display:inline-block;border-radius: 0px;text-align: center;font-size: 13px;color: #636363;text-decoration: none;background: #ededed;}
+.login .col .log {margin-bottom:15px; padding:8px 0px;width:100px; display:inline-block; border-radius: 0px;text-align: center;font-size: 13px;color: #ffffff;text-decoration: none;background: #ef8527;}
+
+.earn{ padding:15px 0px; font-family: 'Roboto-Light',arial; display:inline-block; margin-right:-20px;}
+.earn h4{color:#636363; font-size:28px; margin:0px 0px 20px 0px; text-align:center; margin-bottom:40px;}
+.earn .col{width:calc(33.3% - 20px); text-align:center; float:left;  position:relative; margin-right:20px; border:1px solid #ef8527;}
+.earn .col h4{background:#ef8527; margin:0px; padding:25px 30px; color:#ffffff; font-size:17px; text-align:left;}
+.earn .col h4 .fa-plane{ transform: rotate(45deg); font-size:20px; float:right;}
+.earn .col h4 .fa-bed{ font-size:20px; float:right;}
+.earn .col h4 .fa-shield{  font-size:20px; float:right;}
+.earn .col .commission-box{ margin:0px 30px;}
+.earn .col .boder{border-bottom:1px dotted #707070; float:left; width:100%;}
+.earn .col .boder:last-child{border:none; margin-bottom:20px;}
+.boder .sale-volume{width:85px; float:left; text-align:center; color:#636363; font-size:15px; padding:15px 0px;}
+.boder .commission {width:85px; float:right; text-align:center; color:#636363; font-size:15px; padding:15px 0px;}
+
+.query{ text-align:center; color:#636363; font-size:28px; padding-bottom:10px;}
+.email-id{ color:#ef8527; font-size:19px; text-align:center; padding-bottom:40px;}
+.email-id .fa-envelope-o{font-size:15px; padding-right:5px;}
+
+.calender-icon{font-size: 21px !important;;} 	
+/* Affiliate sign up page end */	
+
+/* Affiliate new page designe start */
+.affiliate-head{ width:100%; height: 100%;} .affiliate-head h1{font-size:26px; color: #4e4e4e; margin: 0px; padding: 50px 0px 10px 0px;}
+
+.banner-copon-bg{ background: #ffffff; color: #ef8527; padding: 10px 20px; width:240px; position:absolute; left:520px; top:55px;}
+.banner-copon-bg h5{ font-size: 28px; padding: 10px 0px 25px 0px; line-height: 35px; border-bottom: 1px solid #c6c6c6; margin: 0px;}
+.banner-copon-bg p{ color: #4e4e4e; font-size: 14px; padding: 18px 0px; margin: 0px;} .banner-copon-bg p span{ color: #ef8527; text-transform: uppercase;font-family :'Roboto-medium',arial;font-size: 20px;}
+.banner-copon-bg .know-more{ color: #50bfb0; font-size:12px; float: right; text-decoration: underline;}
+.flight-price-rules{ color:#f07910; padding: 15px 0px; font-size: 13px;}
+.affiliate-rules{ color:#4e4e4e; padding-bottom: 30px; font-size: 13px;} .affiliate-rules span{color:#f07910;} .affiliate-rules a{ color:#f07910;}
+.afflilate-content-new{width:100%;float:left;  text-align:left; } .afflilate-content-new h3{color:#4e4e4e; font-size:26px; margin:10px 0px 20px 0px; padding-top:10px;} .afflilate-content-new p{color:#717171; font-size: 13px; padding-bottom: 5px;} .afflilate-content-new p span{ color:#f07910;font-family :'Roboto-medium',arial; font-size: 13px;} 
+.affiliate-popup{width:965px; padding: 0px; height: 600px; margin: 0 auto; top: 20%; color: #717171;}
+.affiliate-popup .modal-content{ border-radius: 0px;}
+.affiliate-popup .modal-header{ border-bottom: 0px;}
+.affiliate-popup .modal-header .close{ opacity: 1; background: #ff6600; text-shadow: none; color: #fff; width: 40px; height: 40px; position: absolute; right: 0px; top: 1px;} 
+.affiliate-popup .modal-header .close:hover{opacity: 1;}
+.affiliate-popup .modal-body{padding:10px 60px 40px 60px; font-family:font-family :'Roboto-medium',arial;}
+.affiliate-popup .input-fill{ width: 150px; padding: 18px 0px; float: left; color: #ef8527; font-size: 14px; border: 1px dashed #ef8527; text-transform: uppercase; text-align: center;}
+.affiliate-popup .copy-btn{ width:80px; text-align: center; float: left; padding: 18px 0px; background: #ef8527; border: 1px solid #ef8527; color:#ffffff; font-size:14px; font-weight: 600;} .affiliate-popup .copy-btn:hover, .affiliate-popup .copy-btn:focus{background:#c24700;color:#fff}
+.affiliate-popup .copy-btn.active{background:#c24700;color:#fff}
+.affiliate-popup .modal-body span{ font-size: 11px; padding: 44px 0px 0px 20px; display: inline-block;}
+.affiliate-popup .modal-body .popup-content{ font-size: 13px; font-weight: 500; padding: 15px 0px 30px 0px; border-bottom: 1px solid #b8b8b8;}
+.affiliate-popup .modal-body h4{ color: #ef8527; font-size: 22px; margin: 30px 0px;}
+.affiliate-popup .modal-body p b { color: #4e4e4e; font-size: 12px; padding: 15px 0px; margin: 0px; font-weight: 400;}
+.affiliate-popup .modal-body p { font-size:12px; padding: 0px; font-weight: 100;}
+
+/* Affiliate new page design stop */
+
+
+.affliate-bg {padding-left :60px;}
+.affilate-text {background :#f18628 none repeat scroll 0 0;border-radius :10px;padding :20px 15px;position :absolute;top :100px;width :240px;color :#fff;}
+.affilate-text h1 {font-size :26px;text-shadow :none;color :#ffffff;}
+.affilate-text i {border :2px solid #fff;border-radius :50%;font-size :18px;height :24px;line-height :18px;text-align :center;text-shadow :none;width :24px;}
+.hand-pointer {cursor :pointer !important;}
+.affliate-top-border {background :#ffffff;padding :30px 0px;border-bottom :2px solid #ededed;border-top :2px solid #ededed;margin-bottom :10px;}
+.deal-text h3 {color :#ee8325;font-size :28px;margin :0px;padding-bottom :10px;}
+.deal-text h3 span {display :inline-block;color :#4e4e4e;font-size :14px;padding-left :10px;}
+.deal-text p {color :#8b8b8b;font-size :12px;padding-bottom :20px;margin :0px;}
+.deal-text a {color :#4e4e4e;font-weight :500;border-bottom :1px solid #bebebe;}
+.affliate-airline-bg {border :1px solid #b9b9b9;height :auto;padding :0px;margin-top :20px}
+.affliate-airline-bg .airline-deal {color :#ee8227;font-size :26px;padding :10px 20px;border-bottom :1px solid #b9b9b9;}
+.affliate-airline-bg .margin {margin :0px 10px;border-bottom :1px solid #b9b9b9;cursor :pointer;}
+.affliate-airline-bg .heading {border-bottom :1px solid #b9b9b9;margin :0px;padding :15px 5px;color :#4e4e4e;font-size :16px;}
+.affliate-airline-bg .city-name {color :#8b8b8b;font-size :14px;text-align :left;padding :5px;font-weight :normal;}
+.affliate-airline-bg .city-name .darkgray {color :#4e4e4e;margin :0px;}
+.affliate-airline-bg .travel-date {color :#8b8b8b;font-size :14px;padding :5px;font-weight :normal;}
+.affliate-airline-bg .price {color :#4e4e4e;font-size :18px;padding :10px;line-height :40px;font-weight :normal;}
+.affliate-airline-bg .code {font-size :14px;color :#8b8b8b;padding :15px 8px;float :right;}
+.affliate-airline-bg .margin :last-child {border :none;}
+
+
+.msg_sucessfull {background: #279805; padding: 2px 5px;font-size: 12px;text-align: center;margin-top: 8px; width:100%; float:left; color:#fff; }
+.bottom-call-strip { padding:5px; background: #02a48d; bottom: -66px; left: 0px; color: #fff; position: fixed;  font-size: 15px; text-align: center; width: 100%; z-index:2; transition:all 0.5s ease 0s;} .bottom-call-strip a { color: #fff; text-decoration
+: none; }
+
+@media only screen and (max-width: 1169px){
+.container{width: 100%}
+
+}
+
+
+@media only screen and (max-width :979px) {
+.slick-slider {padding :0 15px}
+.discountPrice {width :256px;height :256px;padding :15px 25px}
+.discount_flight {font-size :18px;line-height :22px}
+.discount_top_text {line-height :26px}
+.discount_price {font-size :40px}
+.body-bg-gray {padding :12px}
+ .affliate-bg {padding-left :30px !important;}
+ .affilate-text {width :200px !important;}
+ .sign-up{margin:0px;} .login,.earn{padding:20px 0px;}.earn h4{margin:0 0 20px 0}
+	.sign-up .col h3{ margin:0 0 5px 0;} .sign-up .col p{ padding-bottom:10px; margin-bottom:10px;} .sign-up .col ul li{padding-bottom:5px;}
+.login .col .cj,.login .col .raku,.login .col .share { width:200px;}  .login .col p{padding:10px; min-height:95px;}
+.earn .col .commission-box{margin:0px 10px;}
+.affliate-deal-col{margin:25px 0px;}
+ .affiliate-popup{width:95%; height: auto;}
+ .banner-copon-bg { width:238px; left:515px;}
+ .banner-copon-bg h5 { font-size:24px;}
+
+}
+@media only screen and (max-width :767px) {/*.text-white {display :block}
+ */
+ .offer .pull-right{ float:left!important;}
+.deals-container {display :block!important}
+.city-heading {font-size :23px}
+.cityline__sub_text {font-size :18px;margin-bottom :10px}
+.cityline_head h2 {font-size :23px}
+.discountPriceBox {display :none}
+.cityline_head h1 {font-size :28px}
+h4.city-heading {margin-bottom :48px}
+.city_left_image {width :100%;padding-right :0}
+.city_right_image {width :100%;padding-left :0}
+.discalmer {padding :0}
+.affilate-block {height :70px}
+.search_engine {margin :90px 0 13px!important}
+.city_name {font-size :15px}
+ .affliate-airline-bg .margin {margin :0px;}
+ .affliate-top-border {padding :0px!important;}
+ .banner-image .heading{font-size:25px; margin-top:60px;}
+ .pramotion-section .row{margin:0;}
+ .sign-up .row, .login .row, .earn{margin:0px;}.sign-up .col{padding:20px 0 0 0;} .sign-up{padding:0px;}
+.login .col p{padding:10px; min-height:65px;}
+ .pramotion-section .col,.sign-up .col,.login .col,.earn .col{width:100%; margin-bottom:15px;}
+ .pramotion-section .col:before,.login .col:before{background:none;}
+.login .col{border-bottom:1px solid #bdbdbd;}
+
+.email-id{padding-bottom:10px;}
+.user-review{border-bottom:none;}
+.user-review .sm-4{width:100%; margin-bottom:20px; border-bottom:1px solid #ececec; padding-bottom:10px;}
+.affliate-deal-col{margin:0px;}
+.affiliate-popup {top:0px;}    
+.banner-copon-bg{ padding:3px 20px 10px 20px; position:static; left: 0px; top: 0px; width:auto; overflow:hidden; margin:-18px -16px 15px -16px; background:#f08527; color:#fff; }
+.banner-copon-bg h5 { font-size: 20px; padding: 0; border:none; }
+.banner-copon-bg p span { color:#fff; border:1px dashed #fff; padding:2px 5px; }
+.banner-copon-bg p { color:#fff; padding:2px; }
+#banner { background:#343434!important; }
+.affiliate-head h1 { padding:0px; font-size: 20px;}
+.banner-copon-bg .know-more{ margin-top:-22px; color:#fff;}
+.affiliate-popup .modal-body span { padding-top:15px;}
+.affiliate-popup .modal-body .popup-content { padding: 15px 0px; }
+.affiliate-popup .modal-body h4 { margin: 15px 0px; }
+.affiliate-rules { padding-bottom:0px;}
+.headerBox{ position:static;}
+ 
+ }
+@media only screen and (max-width :479px) {
+.cityline_head h1 {font-size :23px}
+.deal_book_btn {font-size :13px}
+.city-heading {font-size :20px;margin-bottom :5px}
+ .affliate-airline-bg .price {font-size :15px !important;}
+ .affliate-airline-bg .heading {font-size :15px !important;}
+ .affliate-airline-bg .travel-date {padding :5px 0px!important;}
+ .affiliate-popup .modal-body{ padding: 10px 20px;}
+ .deal_block{ font-size:13px!important;}
+ }

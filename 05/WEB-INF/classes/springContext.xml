@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xmlns:p="http://www.springframework.org/schema/p" xmlns:context="http://www.springframework.org/schema/context"
+ xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd 
+http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.0.xsd"> 
+
+<bean id = "api" class = "com.cff.utility.SpringContext"> 
+  <!--<property name="apiUrl" value = "http://devapi.cheapflightsfares.com"/> 
+
+   <property name="apiUrl" value = "http://testapi.cheapflightsfares.com"/> 
+       --> 
+<!-- <property name="apiUrl" value = "http://devapi.travatrap.com"/> -->
+<property name="apiUrl" value = "http://restapi.cheapflightsfares.com"/>
+<property name="macpAmt" value = "19.89"/> 
+<property name="seatAmt" value = "10.00"/> 
+<property name="carDamageAmt" value = "9.89"/> 
+
+<!-- <property name="apiUrl" value = "http://test.xpeditioners.com"/> -->
+
+ </bean> 
+ 
+  <bean id="taskExecutor" class="org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor">
+		<property name="corePoolSize" value="5" />
+		<property name="maxPoolSize" value="10" />
+		<property name="WaitForTasksToCompleteOnShutdown" value="true" />
+	</bean>
+	
+	<context:property-placeholder location="classpath:common.properties"/>
+	<bean id="commonProperties" class="com.cff.data.CommonAppData">
+	  <property name="apiUrl" value="${common.apiUrl}"/>
+	  <property name="macpAmt" value="${common.macpAmt}"/>
+	  <property name="seatAmt" value="${common.seatAmt}"/>
+	  <property name="carDamageAmt" value="${common.carDamageAmt}"/>
+      <property name="engineType" value ="${common.engineType}"/><!--v FOR vertical OR h FOR horizontal -->
+	  <property name="tfnNo" value ="${common.tfnNo}"/><!--Domain TFN Number -->
+	  <property name="instantDiscountAmt" value ="${common.instantDiscountAmt}"/>
+	  <property name="brbAmt" value ="${common.brbAmt}"/>
+	  <property name="tripmateAmtC" value ="${common.tripmateAmtC}"/>
+	  <property name="tripmateAmtF" value ="${common.tripmateAmtF}"/>
+	  <property name="brb" value= "${common.brb}"/>
+	  <property name="macp" value="${common.tripMate}"/>
+	  <property name="tripMate" value="${common.tripMate}"/>
+	  <property name="siteId" value ="Travelopick_UK"/>
+	  <!-- <property name="siteId" value ="${common.siteId}"/> --> <!--Domain CRM Name -->
+	  <property name="siteIdInt" value ="${common.siteIdInt}"/> <!--Domain CRM ID in Numeric-->
+	  <property name="siteName" value="${common.siteName}"/><!--Domain Name  Without .com or .org and sentence case -->
+	  <property name="domainName" value="${common.domainName}"/> <!-- With .com or .org and all in small letter -->
+	  <property name="supportMail" value ="${common.supportMail}"/> <!--Domain Mail  -->
+	  <property name="siteLogo" value ="${common.siteLogo}"/>
+	  <property name="copyright" value ="${common.copyright}"/><!--Domain Copy-Right  -->
+	  <property name="siteFooterName" value ="${common.siteFooterName}"/>
+	  <property name="address" value ="${common.address}"/> <!--Domain Address  -->
+ 	  <property name="fromEmail" value ="${common.fromEmail}"/><!--Domain Email  -->
+	  <property name="toEmail" value ="${common.toEmail}"/>
+	  <property name="ccEmail" value ="${common.ccEmail}"/>
+	  <property name="bccEmail" value ="${common.bccEmail}"/>
+	  <property name="siteUrl" value="${common.siteUrl}"/>
+	  <property name="hotel" value ="${common.hotel}"/> <!--Yes/No  -->
+	  <property name="flights" value ="${common.flights}"/> <!--Yes/No  -->
+	  <property name="cars" value ="${common.cars}"/> <!--Yes/No  -->
+	  <property name="hoteltab" value ="${common.hoteltab}"/> <!--Yes/No  -->
+	  <property name="flightstab" value ="${common.flightstab}"/> <!--Yes/No  -->
+	  <property name="carstab" value ="${common.carstab}"/> <!--Yes/No  -->
+	
+	</bean>
+ </beans>
+

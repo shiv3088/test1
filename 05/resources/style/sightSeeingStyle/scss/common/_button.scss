@@ -1,0 +1,318 @@
+.row{
+    &.no-gutters{
+        margin-right: 0;
+        margin-left: 0;
+        [class*=col-sm],[class*=col-xs]{
+            padding-right: 0;
+            padding-left: 0;
+        }
+    }
+}
+.btn {
+	@include transition(all .3s ease-out);
+	border-radius: 0;
+	&:hover{
+		background: lighten($cffred, 5%);
+	}
+} 
+
+.btn:focus {
+    outline: 0 !important;
+    outline-offset: 0  !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none  !important;
+}
+.removeTrip{
+    color: $cffred;
+    font-size: 12px;
+    border: 1px solid $cffred;
+    display: inline-block;
+    padding: 1px 4px;
+    &:hover{
+        border: 1px solid #939393;
+        color: #939393;
+    }
+}
+
+.car-button, .htl-button, .go2top, .cxl-btn{
+	background: $cffred;
+	color: #fff;
+	min-height: 23px;
+	padding: 5px 0 5px 0;
+	width: 100%; 
+	font-size: 16px;
+	&.top10{
+		margin-top: 10px;
+	}
+}
+
+.car-btnShowMore, .hotel-btnShowMore{
+	background: $green;
+	color: #fff;
+	width: 100%;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	&:hover{
+		background: darken($green , 10%);
+	}
+}
+
+.cr-btn-link{
+    color: $white;
+    outline: none;
+    background: transparent;
+    padding: 5px 10px;
+    border: 1px solid #908f8f;
+    margin-right: 10px;
+    @include breakpoint(screen-md){padding: 7px 10px;}
+    @include breakpoint(sm){border: none;}
+    @include breakpoint(xs){border: none;}
+    &.btn:hover{
+        color: $white;
+        outline: none;
+        background: transparent;
+    }
+    &.btn:focus, &.btn:active, &.btn:visited{
+        color: $white;
+        outline: none; 
+    }
+}
+
+.inputGroup {
+	.input-group-addon{
+		cursor: pointer;
+	}
+}
+
+
+.separator{
+    width: 100%;
+    height: 20px;
+}
+.cxl-btn-type-1{
+    padding: 15px;
+    background: $cffred;
+    text-transform: uppercase;
+    color: $white;
+    display: block;
+    width: 100%;
+    text-align: left;
+    position: relative;
+    .fa{
+        position: absolute;
+        right: 15px;
+        top: 20px;
+    }
+}
+.cxl-add2trip{
+    padding: 7px 25px 7px 10px;
+    background: $cffred;
+    text-transform: uppercase;
+    color: $white;
+    display: inline-block;
+    width: 100%;
+    text-align: left;
+    position: relative;
+    font-size: 12px;
+    letter-spacing: 1px;
+    &.yellow{
+        background: #fece00;
+    }
+    &.active{
+        background: #888;
+    }
+    .fa{
+        position: absolute;
+        right: 7px;
+        top: 9px; 
+    }
+
+}
+.itinerary-btn{
+    padding: 7px 20px 7px 20px;
+    background: $cffred;
+    text-transform: uppercase;
+    color: $white;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+.book-btn{
+    padding: 10px 20px 10px 20px;
+    width: 100%;
+    background: $cffgreen;
+    text-align: center; 
+    font-size: 18px;
+    &:hover{
+        background: darken($cffgreen, 10%); 
+    }
+}
+.modify-search-btn{
+    padding: 6px 10px;
+    background: $yellow;
+    text-transform: uppercase;
+    color: $gray;
+    display: inline-block;
+    text-align: left;
+    position: relative;
+    font-size: 12px;
+    letter-spacing: 1px;
+    text-align: center;
+    font-weight: bold;
+    width: 100%;
+    &:hover{
+        background: darken($yellow, 10%); 
+    }
+}
+
+.see-more{
+    text-align: right;
+    padding: 15px;
+    .see-more-btn{
+        padding: 7px 35px 7px 20px;
+        background: $white;
+        border: 1px solid $cffred;
+        text-transform: uppercase;
+        color: $cffred;
+        display: inline-block;
+        position: relative;
+        font-size: 12px;
+        letter-spacing: 1px;
+        width: auto;
+        @include breakpoint(xs){
+            width: 100%;
+        }
+        .fa{
+            position: absolute;
+            right: 7px;
+            top: 9px;
+            color: $cffred;
+        }
+        &:hover{
+            border: 1px solid #939393;
+            color: #939393;
+            .fa{
+                color: #939393;
+            }
+        }
+    }
+}
+
+
+.pay-now{
+    font-size: 14px;
+    background: $orangelight;
+    color: #ffffff;
+    text-transform: uppercase;
+    padding: 0 60px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    line-height: 40px;
+    width: 100%;
+    @include breakpoint(xs){padding: 0 12px; font-size: 13px;}
+    
+
+&:hover{background: $orange; color: $white;}
+}
+
+
+
+.navbar{
+    margin-bottom: 0;
+}
+.inputSet2 {
+    cursor: pointer;
+    label {
+    cursor: pointer;
+    font-weight: normal;
+    line-height: 18px;
+    margin-bottom: 0;
+    padding-left: 22px;
+    position: relative;
+    input {
+        opacity: 0;
+        position: absolute;
+        &[type="radio"] {
+        + span::after {
+            border: 2px solid #666;
+            border-radius: 50%;
+            content: "";
+            height: 18px;
+            left: 0;
+            position: absolute;
+            top: 0;
+            width: 18px;
+        }
+        &:checked + span {
+            &::after {
+            border: 2px solid #ff565c;
+            }
+            &::before {
+            background: #ff565c;
+            border-radius: 100%;
+            content: "";
+            display: block;
+            height: 6px;
+            left: 6px;
+            position: absolute;
+            top: 6px;
+            width: 6px;
+            }
+        }
+        }
+    }
+    }
+}
+
+
+
+.xlDesign {
+    position: relative;
+    &:before {
+      z-index: -1;
+      position: absolute;
+      content: "";
+      bottom: 15px;
+      left: 10px;
+      width: 50%;
+      top: 80%;
+      max-width: 300px;
+      background: #777;
+      -webkit-box-shadow: 0 15px 10px #777;
+      -moz-box-shadow: 0 15px 10px #777;
+      box-shadow: 0 15px 10px #777;
+      -webkit-transform: rotate(-3deg);
+      -moz-transform: rotate(-3deg);
+      -o-transform: rotate(-3deg);
+      -ms-transform: rotate(-3deg);
+      transform: rotate(-3deg);
+    }
+    &:after {
+      z-index: -1;
+      position: absolute;
+      content: "";
+      bottom: 15px;
+      left: 10px;
+      width: 50%;
+      top: 80%;
+      max-width: 300px;
+      background: #777;
+      -webkit-box-shadow: 0 15px 10px #777;
+      -moz-box-shadow: 0 15px 10px #777;
+      box-shadow: 0 15px 10px #777;
+      -webkit-transform: rotate(-3deg);
+      -moz-transform: rotate(-3deg);
+      -o-transform: rotate(-3deg);
+      -ms-transform: rotate(-3deg);
+      transform: rotate(-3deg);
+      -webkit-transform: rotate(3deg);
+      -moz-transform: rotate(3deg);
+      -o-transform: rotate(3deg);
+      -ms-transform: rotate(3deg);
+      transform: rotate(3deg);
+      right: 10px;
+      left: auto;
+    }
+  }

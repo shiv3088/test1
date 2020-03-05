@@ -1,0 +1,383 @@
+.component-footer {
+    background: #f3f3f3;
+    padding: 20px 0 0 0;
+    //margin-top: 15px;
+    @include breakpoint(xs){
+        padding: 0;
+    }
+    ul.list-group { 
+        box-shadow: none;
+    }
+
+    .list-group > .list-group-item {
+        a {
+            color: $gray;
+            font-size: 14px;
+
+            &:hover {
+                color: $violet;
+            }
+        }
+    }
+
+    .social-media-icon {
+        li {
+            margin-right: 15px;
+            a {
+                color: $gray;
+                font-size: 24px;
+
+                &:hover {
+                    color: $red;
+                }
+            }
+        }
+    }
+
+    .navbar-form {
+        padding: 0;
+        @include breakpoint(xs) {
+            margin: 0;
+        }
+
+        .form-group {
+            .input-lg,
+            .btn-lg {
+                font-size: 14px;
+            }
+            .btn-lg {
+                font-size: 14px;
+                @include breakpoint(xs) {
+                    width: 100%;
+                }
+            }
+        }
+
+        .pr2px {
+            padding-right: 2px !important;
+            input {
+                border: 0;
+            }
+        }
+
+        .pl2px {
+            padding-left: 2px !important;
+        }
+    }
+
+    .footer-heading {
+        font-size: 18px;
+        color: $violet;
+        text-transform: capitalize;
+        margin-bottom: 8px;
+        font-weight: 500;
+        font-family: 'Roboto', sans-serif;
+
+        @include breakpoint(xs) {
+            font-size: 14px;
+        }
+    }
+
+    .list-group-item {
+        border: none;
+        padding: 2px 0;
+        background: none;
+        color: $graylight;
+        line-height: 20px;
+
+        &:hover {
+            color: $red;
+        }
+
+        .subscribe {
+            padding: 5px 0;
+        }
+
+        .subscribe ul.social-network {
+            list-style: none;
+            display: inline;
+            margin-left: 0 !important;
+            padding: 0;
+        }
+
+        ul.social-network li {
+            display: inline;
+            margin: 0 3px;
+        }
+    }
+
+    .component-footer-content {
+        color: $gray;
+        font-size: 14px;
+        text-align: justify;
+        padding: 20px 0;
+        line-height: 18px;
+        a{
+            display: inline;
+        }
+        @include breakpoint(xs) {
+            font-size: 12px;
+            margin-top: 20px;
+            text-align: left;
+            padding: 0 20px;
+        }
+    }
+
+    .promotional-deal {
+        color: $gray;
+        margin-bottom: 15px;
+        clear: both;
+    }
+
+    .client-logos {
+        text-align: center;
+        padding: 20px 0 15px 0;
+
+        li {
+            background: url(/resources/images/crosssell-images/footer-logo.png) 0 0 no-repeat;
+            display: inline-block;
+            height: 46px;
+            margin: 0 5px;
+            // filter: $gray;
+            // filter: grayscale(1);
+            // -webkit-filter: grayscale(1);
+            // opacity: 0.85;
+
+            &.asta {
+                width: 85px;
+                background-position: -2px 50%;
+
+                &:hover {
+                    filter: none !important;
+                }
+            }
+
+            &.pactSafe {
+                width: 125px;
+                background-position: -89px 50%;
+
+                &:hover {
+                    filter: none !important;
+                }
+            }
+
+            &.trust {
+                width: 109px;
+                background-position: -222px 50%;
+
+                &:hover {
+                    filter: none !important;
+                }
+            }
+
+            &.arc {
+                width: 105px;
+                background-position: -344px 50%;
+
+                &:hover {
+                    filter: none !important;
+                }
+            }
+
+            &.v-secure {
+                width: 149px;
+                background-position: -445px 50%;
+
+                &:hover {
+                    filter: none !important;
+                }
+            }
+
+            &.moneris {
+                width: 99px;
+                background-position: -610px 50%;
+
+                &:hover {
+                    filter: none !important;
+                }
+            }
+
+            &.mastercard {
+                width: 55px;
+                background-position: -721px 50%;
+
+                &:hover {
+                    filter: none !important;
+                }
+            }
+
+            &.visa {
+                width: 80px;
+                background-position: -782px 50%;
+
+                &:hover {
+                    filter: none !important;
+                }
+            }
+
+            &.american {
+                width: 43px;
+                background-position: -870px 50%;
+
+                &:hover {
+                    filter: none !important;
+                }
+            }
+
+            &.diners {
+                width: 52px;
+                background-position: -925px 50%;
+
+                &:hover {
+                    filter: none !important;
+                }
+            }
+
+            &.true {
+                width: 106px;
+                background-position: -989px 50%;
+
+                &:hover {
+                    filter: none !important;
+                }
+            }
+        }
+
+        a {
+            display: inline-block;
+        }
+    }
+
+    // .copyright {
+    //     color: 666;
+    //     font-size: 14px;
+    //     padding: 20px 0 0 0;
+    //     text-align: center;
+
+    //     @include breakpoint(sm) {
+    //         margin-bottom: 90px;
+    //     }
+
+
+    //     @include breakpoint(xs) {
+    //         margin-bottom: 60px;
+    //     }
+    // }
+
+    .footer-copyright{
+        width: 100%;
+        padding: 12px;
+        text-align: center;
+        color: #9c9c9c;
+        background: #ededed;
+        margin-bottom: 0px;
+        @include breakpoint(xs){
+            margin-bottom: 30px;
+        }
+        .copyright{
+            margin-bottom: 0;
+            font-size: 12px;
+            @include breakpoint(xs){
+                margin-bottom: 30px;
+            }
+            a{
+                color: $green;
+                display: inline;
+            }
+        }
+    }
+
+    .foot-links {
+        .promotional-deal {
+            font-size: 12px;
+        }
+    }
+}
+
+.bottom-call-bar {
+    background: gray;
+    bottom: -50px;
+    color: $white;
+    position: fixed;
+    width: 100%;
+    z-index: 5;
+
+    @include breakpoint(xs) {
+        bottom: 0px;
+        transition: all 0.5s ease 0s;
+    }
+
+
+    .text {
+        color: $white;
+        padding: 5px 0;
+        font-size: 12px;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    a {
+        background: $violet;
+        color: $white;
+        display: block !important;
+        font-size: 13px;
+        font-weight: bold;
+        padding: 10px;
+        text-align: center;
+        border-top: 1px solid lighten($violet, 4);
+
+        @include breakpoint(xs) {
+            padding: 10px 0 !important;
+            font-weight: normal;
+        }
+
+
+        &:hover {
+            background: $red;
+        }
+    }
+}
+
+.call-click a {
+    background: lighten($black, 20);
+    border: 0;
+    color: $white;
+    cursor: pointer;
+    float: right;
+    font-size: 20px;
+    width: 80px;
+
+    &:hover {
+        background: $red;
+    }
+}
+
+.subscribe-input {
+    border: 1px solid $graylight;
+    height: 50px;
+    line-height: 20px;
+    width: 100% !important;
+    font-style: italic;
+    padding-left: 10px;
+}
+
+.subscribe-submit {
+    background: $red;
+    color: $white;
+    height: 50px;
+    line-height: 20px;
+    width: 100% !important;
+}
+
+.android {
+    font-size: 22px;
+}
+
+#lhc_status_container {
+    background: $violet !important;
+    border: 0 !important;
+
+    a {
+        color: $white !important;
+    }
+}

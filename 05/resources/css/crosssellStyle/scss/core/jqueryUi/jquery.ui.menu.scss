@@ -1,0 +1,96 @@
+.ui-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: block;
+    outline: none; 
+
+    .ui-menu {
+        margin-top: -3px;
+        position: absolute;
+    }
+
+    .ui-menu-item {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        position: relative;
+
+        a {
+            text-decoration: none;
+            display: block !important;
+            padding: 10px 15px 10px 25px;
+            border-bottom: 1px solid #eee;
+            line-height: 1.5;
+            min-height: 0;
+
+            /* support: IE7 */
+            font-weight: normal;
+
+            &.ui-state-focus, &.ui-state-active {
+                font-weight: normal;
+                color: $white;
+                background: #f77f1e;
+                outline: none;
+            }
+
+            &:hover {
+                color: $white !important;
+                background: #f77f1e;
+                outline: none;
+            }
+
+            &:focus {
+                color: $white !important;
+                background: #f77f1e;
+                outline: none;
+            }
+        }
+
+        /* support: IE10, see #8844 */
+    }
+
+    .ui-menu-divider {
+        margin: 5px -2px 5px -2px;
+        height: 0;
+        font-size: 0;
+        line-height: 0;
+        border-width: 1px 0 0 0;
+    }
+
+    .ui-state-disabled {
+        font-weight: normal;
+        margin: .4em 0 .2em;
+        line-height: 1.5;
+
+        a {
+            cursor: default;
+        }
+    }
+}
+
+/* icon support */
+
+.ui-menu-icons {
+    position: relative;
+
+    .ui-menu-item a {
+        position: relative;
+        padding-left: 2em;
+    }
+}
+
+/* left-aligned */
+
+.ui-menu {
+    .ui-icon {
+        position: absolute;
+        top: .2em;
+        left: .2em;
+    }
+
+    .ui-menu-icon {
+        position: static;
+        float: right;
+    }
+}

@@ -1,0 +1,75 @@
+.flag-icon-background {
+  background-size: contain;
+  background-position: 50%;
+  background-repeat: no-repeat;
+}
+.flag-icon {
+  background-size: contain;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  position: relative;
+  display: inline-block;
+  width: 1.33333333em;
+  line-height: 1em;
+  margin-right:4px;
+  font-size:14px;
+}
+.flag-icon:before {
+  content: "\00a0";
+}
+.flag-icon.flag-icon-squared {
+  width: 1em;
+}
+.flag-icon-aed {
+  background-image: url(/resources/flight-result/images/flags/4x3/ae.svg);
+}
+.flag-icon-aud {
+  background-image: url(/resources/flight-result/images/flags/4x3/au.svg);
+}
+.flag-icon-cad {
+  background-image: url(/resources/flight-result/images/flags/4x3/ca.svg);
+}
+.flag-icon-cny {
+  background-image: url(/resources/flight-result/images/flags/4x3/cn.svg);
+}
+.flag-icon-gbp {
+  background-image: url(/resources/flight-result/images/flags/4x3/gb.svg);
+}
+.flag-icon-hkd {
+  background-image: url(/resources/flight-result/images/flags/4x3/hk.svg);
+}
+.flag-icon-inr {
+  background-image: url(/resources/flight-result/images/flags/4x3/in.svg);
+}
+.flag-icon-jpy {
+  background-image: url(/resources/flight-result/images/flags/4x3/jp.svg);
+}
+.flag-icon-mxn {
+  background-image: url(/resources/flight-result/images/flags/4x3/mx.svg);
+}
+.flag-icon-sgd {
+  background-image: url(/resources/flight-result/images/flags/4x3/sg.svg);
+}
+.flag-icon-usd {
+  background-image: url(/resources/flight-result/images/flags/4x3/us.svg);
+}
+.flag-icon-zar {
+  background-image: url(/resources/flight-result/images/flags/4x3/za.svg);
+}
+.flag-icon-eur {
+  background-image: url(/resources/flight-result/images/flags/4x3/eu.svg);
+}
+.flag-icon-chf {
+  background-image: url(/resources/flight-result/images/flags/4x3/ch.svg);
+}
+/* start content css */
+.cad.fa-dollar:before{content:"C"; font-weight:bold; font-style:normal;}
+.fa-zar:after{content:"R"; font-weight:bold; font-style:normal;}
+.fa-aed:after{content:"AED"; font-weight:bold; font-style:normal;}
+.fa-cad:after {content: "C\f155"; padding-left:2px;}
+.dropdown-menu > li > a.currency-detail{margin:3px 0px; font-size:13px; padding:5px 8px;}
+.dropdown-menu > li > a.currency-detail:focus, .dropdown-menu > li > a.currency-detail:hover{background:#ff9361; color:#fff; border-radius:3px;}
+.fa-aud:before,.fa-hkd:before,.fa-sgd:before,.fa-mxn:before  {content: "\f155";}
+.fa-chf:after{content:"CHF"; font-weight:bold; font-style:normal;}
+
+

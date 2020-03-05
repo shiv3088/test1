@@ -1,0 +1,32 @@
+/* ### general ### */
+* { margin: 0px; padding: 0px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+html, body { font-family: Arial; font-size: 12px; color: #000; }
+input, select, textarea { font-family: Arial; font-size: 12px; color: #000; }
+body { background: #fff; }
+img { border: 0px;  }
+ul, li { list-style: none; }
+:focus { outline: none; }
+
+
+/* ### global classes ### */
+.clear { clear: both; visibility: hidden; line-height: 0; height: 0; }
+.center { margin: 0 auto; max-width: 1200px; position: relative; }
+
+
+
+/* ###pop up ### */
+
+.popupBox { width:400px; margin: 0px auto; }
+.popupBox .head{ padding: 8px 0px; background: #e7e8ea; text-align: center;}
+.popupBox .banner { height:300px; background: url(../images/banner-bg.jpg) left top no-repeat; color: #fff; text-align: center;  background-size:cover;}
+.popupBox p { padding: 12px 0px 122px 0px; font-size:20px; }
+.popupBox .call-now { padding: 0px 0px 20px 0px; font-size: 26px; font-weight:bold; text-transform: uppercase; text-shadow:1px 1px 1px #000;}
+.popupBox .discount { max-width:225px; margin: 0px auto; border-bottom:1px solid #8288ac; padding: 0px 0px 7px 0px; font-size: 20px; line-height:30px; }
+.popupBox .discount span { font-size: 26px; font-weight:bold;}
+.popupBox .phone { padding: 7px 0px 0px 0px; font-size: 26px; color: #f9d505; font-weight: bold; text-align: center; line-height:30px; }
+.popupBox .phone span { font-size: 16px; color: #fff; font-weight:normal; }
+

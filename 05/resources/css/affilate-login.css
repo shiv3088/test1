@@ -1,0 +1,287 @@
+
+
+
+/* phone call option start css here */
+.phonefuter {background-color:#000000 !important;border: medium none;height: 75px;min-height: 93px;padding: 4px 0;text-align: center;z-index: 40;}
+.futerphonetag {background-color:#fff;color: #ff5400;font: bold 13px/16px Arial;padding: 7px 0;text-align: center;}
+.futerphonebutton {background-color: #083f66;border: 1px solid #fff;border-radius: 7px;box-shadow: 3px 3px 5px #07344b;color: #fff;display: inline-block;font: bold 16px/16px Arial;margin: 8px 0 0;padding: 11px 17px;}
+
+
+
+/* affilate login style start here */
+.banner-image {background:url(/resources/images/affiliate/affilate-banner.jpg) no-repeat center; height:600px;}
+.banner-image .tag1{font-size: 40px; margin-top: 173px; color: #fff;}
+.banner-image .tag2{font-size: 30px; margin-top: 26px; color: #fff; font-family: roboto; font-weight: 200;}
+
+.how-it-works{background:#fff; padding:40px 0;}
+.free-sign{background:#ebebeb; padding:40px 0;}
+.affiliateprogram{background:#fff; padding:40px 0;}
+.location{background:#ebebeb; padding:40px 0;}
+
+
+/* ### Pramotion box  ###*/
+.pramotionBox { padding-bottom:; width:100%; overflow:hidden;}
+.pramotionBox h2 { margin:0px; font-size:20px; color:#fff; text-transform:uppercase; text-align:center; font-weight:bold; line-height:38px; background:#2b2b2b; }
+.pramotionBox .content { padding:25px 0px; width:100%; overflow:hidden;}
+.pramotionBox .content p {  margin:0px; padding-bottom:17px; font-size:14px; color:#282828; line-height:23px;}
+.pramotionBox  .affiliate-program { width:100%;}
+.pramotionBox  .affiliate-program .it-works-sec { padding: 50px 0 0 77px;}
+.pramotionBox  .affiliate-program .it-works {margin: 0px; padding-bottom: 0px;font-size: 30px;color: #000;font-family: Myriad Pro;font-weight: 600;}
+.pramotionBox  .affiliate-program .it-works-con {font-family: Myriad Pro;font-size: 16px;font-weight: 300;padding: 5px 0; color: #7b7b7b;}
+.pramotionBox  .affiliate-program h3 { margin:0px;  padding-bottom:23px; font-size:26px; color:#1a6094; text-transform:uppercase; font-weight:bold; }
+.pramotionBox  .affiliate-program p { margin:0px;  padding-bottom:12px; font-size:14px; color:#6d6d6d; line-height:22px;}
+.pramotionBox  .affiliate-program ul { margin:0px; padding:15px 11px; overflow:hidden; }
+.pramotionBox  .affiliate-program li {font-size: 15px; color: #6d6d6d; line-height: 22px;position: relative;padding: 11px 53px; font-weight: 300;font-family: roboto;background: url(/resources/images/affiliate/right-icon.png) no-repeat; background-position: 9px 7px;}
+.pramotionBox  .affiliate-program li span { position:absolute; top:0; left:0;}
+.pramotionBox  .affiliate-program ul.blue li {color:#1a6094; } 
+.pramotionBox  .affiliate-program li a { margin-left:10px; color:#1a6094; text-decoration:none;}
+.pramotionBox .affiliate-program li a:hover { color:#c95b05; }
+.pramotionBox .affiliate-program .heading { font-size: 32px;line-height: normal;font-weight: 300;font-family: roboto; }
+.pramotionBox .affiliate-program  .line {width:90px; height:3px; background:#00a6ba;  margin:15px 0 0 0;} 
+.pramotionBox .affiliate-program .headline {font-size: 16px; line-height: normal;font-weight: 400;font-family: roboto; padding: 20px 0;}
+.pramotionBox .affiliate-program .offer { font-size: 22px;font-weight: 300;font-family: roboto; color:#00a6ba; }
+.pramotionBox  .affiliate-login { width:100%; background:#ebebeb; }
+.pramotionBox  .affiliate-login  .title { padding:15px 30px; font-size:20px; color:#fff; text-align:center; line-height:25px;  background:#00a6ba; }
+.pramotionBox  .affiliate-login  .linkshare{text-align: center; padding: 18px 0; font-family: Roboto; font-size: 14px;}
+.pramotionBox  .affiliate-login .image{ text-align:center; padding:10px 0 ;}
+.pramotionBox  .affiliate-login .image1 { padding-top:60px; }
+.pramotionBox  .affiliate-login .signup-now{ text-align:center; padding:43px 20px ;}
+.pramotionBox  .affiliate-login .img{ width:100%; }
+
+.pramotionBox  .work-aerrow{position: absolute; padding: 38px 0 0 177px;}
+.pramotionBox  .sign-up-image{text-align:center;}
+.pramotionBox  .sign-up-heading{ text-align:center; font-family:roboto; font-size:20px; padding: 10px 0 2px 0;}
+.pramotionBox  .sign-up-con{text-align:center; font-family:Roboto ; font-size:15px; font-weight:300;}
+.affiliate-logo { position:absolute; left:8px; top:8px;}
+
+.pramotionBox  .affiliate-login .btn{line-height: 30px; margin-right: 25px;width: 25%; border-radius: 4px; text-align: center;font-size: 14px; color: #fff;text-decoration: none;background: #f07d00; transition: all 0.8s ease 0s; text-shadow: 1px 1px 1px #c96e13;}
+.pramotionBox  .affiliate-login .btn:hover{background:#c95b05; color#fff !important;}
+
+.pramotionBox  .affiliate-login .btn25{line-height: ; padding: 13px 45px; width: 25%;border-radius: 4px;text-align: center; border: #f07d00 1px solid;font-size: 14px; color: #f07d00; transition:all 0.8s ease 0s;}
+.pramotionBox  .affiliate-login .btn25:hover{background:#c95b05; color:#fff !important; text-shadow: 1px 1px 1px #c96e13;}
+
+.toll-free{font-size:26px; font-weight:700; }	
+	
+/* ### Pramotion box  ###*/
+.pramotion-fareBox { padding-bottom:20px; width:100%; overflow: hidden; }
+.pramotion-fareBox-bg{ border:1px solid #00a6ba; }
+.pramotion-fareBox h2 { padding:15px; margin:0px; font-size:18px; font-family:Roboto; color:#fff; background:#00a6ba;}
+.pramotion-fareBox .right { float:right;}
+.pramotion-fareBox ul { list-style:none; margin:0 !important;}
+.pramotion-fareBox li { padding:20px 15px; color: #000; font-family: Roboto; background: #fff; font-size: 18px; font-weight: 400; width:100%; overflow: hidden;  border-top:1px solid #cdcccc; }
+.pramotion-fareBox .target-location {font-size:30px; font-family: Roboto; font-weight: 300; margin-bottom:7px;} 
+.pramotion-fareBox .state {font-size:17px; font-family: Roboto; font-weight: 400; margin-bottom:10px;} 
+.pramotion-fareBox .line {width:90px; height:3px; background:#00a6ba;  margin:20px 0 0 0;} 
+.pramotion-fareBox .a-plane-icon{background:url(/resources/images/affiliate/a-plane-icon.png) no-repeat; width:15px; height:16px;}
+.pramotion-fareBox .a-hotel-icon{background:url(/resources/images/affiliate/a-hotel-icon.png) no-repeat; width:17px; height:18px;}
+.pramotion-fareBox .flight-bg{    background: #f0f0f0; color: #000; font-family: Roboto;font-size: 18px; font-weight: 400;}
+.pramotion-fareBox .blue { color:#1a6094; }
+.pramotion-fareBox .content { padding:30px 0px 0px 0px; }
+.pramotion-fareBox h3 { font-size:20px; color:#282828; }
+.pramotion-fareBox p { font-size:14px; color:#282828; line-height:25px; margin-bottom: 15px; }
+
+/* affilate login style end here */
+
+
+
+
+
+@media only screen and (max-width : 1200px)
+{
+	
+.left-menu{font-size:14px;}
+.toll-free{ font-size:18px;}
+
+.pramotionBox  .work-aerrow{position: absolute; padding: 38px 0 0 140px;}
+
+}
+
+
+@media only screen and (max-width : 990px)
+{
+	
+.right-menu{float:left;}
+
+}
+
+
+@media only screen and (max-width : 767px)
+{
+	.logo { padding:5px 12px;}
+.navbar-fixed-top { background:#fff;}
+.main-menu { padding-bottom:10px; background:#fff; overflow:hidden; border-bottom:2px solid #f08100!important; }
+.left-menu li { padding-bottom:0px;}
+.left-menu li a { padding:8px;}
+.right-menu { float:left; margin:0px!important; }
+.right-menu  li { border:none;}
+.navbar-default .navbar-toggle { border-color:#f37f00; border-radius:0px; background:#f37f00;}
+.navbar-default .navbar-toggle .icon-bar { background-color:#fff!important; }
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {border-color:#b64906; background:#b64906; }
+.banner-image {background-position:center 70px;}
+.nav-hed { padding-bottom:0px;}
+.header-top { border: none!important;}
+
+
+
+}
+
+
+.home-app {
+    border: 1px solid #c7c7c7;
+    display: inline-block;
+    height: auto;
+    min-height: 267px;
+    padding-bottom: 17px;
+    padding-left: 8px;
+    width: 100%;
+}	  
+	
+}
+
+ /*Login css Start here*/
+
+#login-dp{
+    min-width: 250px;
+    padding: 14px 14px 0;
+    overflow:hidden;
+    background-color:rgba(255,255,255,.8);
+}
+#login-dp .help-block{
+    font-size:12px    
+}
+#login-dp .bottom{
+    background-color:rgba(255,255,255,.8);
+    border-top:1px solid #ddd;
+    clear:both;
+    padding:14px;
+}
+#login-dp .social-buttons{
+    margin:12px 0    
+}
+#login-dp .social-buttons a{
+    width: 49%;
+}
+#login-dp .form-group {
+    margin-bottom: 10px;
+}
+.btn-fb{
+    color: #fff;
+    background-color:#3b5998;
+	padding:0px 25px; width:100%;
+	float:left;cursor:pointer;
+}
+.btn-fb:hover{
+    color: #fff;
+    background-color:#496ebc 
+}
+.btn-tw{
+    color: #fff;
+    background-color:#55acee;
+	padding:0px 25px; width:100%;
+	float:left;cursor:pointer;
+}
+.btn-tw:hover{
+    color: #fff;
+    background-color:#59b5fa;
+} .social-buttons a {color:#fff !important; margin-bottom:10px;} .dropdown-menu {background-color:#fff !important;} 
+
+.log-up{ border:none; padding-bottom:0px;} .log-dwn{ border:none; padding-top:0px;} .log-clos{opacity:1; font-size:30px;} .send{ color:#fff; margin-top:15px;}  .text-b{color:#000;}
+.check label{color:#000; font-size:14px!important;}
+
+button.close {
+    padding: 0 20px !important;
+    position: absolute;
+    right: 0;
+    z-index: 9;
+}   
+.btn-info {
+    background: #333 none repeat scroll 0 0 !important;
+    border: 1px solid #000 !important;
+    color: #fff !important;
+    font-size: 15px !important;
+    padding: 11px !important;
+    text-transform: uppercase !important;
+}
+
+@media(max-width:768px){
+    #login-dp{
+        background-color: inherit;
+        color: #fff;
+    }
+    #login-dp .bottom{
+        background-color: inherit;
+        border-top:0 none;
+    }
+	
+.affiliate-login{margin-top:20px;}
+ .pramotion-fareBox-bg{margin-top:20px;}
+ .pramotionBox .affiliate-program .it-works-sec{padding:0; margin-bottom:25px; text-align:center; }
+ .pramotionBox .sign-up-con{margin-bottom:20px;}
+ .pramotionBox  .work-aerrow{position: absolute; padding: 38px 0 0 168px;}
+ .pramotionBox .affiliate-login .image1{padding-top:0;}
+ .pramotionBox .affiliate-login .btn25{width:44%;padding:17px 65px;}
+}
+
+
+
+@media(max-width:360px){
+ .affiliate-login{margin-top:20px;}
+ .pramotion-fareBox-bg{margin-top:20px;}
+ .banner-image .tag1{color: #fff;font-size: 27px;margin-top: 508px;}
+ .banner-image .tag2{color: #fff;font-size: 16px; margin-top: 8px;}
+ .pramotionBox .affiliate-program .it-works-sec{padding:0; margin-bottom:25px; text-align:center; }
+ .pramotionBox .sign-up-con{margin-bottom:20px;}
+ .pramotionBox .affiliate-program .heading{font-size:21px;}
+ .pramotionBox .affiliate-login .image1{padding-top:0;}
+ .pramotionBox .affiliate-login .btn{width:44%;}
+ .pramotionBox .affiliate-login .btn25{width:44%;padding:17px 37px;}
+ .pramotion-fareBox .flight-bg{font-size:15px;}
+ .discalmer{padding: 0 0 21px;}
+ .banner-image {background:url(/resources/images/affiliate/mobile-banner.jpg) no-repeat ; height:600px;}
+}    
+
+/*Login css End here*/
+
+.statcounter {display:none;}
+
+
+/* added to  .nav */
+.normal {
+xheight: 85px; /*padding:10px 15px 0;*/ /* this causes drop down to lose color ??? */
+-webkit-transition: 0.5s;
+-moz-transition: 0.5s;
+-ms-transition: 0.5s;
+transition: 0.5s;
+}
+
+.normal .navbar-right {
+/*padding-top: 12px;*/
+-webkit-transition: 0.5s;
+-moz-transition: 0.5s;
+-ms-transition: 0.5s;
+transition: 0.5s;
+}
+.navbar-brand {
+padding: 0px !important;
+}
+.navbar-brand img {
+padding: 5px;
+max-height: 85px;
+-webkit-transition: 0.5s;
+-moz-transition: 0.5s;
+-ms-transition: 0.5s;
+transition: 0.5s;
+}
+
+
+blockquote {
+    border-left: none!important;
+    font-size: 17.5px;
+    margin: 0 0 20px;
+    padding: 10px 14px;
+} 
+
+.pri_btn_left{background-image:none!important; margin-left:88%; width:15px; margin-top:20%;} .pri_btn_left i,.pri_btn_right i{color:#000;} .pri_btn_right{background-image:none!important;width:15px!important;margin-top:20%;} .customer_revi{border:1px solid #d6d6d6; margin-bottom:30px; width:100%; float:left; min-height:232px; height:auto;} .coustomer_reiv_bg{background-color:#f1f1f1; padding:15px 10px; font-size:20px; color:#31609f;} .sing_up{display:inline!important;}
+.flights-to {color: #333;font-size: 16px;margin-bottom: 0;} .toll-free{font-size:22px; font-weight:700;}.res-block{ margin:2px 0px; border-bottom:1px dotted #ccc;} .res-block img{ margin-top:10px;}
+
+

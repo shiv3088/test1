@@ -1,0 +1,285 @@
+.park-n-fly-component {
+    .park-n-fly-SearhEngine {
+        padding: 15px 15px 15px 15px;
+        margin-bottom: 40px;
+        background: $violet;
+        position: relative;
+        @include breakpoint(xs) {
+            padding: 15px 15px 15px 15px;
+        }
+
+        .pnfModifysearch {
+            margin-top:10px;
+        }
+        .cr-result-list {
+            margin-bottom: 0px;
+            overflow: hidden;
+            clear: both;
+            li {
+                float: none;
+                font-size: 13px;
+                padding: 5px 0;
+                margin-right: 20px;
+                &:nth-child(1) {
+                    width: auto;
+                }
+                &:nth-child(2) {
+                    width: auto;
+                }
+                &:nth-child(3) {
+                    width: auto;
+                }
+                &:nth-child(4) {
+                    width: auto;
+                }
+                &:nth-child(5) {
+                    width: auto;
+                }
+                &:nth-child(6) {
+                    width: auto;
+                }
+                @include breakpoint(xs) {
+                    float: left;
+                    font-size: 12px;
+                    padding: 2px 0;
+                    margin-right: 0px;
+                    &:nth-child(1) {
+                        width: 100%;
+                    }
+                    &:nth-child(2) {
+                        width: 60%;
+                    }
+                    &:nth-child(3) {
+                        width: 40%;
+                    }
+                    &:nth-child(4) {
+                        width: 60%;
+                    }
+                    &:nth-child(5) {
+                        width: 40%;
+                    }
+                    &:nth-child(6) {
+                        width: 50%;
+                    }
+                }
+            }
+        }
+        .data1 {
+            color: $white;
+        }
+        .data2 {
+            color: lighten($black, 60%);
+        }
+
+        // .pnf-destination-search {
+        //     margin-left: 0;
+        //     margin-right: 0;
+        //     margin-bottom: 15px;
+        // }
+
+        [class*=col-sm] {
+            padding-left: 2px;
+            padding-right: 2px;
+        }
+        .form-group {
+            margin-bottom: 0;
+            @include breakpoint(xs) {
+                margin-bottom: 5px;
+            }
+
+            @include breakpoint(sm) {
+                margin-bottom: 5px;
+            }
+            .form-control {
+                height: 40px;
+            }
+            select,
+            input[type=text] {
+                border-radius: 0;
+                padding: 10px 13px;
+            }
+        }
+    }
+	.pnf-map {
+        margin-bottom: 20px;
+		@include breakpoint(xs) {
+                margin-bottom:15px;
+            }
+	}
+    .pnf-services{
+        margin-right: 0;
+        margin-left: 0;
+        padding: 10px 0px 0 0;
+        font-size: 13px;
+         
+    }
+    .pnf-repeater {
+        margin-bottom: 50px;
+        background: $white;
+        position: relative;
+        .pnf-icon{
+            position: absolute;
+            top: -35px;
+            left: -18px;
+            color: $red;
+            font-size: 60px;
+            &:after{
+                content: attr(data-index);
+                position: absolute;
+                background: #fff;
+                color: #333;
+                top: 10px;
+                left: 20px;
+                font-size: 14px;
+                font-weight: bold;
+                border-radius: 50%;
+                height: 20px; line-height: 20px;
+                width: 20px;
+                text-align: center;
+                font-family: 'roboto';
+            }
+        }
+        @extend .xlDesign;
+        .pnf-header {
+            border-bottom: 1px solid $red;
+            margin: 0;
+            position: relative;
+            overflow: hidden;
+            .pnf-logo{
+                display: inline-block;
+                margin-top: 10px;
+            }
+            div.pnfName {
+                margin: 0;
+                padding: 10px;
+                font-size: 22px;
+                font-weight: bold;
+                @include breakpoint(xs) {
+                    font-size: 18px;
+                }
+                small {
+                    font-size: 14px;
+                    font-weight: normal;
+                    display: block;
+                    @include breakpoint(xs) {
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+
+        .pnf-body {
+            margin: 0;
+            padding-top: 15px;
+            padding-bottom:15px; 
+            position: relative;
+            border-bottom: 1px dotted lighten($graylight, 5);
+            @include breakpoint(xs) {
+                padding-top: 10px;
+                padding-bottom: 10px;
+            }
+            .location{
+                padding-left:10px;
+                margin-bottom:5px;
+                strong{
+                    padding-bottom:5px;
+                    display: inline-block;
+                }
+                .text-orange{
+                    color:$red;
+                }
+				.parking-type {
+                    font-size:16px;
+						@include breakpoint(xs) {
+							font-size:14px;
+						}
+                    }
+                    
+                    .bulet-points {
+                        
+                        span {
+                            padding-left: 20px;
+                            margin-right:20px;
+                            display: block;
+                            width: 143px; 
+                            float: left;
+
+                            &::before {
+ 
+                                position:absolute;
+                                margin-left: -20px;
+                                font-family: 'FontAwesome';
+                                 content: "\f00c";
+                                 color:$red;
+                            }
+
+                            @include breakpoint(xs) {
+                                display: block;
+                                width: 100%;
+                                float: none;
+                            }
+                        }
+
+                    }
+            }
+			
+				
+            .pnfSelectPrice {
+                padding-top: 5px;
+                padding-bottom: 5px;
+                font-size: 40px;
+                .fa-usd {
+                    font-size: 20px;
+                    @include breakpoint(xs) {
+                        font-size: 20px;
+                    }
+                }
+                .price {
+                    margin: 0;
+                    font-size: 34px;
+                    color: lighten($red, 5%);
+                    @include breakpoint(xs) {
+                        font-size: 30px;
+                    }
+                    .total-charge {
+                        font-size: 16px;
+                        color: $gray;
+
+                        .fa {
+                            font-size: 14px;
+                        }
+                    }
+                }
+                small {
+                    color: lighten($gray, 30);
+                    display: inline-block;
+                    padding-bottom: 5px;
+                    font-size: 12px;
+                    margin-left: -23px;
+
+                    @include breakpoint(xs) {
+                        font-size: 12px;
+                    }
+                }
+
+                sup {
+                    top: -13px;
+                    font-size: 14px;
+
+                    @include breakpoint(xs) {
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+    }
+    .pnfBooking-cost { 
+        padding-left: 15px;
+        margin-bottom: 20px;
+        @include breakpoint(xs) {
+            border-left: 0;
+            padding-left: 0px;
+            margin-bottom: 10px;
+        }
+    }
+}

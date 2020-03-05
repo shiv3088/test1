@@ -1,0 +1,1357 @@
+.component-sightSeeing-detail{  
+
+    background: #eee;
+    font-family: 'Roboto', sans-serif, sans-serif;
+    .go-back{ background: $orange; color: #fff; margin: 10px 0 9px 0}
+    .detail-view{
+   padding: 5px 0 25px 0;
+    
+   .detail{
+    
+    margin-bottom: 10px;
+    background: #fff;
+    padding: 10px;
+    border: 1px solid #e0e0e0;
+    
+    @include breakpoint(sm){margin-bottom: 0px;}
+
+    h3{ 
+        margin-top: 0;
+        font-size: 17px;
+        font-weight: 600;
+        margin-bottom: 15px;
+
+        @include breakpoint(screen-sm){font-size: 20px; font-weight: bold;}
+    }
+      
+       .attraction{
+            
+        margin-bottom: 25px;
+                   
+         .attraction-name {    
+                color: $orange;
+                margin: 0 0 0 0;
+                font-size: 20px;
+                white-space: nowrap;
+                max-width: 100%;
+                overflow: hidden;
+                text-overflow: ellipsis; 
+                @include breakpoint(screen-sm) { 
+                    font-size: 18px;
+                    overflow: auto;
+                    white-space: normal;
+                }
+                a{
+                    color: #4d4d77;
+                    &:hover{
+                        color: $orangelight;
+                    }
+                }
+            }
+            
+           
+      .location{
+          font-size: 16px;
+          color: #797979;
+           }
+           
+      .detail-review{
+        
+        margin: 20px 0 0 0;
+        padding: 5px 0 5px 0;
+        @include breakpoint(screen-xs) {
+            margin: 10px 0 0 0 ;
+        }
+ li {
+    font-size: 16px;
+    border-right: 1px solid #9b9b9b; 
+    padding: 0 10px 0 0;
+    color: #848484;
+    float: left;
+    margin-right: 5px;
+    line-height: 14px;
+    margin-bottom: 10px;
+
+    @include breakpoint (screen-md) {
+        border-right: 0;
+    }
+
+     .fa-clock-o { color: $orange; }
+     
+     .star-detail{
+               
+               
+               .fa-star{ font-size: 15px; color: #febf00; line-height: 11px;}
+               .fa-star-o{ font-size: 15px; color: #c3bebe; line-height: 11px;}
+               .fa-star-half-o{font-size: 15px; color: #febf00; line-height: 11px;}
+           }
+     span{color: $gray;}
+     
+ &:last-child {border-right:none;}
+ 
+}
+
+}
+    
+.detail-fares-sec {
+    text-align: right;
+    margin: 0 0 0 0;
+    padding: 10px 15px;
+    line-height: 1.2em;
+    border-left: 1px solid #ddd;
+    
+    .check-my-activity{
+        position: absolute;
+        margin-top: -81px;
+        z-index: 999;
+        right: 24px;
+        
+        .activity{
+            font-size: 12px;
+            color: #4d4d77;
+            text-transform: uppercase;
+            padding: 0 13px;
+            font-weight: bold;
+            letter-spacing: 2px;
+            line-height: 32px;
+            margin-bottom: 10px;
+            background: none;
+            border: 1px solid #4d4d77;
+            text-align: right;
+        }
+    }
+    
+    .fare{
+        color: #4d4d77;
+        font-size: 30px;
+        margin-bottom: 15px;
+        text-align: right;
+        
+        span{
+            font-size: 16px;
+            color: #8f8e8e;
+            font-weight: 600;
+        }
+    } 
+    
+     
+    
+    .select-result{
+        font-size: 14px;
+        background: #ff565c;
+        color: #ffffff;
+        text-transform: uppercase;
+        padding: 0 24px;
+        font-weight: bold;
+        letter-spacing: 2px;
+        line-height: 40px;
+        margin-bottom: 10px;
+        
+        &:hover{background: #4d4d77;}
+    }
+     
+  }
+           
+   
+
+ }
+
+ 
+ 
+       
+.attraction-detail {  
+            
+
+          .hotel-slider{
+            padding: 20px 0 0 0;
+
+            #slider_main { 
+                .item {
+                height: 460px;
+                overflow: hidden;
+                text-align: center;
+                position: relative;
+                background: #3c3b3b;
+                display: flex!important;
+                align-items: center;
+                justify-content: center;
+                @include breakpoint(screen-md) {
+                height: 350px;
+                }
+                @include breakpoint(screen-sm) {
+                height: 300px;
+                }
+                @include breakpoint(screen-xs) {
+                height: 240px;
+                }
+                img {
+                object-fit: contain;
+                width: auto!important;
+                display: inline-block;
+                }
+                }
+                }
+          }
+
+           @include breakpoint(sm){margin-bottom: 0;}
+    
+ .detail-result {
+       padding:5px 10px;
+       
+      h3{
+          margin: 0 0 10px 0;
+          color: #686868;
+          font-size: 22px;
+      }
+       
+       p{
+           color: #848484;
+           font-size: 14px;
+           padding-bottom: 10px;
+           text-align: justify;
+           
+           span{font-size: 17px;}
+       }
+       
+       }
+
+       
+ }      
+       
+  .attraction-img{
+       padding: 0;
+      margin: 0;
+      
+      img{
+          height: 350px;
+          width: 850px;
+          @include breakpoint(sm){height: auto;}
+          @include breakpoint(xs){height: auto; border:1px solid #ccc; }
+      }
+       
+       }     
+          
+.check-availability{
+        margin-bottom: 40px;
+        background: #f7f7f7;
+        padding: 25px 22px;
+        border: 1px dotted #ccc;
+
+        
+    
+    .discover-form {  
+                h1 {
+                        display: block;
+                        font-size: 23px;
+                        font-family: Roboto;
+                        margin: 0 0 20px 0;
+                        color: #686868;    
+                    @include breakpoint(xs) { font-size:24px; }
+                }
+                .form-inline{
+                    
+                   
+            .form-control{width: 100%;} 
+                               
+                    .form-group-dest { width:47%; float: left; margin-right: 3px; 
+                        input { height: 50px;
+                        line-height: 50px; padding-left:40px;
+                        font-size: 15px;
+                        color: #434343;}
+                        
+                        @include breakpoint(xs) { width:60%; font-size:14px; }
+                    }
+                    
+                    .form-group-start { width:25%;  float: left; margin-right: 3px;
+                        input { height: 45px;
+                        line-height: 45px; padding-left:40px;
+                        font-size: 15px;
+                        color: #434343;}
+                        
+                        @include breakpoint(xs) { width:60%; font-size:14px; }
+                    }
+                    
+                    .form-group-end { width:25%;  float: left; margin-right: 3px;
+                        input { height: 45px;
+                        line-height: 45px; padding-left:40px;
+                        font-size: 15px;
+                        color: #434343;}
+                        
+                        @include breakpoint(xs) { width:60%; font-size:14px; }
+                    }
+                    .see-plan { width:13%; height: 45px;
+                        line-height: 45px;
+                        font-size: 16px; background:$red; color:$white; padding:0 !important; letter-spacing: 2px;font-weight: 600; 
+                     @include breakpoint(xs) { font-size:14px; }
+                    }
+                    
+                    .locate-icon  { color:$red; font-size:17px; position: absolute; margin:12px;   }
+                    
+                } 
+                
+                @include breakpoint(sm) { width:100%;  }
+                @include breakpoint(xs) { width:100%;  } 
+                
+                }
+       }     
+       
+
+ .choose-attractions{
+    border: 1px solid #eee;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 8px 8px -8px #888;
+    background: #f7f7f7;
+    min-height: 210px;
+
+    @include breakpoint(sm) { padding: 10px; min-height: auto; }
+    @include breakpoint(xs) { padding: 10px; min-height: auto; }
+     
+     .row-flex {flex-wrap: wrap;	align-items: stretch; display: flex; flex-direction: row; justify-content: flex-start; }
+     
+     &:hover{background: #fff; border: 1px solid #999;}
+     
+     .departure-time{
+         
+         .depart{font-size: 17px; color: $orange; font-weight: bold;}
+         .code{font-size: 13px; color: #696868; font-weight: bold; margin-bottom: 7px;
+        
+            span{color: $orange; font-weight: 800;}
+        }
+     }
+     
+     .departure-details{
+         @include breakpoint(xs){margin-bottom: 10px;}
+         
+         .depart-time{font-size: 15px; color: #000; font-weight: bold;}
+         p{margin-bottom: 7px; font-size: 13px; color: #666;}
+         .language{color: #333; font-size: 13px; font-weight: bold;
+            span {
+                color: $orange;
+            }
+        }
+     }
+     
+     .choose-attraction-name {
+    
+    color: #686868;
+    margin: 0 0 0 0;
+    font-size: 22px;
+             a{color: #686868;}
+             a:hover{color: #f35a5f;}
+       }
+    
+     .choose-detail{
+        
+        margin: 10px 0 20px 0;
+        padding: 5px 0 5px 0;
+ li {
+    font-size: 14px;
+    border-right: 1px solid #9b9b9b;
+    padding: 0 15px 0 0;
+    color: #848484;
+    float: left;
+    margin-right: 15px;
+    line-height: 11px;
+     
+    
+     
+     .choose-star-detail{
+               
+               .fa-star{ font-size: 16px; color: #febf00; line-height: 11px;}
+               .fa-star-o{ font-size: 16px; color: #c3bebe; line-height: 11px;}
+           }
+     span{color: #4e4e78;}
+     
+ &:last-child {border-right:0;}
+ 
+} }
+     
+     
+     .discover-form {  
+                margin-top: 25px;
+         
+                .form-inline{
+                             
+            .form-control{width: 100%;} 
+                               
+                    
+                    .form-group-adult { 
+                        label{font-size: 12px; color: #7a7777; }
+                        
+                        width:17%;  float: left; margin-right: 30px;
+                        
+                        select { height: 45px;
+                        line-height: 45px; padding-left:10px;
+                        font-size: 15px;
+                        color: #f35a5f;
+                        -moz-appearance: none;
+                        }
+                        
+                        @include breakpoint(xs) { width:60%; font-size:14px; }
+                    }
+                    
+                    .form-group-child {
+                        label{font-size: 12px; color: #7a7777; }
+                        
+                        width:17%;  float: left; margin-right: 3px;
+                        
+                        select { height: 45px;
+                        line-height: 45px; padding-left:10px;
+                        font-size: 15px;
+                        color: #f35a5f;
+                        -moz-appearance: none;
+                        }
+                        
+                        @include breakpoint(xs) { width:60%; font-size:14px; }
+                    }
+                   
+                    
+                    .locate-icon  { color:#282425; font-size:17px; position: absolute;  margin: 36px 0 0 106px;   }
+                    
+                } 
+                
+                @include breakpoint(sm) { width:100%;  }
+                @include breakpoint(xs) { width:100%;  } 
+                
+                }
+           
+     .choose-fares-sec{ 
+         text-align: center; 
+         margin: 0 0 0 0; 
+         padding: 0px 0 0 10px; 
+         border-left: 1px solid #eee; 
+         height: 100%;
+         @include breakpoint(xs) { padding: 0px 0 0 0; border-left: none;  }
+     
+         .usd{
+            color: #000;
+            margin-bottom: 11px;
+         }
+         
+         .fares{
+            color:$orange;
+            margin-bottom: 15px;
+            font-size: 28px;
+            font-weight: bold;
+            @include breakpoint(sm) { margin-bottom: 15px; font-size: 20px;}
+            @include breakpoint(xs) { margin-bottom: 0; border-right:1px solid #ccc;}
+             
+             sup{font-size: 16px;}
+         }
+         
+         .book {
+            height: 35px;
+            line-height: 35px;
+            font-size: 12px;
+            color: #d35800;
+            padding: 0 20px;
+            letter-spacing: 2px;
+            font-weight: 600;
+            margin-bottom: 23px;
+            border: 1px solid #ef8527;
+            background: #f7f7f7;
+            
+            @include breakpoint(sm) {
+                margin-bottom: 10px;
+                box-shadow: 0 8px 8px -8px #888;
+                height: 33px;
+                line-height: 32px;
+                padding: 0 16px;
+                letter-spacing: 1px;
+            }
+
+            @include breakpoint(xs) {
+                margin-bottom: 5px;
+                box-shadow: 0 8px 8px -8px #888;
+                height: 32px;
+                line-height: 32px;
+                padding: 0 15px;
+                letter-spacing: 1px;
+            }
+         }
+         
+         .low-prices{
+             color:green; 
+             margin:0 0 10px 0; 
+             text-transform: uppercase; 
+             font-size: 11px;
+             font-weight: bold; 
+             letter-spacing: 1px;
+             @include breakpoint(sm) { margin: 0 0 10px 0;}
+         }
+
+         p{margin-bottom: 7px;}
+         
+         .calculated-price{ 
+             font-size: 14px; 
+             font-weight: bold; 
+             color:#444;
+             cursor: pointer;
+             position: relative;
+             @include breakpoint(sm) { font-size: 9px; }
+             @include breakpoint(xs) { font-size: 10px; }
+
+            & .pc{
+                display: none; 
+                position: absolute;
+                top: 25px;
+                right: 15%;
+                font-size: 12px;
+                background: #fff; 
+                border: 1px solid #ccc;
+                padding: 7px;
+                color: #6e6e6e;
+                box-shadow: 0 8px 8px -8px #888;
+                z-index: 1;
+                text-align: left;
+                @include breakpoint(md) { top: 48px;}
+                @include breakpoint(sm) { top: 30px; margin-left: -284px;}
+                @include breakpoint(xs) { top: 22px; margin-left: -297px;}
+            
+                p{margin-bottom: 0;}
+                .fa-caret-up { 
+                    color: #ccc;
+                    position: absolute;
+                    top: -20px;
+                    font-size: 28px;
+                    text-align: center;
+                    width: 100%;
+                }
+            } 
+                
+            &:hover .pc{display: inline-block;}
+        
+        }
+         
+         .cutfare { color: #656565; font-size: 17px; margin-bottom: 15px; 
+         
+            sub {bottom: -0.0em;}
+         }
+        .per-adult-fare { color: #4d4d77; font-size: 24px; margin-bottom: 30px;  
+         
+            span{background: #ffcf00; color: #3f3e3e; font-size: 12px; margin-right: 13px; padding: 2px 12px;}
+            
+            sub{color: #898888; font-size: 12px; bottom: -0.0em;}
+        
+         }
+        .take-hour { color: #848484; font-size: 13px;margin-bottom: 10px; font-weight: 600;}
+        
+     
+     }
+     
+    
+       }  
+       .content-head{font-size: 25px; margin-bottom: 25px;
+    
+        @include breakpoint(sm){font-size: 18px; margin-bottom: 10px;}
+    }
+
+       .content-main{
+            overflow: auto;
+            height: 380px;
+ 
+
+           .content-sec{
+            margin-bottom: 4px;
+            .right-arrow{cursor: pointer; 
+            
+                
+            }
+           
+        h2 {
+            font-size: 15px; 
+            margin: 2px 0;
+            color: $orange;
+            cursor: pointer;
+            @include breakpoint(screen-sm){font-size: 12px; font-weight: 600;}
+   }
+            .con-head{
+                color: #4d4d77;
+                font-size: 15px;
+                font-weight: bold;
+                margin-bottom: 10px;
+                @include breakpoint(screen-sm) {
+                    font-size: 12px;
+                }
+                .star-detail{color: #f15a5f; padding-left: 30px;
+                   }
+            
+                span{
+                    padding-right: 10px;
+                }
+   
+                p{
+                   color: #858787;
+                   padding-left: 30px;
+                   font-size: 15px;
+                   font-weight: normal;
+   
+                   span{
+                       color: #4d4d85;
+                   }
+           }
+            }
+
+            .review-point{
+                color: #4d4d77;
+                margin-bottom: 18px;
+                border: 1px solid #ddd;
+                background: #fff;
+                border-radius: 10px;
+                padding: 21px;
+                @include breakpoint(sm){padding: 10px;}
+                @include breakpoint(xs){padding: 15px;}
+
+                .title-sec{
+                    border-bottom: 1px solid #ddd;
+                    padding-bottom: 10px;
+                    margin-bottom: 10px;
+
+                    .icon{
+                        width: 52px;
+                        height: 52px;
+                        float: left;
+                        margin-right: 25px;
+                    }
+
+                    .name-sec{
+                        padding-top: 5px;
+
+                        .review-name{
+                            color: $orange;
+                            font-size: 15px;
+                            font-weight: bold;
+                        }
+        
+                        .star-detail{
+                            color: $yellow;   
+                            float: left;
+                           }
+                    
+                        span{
+                            padding-right: 10px;
+                            @include breakpoint(xs){font-size: 13px;}
+                        }
+           
+                        p{
+                           color: #858787;
+                           font-size: 15px;
+                           font-weight: normal;
+           
+                           span{
+                               color: $orange;
+                           }
+                   }
+                    }
+                }
+            }
+            p{
+                color: #666;
+                font-size: 13px;
+                margin-bottom: 5px;
+                text-align: justify;
+        }
+        }
+       }    
+ 
+       
+ 
+ .modal-dialog {
+    width: 800px;
+    margin: 85px auto 30px auto;
+    
+     .modal-header{
+         padding:15px 15px 5px 15px;
+         border-bottom:none;
+     
+     h4{
+        color: #4d4d77;
+        font-size: 24px;
+        margin: 0 0;
+     }
+     
+     p{
+        color: #757575;
+        font-size: 14px;
+     }
+   
+     .close{
+        background: #868485;
+        border-radius: 50%;
+        padding: 6px;
+        width: 30px;
+        height: 30px;
+        font-size: 19px;
+        color: #fff;
+        font-weight: 300;
+        opacity: 0.7;
+     }
+   } 
+     
+     
+ 
+     
+ .modal-footer {
+    padding: 25px 15px 30px 15px;
+    border-top: none;
+    text-align: left;
+     
+     
+ .continue{
+        height: 45px;
+        line-height: 45px;
+        font-size: 14px;
+        background: #f35a5f;
+        color: #ffffff;
+        padding: 0 16px;
+        letter-spacing: 2px;
+        font-weight: 600;
+        text-transform: uppercase;
+     }
+ .add-more-activity{
+        height: 45px;
+        line-height: 45px;
+        font-size: 14px;
+        color: #8e8e8e;
+        padding: 0 16px;
+        letter-spacing: 2px;
+        font-weight: bold;
+        text-transform: uppercase;
+        border: 1px solid #d0d0d0;
+        background: none;
+     }
+} } } 
+
+.review-attraction{
+    margin-bottom: 25px;
+    background: #fff;        
+    padding: 20px;
+    border: 1px solid #cfcfe6;
+    @include breakpoint(sm){padding: 15px;}
+    @include breakpoint(xs){padding: 10px;}
+       
+     .attraction-name {
+            color: $gray;
+            margin: 0 0 0 0;
+            font-size: 23px;
+            sup{
+                font-size: 11px;
+                padding: 4px;
+                border-radius: 50%;
+                line-height: 1.5em;
+                color: #fff;
+                text-align: center;
+                width: 25px;
+                font-weight: bold;
+                background: $orangelight;
+                border: 1px solid $orangelight;
+                position: absolute;
+                // top: 0;
+                height: 25px;
+            }
+            @include breakpoint(sm){margin: 6px 0 0 0; font-size: 20px;}
+            @include breakpoint(xs){margin: 0 0 15px 0; font-size: 20px;}
+
+         a{color: $gray;}
+         a:hover{color: $orange;} 
+   }
+
+
+   .review-fare{
+    text-align: right;
+    margin: 0 0 0 0;
+    padding: 0;
+    @include breakpoint(xs){text-align: left;}
+    
+           
+    .continue-shopping{
+        font-size: 14px;
+        border: #cccccc 1px solid ;
+        color: $gray;
+        text-transform: uppercase;
+        padding: 0 15px;
+        font-weight: bold;
+        letter-spacing: 2px;
+        line-height: 40px;
+        background: none;
+        @include breakpoint(xs){padding: 0 10px; font-size: 12px;}
+    
+    &:hover{color: $orange;}
+}
+    
+    .rev-pay{
+        font-size: 14px;
+        background: $orangelight;
+        color: #ffffff;
+        text-transform: uppercase;
+        padding: 0 60px;
+        font-weight: bold;
+        letter-spacing: 2px;
+        line-height: 40px;
+        @include breakpoint(xs){padding: 0 12px; font-size: 13px;}
+        @include breakpoint(md){padding: 0 50px; }
+        
+    
+    &:hover{background: $orange;}
+}
+       }
+
+
+} 
+
+
+.viater-review {
+    position: relative;
+    margin: 0 0 20px 0;
+    background: #fff;
+    padding: 20px;
+    border: 1px solid #cfcfe6;
+    box-shadow: 0 8px 8px -8px #888;
+    @include breakpoint(sm){padding: 15px;}
+    @include breakpoint(xs){padding: 10px; margin: 0 0 20px 0;}
+     
+   .great-choice-name{  
+        font-size: 20px; 
+        color: $orange; 
+        margin: 15px 0 0px 0; 
+        white-space: nowrap;
+        max-width: 100%;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        cursor: copy;
+
+        @include breakpoint(xs){
+            font-size: 17px;
+            color: #4d4d77;
+            margin: 15px 0 0px 0;
+            cursor: pointer;
+            white-space: normal;
+        }
+
+        a{ color: $orange; }    
+        a:hover{ color: $orangelight; }
+    }
+
+    .location{
+        font-size: 16px;
+        color: #797979;
+         }
+     
+    .great-choice-detail{
+        margin: 8px 0;
+        padding: 0;
+ 
+     li { 
+          
+        font-size: 14px;
+        color: #6e6e6e;
+        float: left;
+        margin-right: 10px;
+        line-height: 20px; 
+        .icon-red{color: $orangelight;}
+         
+        &:first-child {border-left:none;}
+        @include breakpoint(xs){font-size: 12px;}
+ 
+} 
+     }
+ 
+     .great-choice-fare{ 
+         color: $orange; 
+         font-size: 24px; 
+         margin-bottom: 1px; 
+         cursor: default; 
+         font-weight: bold;
+         @include breakpoint(xs){font-size: 21px; }
+         sup {top: -0.3em;}
+        sub {color: #8b8b8b; font-size: 12px; font-weight: bold; bottom: -0.0em;}
+
+        & .price-popup { 
+             display: none; position: absolute; top: 0; margin-left:10px; font-size: 12px; 
+             background: #fff; width: 160px; border: 1px solid #ccc; padding: 7px; color: #6e6e6e; 
+             box-shadow: 0 8px 8px -8px #888; z-index: 1;
+
+                 .fa-caret-left{ color: #ccc; position: absolute;  left: -11px;  top: 0; font-size: 30px;}
+          } 
+            
+         &:hover .price-popup { display: inline-block;} 
+       
+        
+         }
+     .free-cancellation-available{ color: #4d4d77; font-weight: bold; font-size: 11px; }
+     .tour-grade-code{margin-top: 7px; font-size: 12px; font-weight: bold;
+    
+        span{color: $orange; font-weight: 800; font-size: 12px;}
+    }
+     
+     .edit-details{color: $gray; font-size: 12px; float: left; font-weight: 700; margin-right: 16px; margin-top: 7px; cursor: pointer;
+     
+         .fa-angle-right{ font-size: 17px; color: $orange; font-weight: bold; padding: 2px; vertical-align: sub;}
+     }
+     
+     .remove-cart{
+            color: #848484;
+            font-size: 12px;
+            text-align: right;
+            font-weight: bold;
+            cursor: pointer;
+            position: absolute;
+            right: 10px;
+        
+        @include breakpoint(xs){
+            color: #fff;
+            font-size: 11px;
+            background: $orange;
+            padding: 5px;
+            border-bottom-left-radius: 14px;
+            position: absolute;
+            top: 10px;
+            right: 10px;
+        }
+
+        @include breakpoint(sm){
+            position: absolute;
+            top: 3px;
+            right: 9px;
+        }
+     
+         .fa-times{
+             font-size: 17px;
+             color: $orange;
+             padding: 2px;
+             vertical-align: sub;
+             @include breakpoint(xs){color: #fff;}
+            }
+     
+     }
+     }
+
+.detail-tab {
+    width: 100%;
+    overflow: hidden;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background: $white;
+
+    @include breakpoint(sm){margin-top: 7px;}
+    
+    ul {
+      display: block;
+      padding: 0px;
+      margin-right: 1px;
+      list-style: none;
+      background: #fff;
+    }
+    li {
+      text-align: right;
+      float: left;
+      a {
+        font-size: 15px;
+        color: #999;
+        position: relative;
+        text-decoration: none;
+        display: block;
+        margin: 0 30px 0 0;
+        padding: 8px 25px;
+        border-bottom: 2px $orangelight solid;
+         
+         
+        
+        @include breakpoint(sm){
+            padding: 6px 11px;
+            font-size: 12px;
+            margin: 0 8px 0 0;
+        }
+
+        &:hover {
+             
+            position: relative;
+            border-bottom: 2px $orangelight solid;
+            background: #ececec; 
+            color: #000;
+             
+             
+            
+          }
+         
+      }
+      
+      
+      span {
+        margin-right: 5px;
+      }
+    }
+     
+  }   
+    .detail-right{
+
+        .low-price{
+            margin-bottom: 8px;
+            background: $white;
+            border: 1px solid #e0e0e0;
+            text-align: left;
+            padding: 10px;
+            span{
+                
+                font-size: 17px;
+                color: #565a5c;
+                margin-left: 10px;
+            }
+        }
+         
+        text-align: center;
+        box-shadow: 0 8px 8px -8px #888;
+       
+        @include breakpoint(md){margin: 0;}
+        @include breakpoint(sm){margin: 0;}
+        @include breakpoint(xs){margin: 0;}
+        
+        .offer-bg{
+            background: $orangelight;
+            text-align: center;
+            padding: 10px;
+            border: 1px solid $white;
+            border-bottom: none;
+            
+            .special-offer{ 
+                color: #fff;
+                font-size: 20px;
+                letter-spacing: 2px;
+            }
+
+            .offer-price{ color: #fff; font-size: 25px;
+            
+                span{text-decoration: line-through; color: #ff9397;}
+            }
+        }
+        
+        
+        .fare-box{
+            text-align: center;
+            padding: 10px;
+            background: #ddd;
+            margin-bottom: 8px;
+            border: 1px solid $white;
+            
+            .form-usd{ color: #4d4d77; font-size: 14px;}
+            .fare{ 
+                color: $orange;
+                font-size: 50px;
+                font-weight: bold;
+                letter-spacing: -2px;
+                line-height: 45px;
+
+                @include breakpoint(md){
+                    font-size: 45px;
+                }
+
+                @include breakpoint(sm){
+                    font-size: 45px;
+                    line-height: 40px;
+                }
+
+                @include breakpoint(xs){
+                    font-size: 45px;
+                    line-height: 40px;
+                    padding: 15px 0;
+                }
+            
+                sup{font-size: 57%;}
+            }
+        }
+       .date-travel-sec{
+        padding: 10px;
+        background: $white;
+        border: 1px solid #e0e0e0;
+
+        .change-date{ text-align: center; 
+        
+            .date-icon{
+                color: $orangelight; 
+                font-size: 19px; 
+                position: absolute; 
+                padding: 5px 13px;
+                @include breakpoint(xs) {left: 22px;}
+            }
+            .date-box{
+                height: 35px;
+                font-size: 15px;
+                color: #4d4d77;
+                padding-left: 45px;
+                width: 100%;
+            }
+        }
+
+        .datechange-loader {
+            background: rgba(255,255,255,0.8);
+            padding: 50px;
+            position: absolute;
+            width: 88%;
+            height: 228px;
+        }
+        
+        /*adult increse dropdown start here*/
+        .right_block {
+            padding: 10px 0 15px 0 ;
+        
+        .adult_div {
+            
+            position: relative;
+           padding: 0 0 5px 0;
+            
+            .adult-icon{color: $orangelight; font-size: 18px; position: absolute; top: 4px; left: 15px; }
+            .down-icon{color: $orangelight; font-size: 22px; position: absolute; top:4px; right: 15px; cursor: pointer;}
+            
+            input[type="text"]{
+                width: 100%;
+                color: #42425e;
+                font-weight: bold;
+                padding: 8px 5px 8px 35px;
+                border: 1px solid #ccc;
+            }
+            .dropdown-menu-adult{
+                display: none;
+                 background: #fff;
+                overflow: hidden;
+                padding: 10px;
+                position: absolute;
+                left: 0px;
+                top: 39px;
+                border: 1px solid #e0e0e0;
+                width: 100%;
+                z-index: 1; 
+                .title{
+                    padding-bottom: 10px; border-bottom: 1px solid #ccc; margin-bottom: 15px; text-align: left;
+                }
+                ul{
+                list-style: none;
+               
+                    li{
+                        display: block; width: 100%;
+                        .input-group-addon {
+                            background: none; border: none; padding: 6px 5px;
+                            @include breakpoint(sm){font-size: 12px;} 
+                        }
+                    }
+                     
+                }
+            }
+            .btn-submit{
+                        background: $orangelight; padding: 5px; display: inline-block; color: #fff; width: 100%;
+                        
+                        &:hover{background:$orange;}
+                    }
+          }  
+        } 
+        
+        
+        
+        .check-availability{
+            font-size: 13px;
+            background: $gray;
+            color: #ffffff;
+            padding: 9px 0;
+            letter-spacing: 2px;
+            
+          
+             
+            @include breakpoint(sm){font-size: 15px;}
+            @include breakpoint(xs){font-size: 16px; padding: 10px 0;}
+        }  
+             
+
+        .mobile-voucher{color: #59595c; font-size: 12px; text-align: left; font-weight: bold; margin: 10px 0;     padding-bottom: 10px;
+            border-bottom: 1px solid #e0e0e0;
+        
+            .fa-mobile{font-size: 23px; vertical-align: middle; margin-right: 10px;}
+        }
+        .instant-confirmation{color: #59595c; font-size: 12px; text-align: left; font-weight: bold; margin: 10px 0;     padding-bottom: 10px;
+            border-bottom: 1px solid #e0e0e0;
+        
+            .fa-bolt{font-size: 19px; vertical-align: middle; margin-right: 13px;}
+        }
+        .easy-cancellation{color: #038403; font-size: 12px; text-align: left; font-weight: bold; margin: 10px 0; 
+        
+            .fa-credit-card { font-size: 13px; margin-right: 9px;}
+
+            .policy-detail {
+                position: relative;
+                display: inline-block;
+                font-weight: normal;
+                color: #4d4c4c;
+            }
+            
+            .policy-detail a {
+                color: #038403;
+                cursor: default;
+            }
+            
+            .info-icon {
+                line-height: 12px;
+                font-size: 12px;
+                &.black {
+                    border-color: #000;
+                }
+            }
+            
+            .policy-detail .show_policy {
+                display: none;
+                background: #fff;
+                padding: 10px;
+                position: absolute;
+                left: -34px;
+                top: 32px;
+                width: 200px;
+                border: 1px solid #94afc6;
+                z-index: 1;
+                @include breakpoint(md) {left: -82px;}
+                @include breakpoint(xs) {left: -56px;}
+                @include breakpoint(sm) {left: -100px;}
+                &.show_policy.payment-tooltip {
+                    left: inherit;
+                    right: -18px;
+                    .arrow {
+                        left: inherit;
+                        right: 12px;
+                    }
+                }
+            }
+            
+            .show_policy .arrow {
+                width: 21px;
+                height: 11px;
+                display: block;
+                position: absolute;
+                left: 28px;
+                top: -11px;
+                background: url(/resources/assets/fare_rule_arrow.png) no-repeat;
+                @include breakpoint(md) {left: 75px;}
+                @include breakpoint(xs) {left: 50px;}
+                @include breakpoint(sm) {left: 94px;}
+            }
+            
+            .policy-detail:hover .show_policy {
+                display: block;
+            }
+            
+            .policy-detail p {
+                margin: 0px;
+                font-size: 11px;
+            }
+
+            
+            }
+        }
+    }
+         
+        
+        
+        
+         /*adult increse dropdown end here*/
+    .review-right-sec{
+        border: 1px solid #cfcfe6;
+        padding: 18px 13px;
+        background: #fff;
+        box-shadow: 0 8px 8px -8px #888;
+        @include breakpoint(md){padding: 14px 13px;}
+        @include breakpoint(xs){padding: 10px 10px;}
+        
+    .enter-promotion-code{
+        border-bottom: 1px dotted #b1b1b1;
+        padding-bottom: 19px;
+        margin-bottom: 15px;
+
+        .col-xs-8 { padding-right: 0; }
+        .col-xs-4 { padding-left: 0; }
+        
+        .promotion-code{ 
+            color: #5f5f5f;
+            font-size: 16px;
+            margin-bottom: 13px;
+            
+            span{ color: #848484;}
+        }
+        
+        .enter-code{font-size: 12px;}
+        .apply{font-size: 14px; height: 34px; line-height: 34px; color:$white; background: $gray; cursor: pointer; text-align:center;
+        
+            .fa-angle-right{font-size: 17px;   font-weight: bold;  vertical-align: sub;}
+        }
+        
+        
+        
+        }  
+       .current-cart {font-size: 14px; color: #4d4d77; margin-bottom: 5px; font-weight: 700;}
+       .service-fee{color: #898484; font-size: 14px; margin-bottom: 5px;
+    
+        span{float: right;}
+    }
+        .current-cart-fare {
+            text-align: right; 
+            font-weight: bold; 
+            font-size: 23px; 
+            color: $orange; 
+            @include breakpoint(md){font-size: 15px;}
+        
+            sup{ top: -0.3em;}
+            span{
+                font-size: 21px; 
+                font-weight: normal; 
+                float: left;
+                @include breakpoint(md){font-size: 15px;}
+            }
+        } 
+
+    }
+    .cart-empty{
+        background: #fff;
+        text-align: center;
+        padding: 10px;
+        font-weight: 700;
+        color: $orange; 
+        font-size: 17px;
+        border: 1px solid #cfcfe6;
+    }
+    } }
+
+    .plse-wait{
+        text-align: center;
+        color: $orange;
+        font-size: 20px;
+        font-weight: bold;
+        width: 300px;
+        height: 250px;
+        position: fixed;
+        left: 50%;
+        top: 50%;
+        background: #fff;
+        padding: 44px 0;
+        box-shadow: 0 30px 50px #bbb;
+        transform: translate(-50%,-50%);
+        z-index: 9999;
+
+        .luf-icon { background:url(/resources/assets/sightSeeing/favicon.png) no-repeat center center;  width: 94px; height: 94px; line-height:90px; border-radius: 50%; margin:0 auto; position:relative;top:30px; }
+        .luf-loader {border: 3px solid #dddddd;border-radius: 50%;border-top: 5px solid #f18626;width: 90px;height: 90px;-webkit-animation: spin 1s linear infinite;animation: spin 1s linear infinite;border-width: 5px;}
+@-webkit-keyframes spin {0% { -webkit-transform: rotate(0deg); }100% { -webkit-transform: rotate(360deg); }}
+
+@keyframes spin {0% { transform: rotate(0deg); }100% { transform: rotate(360deg); }}
+
+.dot span {font-size: 50px;animation-name: blink;animation-duration: 1.4s;animation-iteration-count: infinite;animation-fill-mode: both;}
+.dot span:nth-child(2) {animation-delay: .2s;}
+.dot span:nth-child(3) {animation-delay: .4s;}
+@keyframes blink {0% {opacity: .2;} 20% {opacity: 1;}100% {opacity: .2;} }
+
+
+.lounge-mob-hidden{display:block;}
+.lounge-mob-show {display:none;}
+.ad-box { margin-bottom:10px; }
+
+}
+.main-body{background: #eee;} 
+
+.has-error .checkbox, .has-error .checkbox-inline, .has-error .control-label, .has-error .help-block, .has-error .radio, .has-error .radio-inline, .has-error.checkbox label, .has-error.checkbox-inline label, .has-error.radio label, .has-error.radio-inline label {
+    color: #ff0000;
+    font-size: 12px;
+}
+

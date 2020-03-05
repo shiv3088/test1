@@ -1,0 +1,9 @@
+[{
+  "relation": ["delegate_permission/common.handle_all_urls"],
+  "target": {
+    "namespace": "android_app",
+    "package_name": "com.travelopick",
+    "sha256_cert_fingerprints":
+    ["0B:99:10:B2:54:6C:4F:31:08:FA:B7:3B:58:5A:06:5E:7D:FE:C2:0B:A0:61:77:B0:17:43:24:7C:41:74:47:2B"]
+  }
+}]

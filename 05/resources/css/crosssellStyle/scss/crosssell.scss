@@ -1,0 +1,81 @@
+@import 'core/core';
+@import "common/button";
+@import "common/header";
+@import "common/footer";
+@import "common/crosssell"; 
+@import "common/itinarary";
+@import "common/cxl-car-result";
+@import "common/cxl-hotel-result";
+@import "common/cxl-payment";
+@import "common/cxl-confirmation";
+@import "common/cxl-pnf-result";
+.has-error .form-control {
+    border-color: red !important; 
+}
+ 
+.has-error .checkbox,
+.has-error .checkbox-inline,
+.has-error .control-label,
+.has-error .help-block,
+.has-error .radio,
+.has-error .radio-inline,
+.has-error.checkbox label,
+.has-error.checkbox-inline label,
+.has-error.radio label,
+.has-error.radio-inline label {
+    color: red !important;
+    font-size: 12px;
+}
+
+.form-group {
+    select::-ms-expand {
+        display: none;
+    }
+    select {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+    }
+	&.arrow{
+		position: relative;
+		&:before {
+			color: #666; 
+			content: "\f0d7";
+			font-family: "FontAwesome";
+			font-size: 14px;
+			position: absolute;
+			pointer-events: none;
+			right: 10px;
+			top: 10px;
+		}
+	}
+}
+
+.pay-arrow{
+    position: relative;
+    &:before {
+        color: #666;
+        content: "\f0d7";
+        font-family: "FontAwesome";
+        font-size: 14px;
+        position: absolute;
+        pointer-events: none;
+        right: 10px;
+        top: 5px;
+    }
+}
+
+.cffFormIcon {
+    background: #fff;
+    position: relative;
+    .icon {
+        position: absolute;
+        top: 5px;
+        color: $red;
+        font-size: 20px;
+        padding: 3px 10px;
+    }
+    input.form-control {
+        padding-left: 31px !important;
+    }
+}

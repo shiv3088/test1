@@ -1,0 +1,131 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:context="http://www.springframework.org/schema/context"
+		xmlns:mvc="http://www.springframework.org/schema/mvc" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="
+http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans-4.0.xsd
+http://www.springframework.org/schema/context
+http://www.springframework.org/schema/context/spring-context-4.0.xsd
+  http://www.springframework.org/schema/mvc
+        http://www.springframework.org/schema/mvc/spring-mvc.xsd">
+
+<!-- Enables the Spring MVC @Controller programming model -->
+	<mvc:annotation-driven>
+		<mvc:argument-resolvers>
+			<bean class="org.springframework.mobile.device.DeviceWebArgumentResolver" />
+			<bean class="org.springframework.mobile.device.site.SitePreferenceWebArgumentResolver" />
+		</mvc:argument-resolvers>
+		<mvc:message-converters>
+        <bean class="org.springframework.http.converter.json.MappingJackson2HttpMessageConverter" />
+     </mvc:message-converters>
+      <mvc:path-matching suffix-pattern="false" registered-suffixes-only="true"/>
+       
+	</mvc:annotation-driven>
+
+<!-- <bean id="contentNegotiationManager"
+    class="org.springframework.web.accept.ContentNegotiationManagerFactoryBean">
+    <property name="favorPathExtension" value="false" />
+    <property name="favorParameter" value="true" />
+    <property name="mediaTypes">
+        <value>
+            json=application/json
+            xml=application/xml
+        </value>
+    </property>
+</bean>
+<mvc:annotation-driven
+    content-negotiation-manager="contentNegotiationManager">
+    <mvc:path-matching suffix-pattern="false" registered-suffixes-only="true" />
+</mvc:annotation-driven> -->
+	<mvc:interceptors>
+		<!-- Resolve the device that originated the web request -->
+		<bean class="org.springframework.mobile.device.DeviceResolverHandlerInterceptor" />
+	
+		<!-- Manage the user's site preference -->
+		<bean class="org.springframework.mobile.device.site.SitePreferenceHandlerInterceptor" /> 
+	
+		<!-- Redirects mobile users to domain.com/m -->
+		<!-- <bean class="org.springframework.mobile.device.switcher.SiteSwitcherHandlerInterceptor" factory-method="urlPath">
+			<constructor-arg index="0" type="java.lang.String" value="/m" />
+			<constructor-arg index="1" type="java.lang.String" value="/t" />
+			<constructor-arg index="2" type="java.lang.String" value="/" />
+		</bean>-->
+	</mvc:interceptors>
+	
+	<context:component-scan base-package="com.cff" />
+ 	<!-- <bean
+		class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+		<property name="prefix">
+			<value>/WEB-INF/views/</value>
+		</property>
+		<property name="suffix">
+			<value>.jsp</value>
+		</property>
+		
+	</bean> -->
+	
+	<bean id="liteDeviceDelegatingViewResolver" class="org.springframework.mobile.device.view.LiteDeviceDelegatingViewResolver">
+        <constructor-arg>
+            <bean id="viewResolver" class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+                <property name="prefix" value="/WEB-INF/views/" />
+                <property name="suffix" value=".jsp" />
+            </bean>
+        </constructor-arg>
+        <property name="enableFallback" value="true" />
+    </bean>
+	
+	 <mvc:resources mapping="/resources/**" location="/resources/"  
+	cache-period="31556926"/>
+
+  <bean
+		class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+		<property name="location">
+			<value>/resources/application.properties</value>
+		</property>
+	</bean>
+	
+	<bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver" />
+	
+  <mvc:resources mapping="/robots.txt" location="/robots.txt" order="0"/>
+    <mvc:resources mapping="/assetlinks.json" location="/assetlinks.json"/>
+ 
+     <mvc:resources mapping="/manifest.json" location="/manifest.json"/>
+         <mvc:resources mapping="/service-worker.js" location="/service-worker.js"/>
+         
+     <mvc:resources mapping="/*.xml" location="/" />
+   <mvc:resources mapping="/google320357d24099de1a.html" location="/google320357d24099de1a.html" />
+ <mvc:resources mapping="/pinterest-0c22a.html" location="/" />
+ 
+  <mvc:resources mapping="/privacy_policy.html" location="/" />
+  
+   <mvc:resources mapping="/term_condition.html" location="/" />
+   
+    <bean id="messageSource"
+      class="org.springframework.context.support.ReloadableResourceBundleMessageSource">
+    <property name="basename" value="/WEB-INF/messages" />
+	</bean>
+
+	 <!-- Configure to plugin JSON as request and response in method handler -->
+  <!--   <bean class="org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter">
+        <property name="messageConverters">
+            <list>
+                <ref bean="jsonMessageConverter"/>
+            </list>
+        </property>
+    </bean>
+     
+    Configure bean to convert JSON to POJO and vice versa
+    <bean id="jsonMessageConverter" class="org.springframework.http.converter.json.MappingJackson2HttpMessageConverter">
+    </bean>  -->
+    
+   <!--  <bean 
+      class="org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping">
+    <property name="contentNegotiationManager" ref="contentNegotiationManager"/>
+    <property name="useRegisteredSuffixPatternMatch" value="true"/>
+    </bean> -->
+    
+    <context:annotation-config/>
+
+</beans>
+

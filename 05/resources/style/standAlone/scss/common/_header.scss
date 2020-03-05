@@ -1,0 +1,2631 @@
+.component-header {
+    position: relative;
+    top: 0;
+
+    @include breakpoint(xs) {
+        background: $violet;
+        min-height: 530;
+    }
+    
+ 
+    .component-navigation {
+        transition: all 0.7s ease-in;
+
+        #myNavbar .navbar-nav li a {
+            color: $white;
+            font-size: 15px;
+            background: none;  
+            box-shadow: none;
+            
+        } 
+        
+        h3 {
+            color: $black;
+            font-size: 22px;
+        }
+
+        .dropdown-menu {
+            left: auto;
+            right: 0;
+
+            @include breakpoint(xs) {
+                right: initial;
+                min-width: 470px;
+            }
+        }
+
+        .navbar {
+            margin-bottom: 0px;
+        }
+
+        &.whiteBgNag {
+            background: $white;
+            height: 70px;
+            z-index: 12;
+            float: left;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            box-shadow: 0 0px 5px #333;
+        }
+
+        &.fixed {
+            background: $white;
+            height: 50px;
+            z-index: 12;
+            display: inline-block;
+            position: fixed;
+            top: 0px;
+            width: 100%;
+            box-shadow: 0 0px 5px #333;
+
+            @include breakpoint(xs) {
+                //top: 30px;
+            }
+
+
+            .component-header-nav {
+                top: 0px;
+            }
+
+            #myNavbar .navbar-nav li a {
+                color: $violet;
+
+                &:hover {
+                    color: $red;
+                }
+            }
+
+            .logo-cff {
+                background: url(#{$assetPath}/logo.png) no-repeat;
+            }
+
+            .nav-label-one {
+                background: #f3f3f3;
+
+                li {
+                    color: $black;
+                }
+            }
+        }
+    }
+    
+    
+
+    .component-navigation-whiteBgNag {
+        transition: all 0.7s ease-in;
+
+        #myNavbar .navbar-nav li a {
+            color: $gray;
+            font-size: 15px;
+
+            &:hover {
+                color: $orangelight;
+            }
+        }
+
+        .component-header-nav {
+            .logo-cff {
+                background: url(#{$assetPath}/logo.png) no-repeat;
+            }
+        }
+
+        .navbar {
+            margin-bottom: 0px;
+        }
+
+        background: $white;
+        float: left;
+        width: 100%;
+        margin: 0 0 0 0;
+        border-bottom: 1px solid #ddd !important;
+        position: relative;
+        z-index: 3;
+
+        @include breakpoint(xs) {
+            border-bottom: 0;
+        }
+
+
+        .component-header-nav {
+            position: static;
+        }
+    }
+
+    .component-header-nav {
+        position: absolute;
+        top: 0;
+        z-index: 3;
+
+        @include breakpoint(xs) {
+            position: relative;
+            top: 0;
+        }
+
+
+        .navbar-toggle {
+            @include breakpoint(sm) {
+                border-radius: 0; 
+                border: 0;
+                float: right;
+
+                //margin-top: auto;
+                span.icon-bar {
+                    background: $white;
+                }
+            }
+        }
+
+        
+
+        .navbar-collapse {
+            
+            @include breakpoint(xs) {
+                background: $white;
+                color: $black;
+            }
+        }
+
+        .logo-cff {
+            background: url(#{$assetPath}/cff.svg) no-repeat;
+            height: 28px;
+            width: 195px;
+            display: inline-block;
+            vertical-align: middle;
+            margin-top: 10px;
+            text-indent: -9999px;
+            margin-left: 0;
+            @include breakpoint(screen-md) {
+                margin-left: 10px;
+            }
+            @include breakpoint(xs) {
+                margin-top: 10px;
+                margin-left: 20px;
+            }
+        }
+
+        @include breakpoint(xs) {
+            width: 100%;
+        }
+
+
+        .navbar-default {
+            border: none;
+            background: transparent;
+            box-shadow: none;
+
+            .navbar-right{
+                margin-right: -12px;
+            }
+
+            .navbar-nav {
+                a {
+                    color: $black;
+                    text-shadow: none;
+
+                    @include breakpoint(lg) {
+                        padding: 15px;
+                    }
+
+                    @include breakpoint(screen-md) {
+                        padding: 15px 15px 15px 10px;
+                    }
+                    @include breakpoint(screen-sm) {
+                        padding: 15px 10px 15px 10px;
+                    }
+ 
+                }
+            }
+
+            a,
+            a:hover {
+                color: $red;
+                text-shadow: none;
+            }
+        }
+    }
+
+    .city-panel {
+        position: absolute;
+        top: 70px;
+        z-index: 2;
+        color: $white;
+        width: 100%;
+
+        @include breakpoint(xs) {
+            padding: 0 0 5px 0;
+            position: initial;
+            background: $white;
+            clear: both;
+            border-top: 1px solid #ddd;
+        }
+
+
+        .banner-caption-block {
+            background: rgba(255, 255, 255, 0.85);
+            border-radius: 10px;
+            color: #4d4d77;
+            padding: 20px;
+            margin-top: 60px;
+            width: 350px;
+
+            @include breakpoint(xs) {
+                width: 100%;
+                border-radius: 0;
+                padding: 5px 0;
+                margin-top: 0;
+            }
+
+
+            h1 {
+                margin: 0;
+                padding: 0 0 15px 0;
+                font-size: 24px;
+                border-bottom: 1px dashed #a3a3a3;
+
+                @include breakpoint(xs) {
+                    font-size: 18px;
+                    border-bottom: 0;
+                }
+            }
+
+            .offer {
+                font-size: 20px;
+                color: $red;
+                padding: 10px 10px 0 0;
+                letter-spacing: 1px;
+
+                @include breakpoint(xs) {
+                    font-size: 14px;
+                }
+            }
+			
+			.countdown { 
+				  .timer { font-size:30px;  color:#f65b64;font-family: Arial;font-weight: bolder;
+					@include breakpoint(xs) { font-size:24px; 	 }
+				  }
+			     .subline { font-size:18px; 
+				 @include breakpoint(xs) { font-size:16px;   }
+						}
+				  .text	 { color:#4d4d77; font-size: 16px; margin-top: 10px;
+					@include breakpoint(xs) { font-size:14px; }
+				  }
+				  @include breakpoint(xs) {
+                     text-align:center;
+					 background: #e8e8e8;border-radius: 5px;padding: 6px 0;margin: 0 -9px -5px -9px;
+					  
+                }
+				 }
+				 
+			
+			
+        }
+
+        h1 {
+            font-size: 36px;
+            padding: 55px 0 10px;
+            display: inline-block;
+            border-bottom: 1px solid #fff;
+
+            @include breakpoint(md) {
+                font-size: 30px;
+                padding: 35px 0 10px;
+            }
+
+
+            @include breakpoint(sm) {
+                font-size: 26px;
+                padding: 35px 0 10px;
+            }
+
+
+            @include breakpoint(xs) {
+                padding: 0 0 0 0 !important;
+                text-align: center;
+                font-size: 20px;
+                color: #44445f;
+                width: 100%;
+                text-align: center;
+            }
+        }
+
+        .line {
+            border-bottom: 1px solid #fff;
+            margin: 8px 300px 0 0;
+
+            @include breakpoint(xs) {
+                border-bottom: 1px solid #ddd;
+            }
+
+
+            @include breakpoint(sm) {
+                display: none;
+            }
+        }
+
+        .offer {
+            font-size: 18px;
+            color: #ebdd1a;
+            padding: 10px 100px 0 0;
+            letter-spacing: 1px;
+
+            @include breakpoint(xs) {
+                text-align: center;
+                padding: 0 0 0 0;
+                font-size: 13px;
+                color: #ea5454;
+            }
+
+
+            @include breakpoint(sm) {
+                padding: 0 0 0 0;
+            }
+        }
+
+        .city-right-bg {
+            background: #f65b64;
+            border-radius: 50%;
+            height: 250px;
+            padding: 27px 20px;
+            width: 250px;
+            margin-top: 30px;
+
+            @include breakpoint(xs) {
+                margin: 20px 0 0 20px;
+            }
+        }
+
+        .save-big {
+            font-size: 20px;
+            color: $white;
+            text-align: center;
+        }
+
+        .city-name {
+            font-size: 14px;
+            color: $white;
+            font-weight: 400;
+            text-align: center;
+            margin-bottom: 6px;
+        }
+
+        .city-depart {
+            color: $white;
+            text-align: center;
+            font-size: 16px;
+            margin-bottom: 6px;
+            margin-top: 4px;
+        }
+
+        .super-saver {
+            text-align: center;
+            font-size: 24px;
+            color: $white;
+            font-weight: 900;
+            margin-top: 17px;
+        }
+
+        .city-price {
+            color: $white;
+            text-align: center;
+            font-size: 40px;
+            font-weight: bold;
+            margin-bottom: 3px;
+
+            span {
+                color: $white;
+                text-align: center;
+                font-size: 30px;
+                font-weight: 700;
+            }
+        }
+
+        .city-date {
+            color: $white;
+            text-align: center;
+            font-size: 14px;
+        }
+
+        .fa-arrow {
+            color: $white;
+            text-align: center;
+
+            .fa-arrow-circle-o-right {
+                color: $white;
+                font-size: 33px;
+            }
+        }
+
+        .city-right-bg {
+            padding: 27px 20px;
+
+            @include breakpoint(xs) {
+                margin: 20px 0 0 20px;
+            }
+        }
+    }
+
+    .promotional-offer {
+        position: absolute;
+        top: 70px;
+        z-index: 2;
+        color: $white;
+        width: 100%;
+
+        @include breakpoint(xs) {
+            padding: 0 0 5px 0;
+            position: absolute;
+        }
+
+
+        .promotional-offer-bg {
+            padding: 18px 0;
+            text-align: center;
+
+            @include breakpoint(xs) {
+                margin: 20px 0 0 0;
+            }
+        }
+
+        .pro-city-name {
+            font-size: 56px;
+            font-weight: bold;
+            line-height: 60px;
+        }
+
+        .offer-line {
+            border-top: #fff 1px solid;
+            width: 318px;
+            margin: 0 auto;
+
+            @include breakpoint(xs) {
+                width: 280px;
+            }
+        }
+
+        .pro-fly-to {
+            font-size: 19px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            color: #ff565c;
+            line-height: 35px;
+
+            @include breakpoint(xs) {
+                letter-spacing: 3px;
+            }
+        }
+
+        .pro-fare {
+            font-size: 53px;
+            font-weight: bold;
+        }
+
+        .pro-oneway {
+            font-size: 15px;
+            letter-spacing: 2px;
+            line-height: 30px;
+        }
+
+        .offer-line1 {
+            border-top: #fff 1px solid;
+            width: 220px;
+            margin: 0 auto;
+        }
+
+        .pro-date {
+            font-size: 14px;
+            letter-spacing: 2px;
+            line-height: 25px;
+        }
+    }
+
+    .nav-label-one {
+        display: none;
+        background: #122a44;
+        font-size: 12px;
+        padding: 5px 0;
+        position: absolute;
+        top: 0;
+        width: 100%;
+
+        li {
+            display: inline;
+            color: $white;
+
+            .fa-android {
+                color: #fff;
+                font-size: 13px;
+            }
+
+            .fa-apple {
+                color: #fff;
+                font-size: 13px;
+            }
+        }
+    }
+
+    .input-group-addon > i { 
+        font-size: 23px;
+        margin: 0 -6px;
+    }
+
+    .input-lg {
+        font-size: 13px;
+    }
+
+    .hotel-input {
+        font-size: 18px;
+    }
+
+    .component-header-img {
+        height: 100%;
+        max-height: 800px;
+        background: $violet;
+        background-size: auto !important;
+
+        @include breakpoint(md) {
+            height: 100%;
+            background-position: -670px 50px !important;
+            max-height: 100%;
+        }
+
+
+        @include breakpoint(sm) {
+            min-height: 400px;
+            background-position: -770px 50px !important;
+            height: 100%;
+        }
+
+
+        @include breakpoint(xs) {
+            min-height: 200px !important;
+            max-height: 100%;
+        }
+
+
+        &.list {
+            min-height: auto !important;
+        }
+
+        img {
+            margin: 0 auto;
+        }
+    }
+
+    .component-header-payment {
+        margin-bottom: 0px;
+        background: $black;
+
+        @include breakpoint(xs) {
+            //min-height: 675px;
+        }
+
+
+        img {
+            opacity: 0.5;
+            margin-top: 0;
+        }
+
+        .static-head {
+            position: absolute;
+            top: 110px;
+            color: #fff;
+            font-size: 36px;
+            text-align: center;
+            width: 100%;
+            z-index: 1;
+
+            @include breakpoint(sm) {
+                top: 80px;
+                font-size: 30px;
+            }
+
+
+            @include breakpoint(xs) {
+                top: 90px;
+                font-size: 20px;
+            }
+        }
+    }
+.component-header-review {
+	margin-bottom: 0px;
+ background: $black;
+ @include breakpoint(xs) {
+ //min-height: 675px;
+}
+img {
+}
+.static-head {
+	position: absolute;
+	top: 100px;
+	color: #4d4d77;
+	font-size: 24px;
+	text-align: center;
+	width: 100%;
+	z-index: 1;
+	padding-left: 175px;
+    
+    @include breakpoint (sm) {
+    top: 75px;
+    font-size: 18px;
+    padding-left: 95px;
+    }
+    
+    @include breakpoint (xs) {
+    top: 94px;
+    font-size: 8px;
+    padding-left: 30px;
+    }
+
+.review-us {
+	background: #56587f;
+	color: #fff;
+	letter-spacing: 3px;
+	font-weight: 600;
+	padding: 13px 20px;
+	font-size: 14px;
+	margin-top: 18px;
+    
+    @include breakpoint (sm) {
+    top: 75px;
+    font-size: 18px;
+    padding-left: 95px;
+    }
+
+    @include breakpoint (xs) {
+    font-size: 7px;
+    padding-left: 30px;
+    padding: 5px 8px;
+    margin-top: 1px;
+    font-weight: 200;
+    letter-spacing: 2px;
+    }
+}
+}
+}
+    .component-country-flags {
+        background: $white;
+        padding: 15px;
+        overflow: hidden;
+    }
+
+    .component-navigation {
+        h3 {
+            color: $black;
+            font-size: 22px;
+        }
+
+        .dropdown-menu {
+            min-width: auto;
+            left: auto;
+            right: 0;
+            border-radius: 3px;
+
+            @include breakpoint(xs) {
+                right: initial;
+                min-width: 470px;
+            }
+        }
+    }
+}
+
+//Result page Cart
+#sightSeeingListController {
+.view-cart{
+        color: $red;
+        padding: 9px 10px;
+        font-weight: 600;
+        font-size: 20px;
+        @include breakpoint(xs){top: 50px; right: 0; z-index: 5;}
+    
+    @include breakpoint(screen-md){
+        padding: 3px 10px;
+        font-size: 14px;
+        color: #f15a5f;
+        background: none;
+        left: 0;
+        }
+        @include breakpoint(screen-xs) {
+            position: absolute;
+            top: -80px;
+            font-size: 25px;
+            right: 10px;
+        }
+
+        .fa-stack {
+            height: 2em;
+            width: 2em;
+            line-height: 2em;
+            top: 0;
+            right: 0;
+            font-size: 18px;
+        }
+        .fa-stack[data-count]:after{
+            top: -2px;
+            right: -4px;
+            position: absolute;
+            content: attr(data-count);
+            font-size: 10px;
+            padding: .5em;
+            border-radius: 50%;
+            line-height: .75em;
+            color: $orangelight;
+            text-align: center;
+            min-width: 2em;
+            font-weight: bold;
+            background: $white;
+            border: 1px solid $orangelight;
+            @include breakpoint(xs){color: $red; background:$white;
+            }
+          }
+          .fa-circle {color:$red;
+          }
+          
+          .red-cart {color: $orangelight; background:$gray;
+            @include breakpoint(screen-xs){color: $orangelight; background:$white;
+            }
+          }
+  
+    } 
+
+    
+}
+
+//Detail page Cart
+#sightSeeingDetailController {
+    .view-cart{
+        color: $red;
+        padding: 9px 10px;
+        font-weight: 600;
+        font-size: 20px;
+        
+        @include breakpoint(screen-md){
+            padding: 3px 10px;
+            font-size: 22px;
+            color: #f15a5f;
+            background: none;
+            right: 0;
+            }
+            @include breakpoint(screen-xs){
+                padding: 3px 10px;
+                font-size: 22px;
+                color: #f15a5f;
+                background: none;
+                right: 10px;
+                 
+                }
+
+                .fa-stack {
+                    height: 2em;
+                    width: 2em;
+                    line-height: 2em;
+                    top: 11px;
+                    right: 20px;
+                    position: absolute;
+                    font-size: 20px;
+                }
+                .fa-stack[data-count]:after{
+                    top: 0;
+                    right: -2px;
+                    position: absolute;
+                    content: attr(data-count);
+                    font-size: 10px;
+                    padding: .5em;
+                    border-radius: 50%;
+                    line-height: .75em;
+                    color: #f35a5f;
+                    text-align: center;
+                    min-width: 2em;
+                    font-weight: bold;
+                    background: white;
+                    border: 1px solid #f35a5f;
+                  }
+                  .fa-circle {color:$red;
+                  }
+                  
+                  .red-cart {color: $orangelight; background:#eee;
+                  }
+      
+        } 
+    }
+
+   
+
+.engine-carousel-banner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 500px;
+    margin-top: 50px;
+    background: transparent;
+    @include breakpoint(xs) {
+        background: $violet;
+        position: relative;
+    }
+    .carousel-fade {
+        .carousel-inner {
+            // background: #000;
+            // opacity: 0.6;
+            .item {
+                opacity: 0;
+                transition-property: opacity;
+                h1{
+                    color: #fff;
+                    margin: 0;
+                    text-align: center;
+                    padding-top: 170px;
+                    font-weight: bold;
+                    font-size: 33px;
+                }
+            }
+            .active {
+                opacity: 1;
+                &.left,
+                &.right {
+                    left: 0;
+                    opacity: 0;
+                    z-index: 1;
+                }
+            }
+            .next.left,
+            .prev.right {
+                opacity: 1;
+            }
+        }
+        .carousel-control {
+            z-index: 2;
+        }
+    }
+    @media all and (transform-3d),
+    (-webkit-transform-3d) {
+        .carousel-fade .carousel-inner>.item {
+            &.next,
+            &.active.right,
+            &.prev,
+            &.active.left {
+                opacity: 0;
+                -webkit-transform: translate3d(0, 0, 0);
+                transform: translate3d(0, 0, 0);
+            }
+            &.next.left,
+            &.prev.right,
+            &.active {
+                opacity: 1;
+                -webkit-transform: translate3d(0, 0, 0);
+                transform: translate3d(0, 0, 0);
+            }
+        }
+    }
+    
+        .item {
+            &:nth-child(1) {
+                background: url(/resources/assets/sightSeeing/great-wall-of-china.jpg) no-repeat center $violet;
+                //background-size: cover;
+            }
+            &:nth-child(2) {
+                background: url(/resources/assets/sightSeeing/mont-st-michel-france.jpg) no-repeat center $violet;
+                //background-size: cover;
+            }
+            &:nth-child(3) {
+                background: url(/resources/assets/sightSeeing/petra-jordan.jpg) no-repeat center $violet;
+                //background-size: cover;
+            }
+            &:nth-child(4) {
+                background: url(/resources/assets/sightSeeing/salar-de-uyuni-bolivia.jpg) no-repeat center $violet;
+                //background-size: cover;
+            }
+            &:nth-child(5) {
+                background: url(/resources/assets/sightSeeing/taj-mahal.jpg) no-repeat center $violet;
+                //background-size: cover;
+            }
+        }
+             
+    .carousel {
+        .item {
+            width: 100%;
+            height: 500px;
+        }
+        //  z-index: -99;
+    }
+    .carousel-fade .carousel-inner {
+        .item {
+            opacity: 0;
+            transition-property: opacity;
+        }
+        .active {
+            opacity: 1;
+        }
+    }
+}
+
+.disableReturnDate {
+    opacity: 0.5;
+}
+
+.component-search {
+    .maincalulation {
+        cursor: pointer;
+    }
+
+    .hotel-bnr-head {
+        position: absolute;
+        top: 126px;
+        color: #fff;
+        font-size: 38px;
+        text-align: center;
+        width: 100%;
+        z-index: 1;
+        text-transform: uppercase;
+
+        span {
+            color: #d86b1d;
+        }
+
+        p {
+            font-size: 20px;
+            color: #ccc;
+        }
+    }
+
+    .hotel-bnr-eng {
+        margin-top: 50px;
+    }
+
+    .component-search-engine {
+        padding: 15px;
+
+        .hotel-eng-bg {
+            width: 1007px;
+            background: #fff;
+            padding: 5px 0 0 16px;
+            height: 107px;
+            margin: 49px 0 0 71px;
+
+            .hotel-search-desti {
+                color: #000;
+                font-size: 17px;
+                padding: 7px 0 0 42px;
+                background: url(#{$assetPath}/location-icon.png) 18px 8px no-repeat;
+            }
+        }
+
+        @include breakpoint(xs) {
+            top: 80px;
+            width: auto;
+            left: initial;
+            margin-left: auto;
+            padding: 0;
+        }
+
+
+        &.search-for-home {
+            .list-one {
+                border-bottom: 1px dotted $white;
+
+                @include breakpoint(xs) {
+                    text-align: center;
+                }
+
+
+                .cff-list-tab {
+                    padding: 10px 15px;
+                    background: $white;
+
+                    &.active {
+                        background: $red;
+
+                        a {
+                            color: $white;
+                        }
+                    }
+
+                    a, a:hover {
+                        color: #333;
+                    }
+                }
+            }
+        }
+
+        &.home-search {
+            a,
+            a:hover,
+            a:active {
+                color: $white;
+
+                &:hover {
+                    color: #ff565c;
+                }
+            }
+        }
+
+        .list-inline {
+            margin-left: 0;
+            font-weight: 600;
+            font-size: 13px;
+        }
+
+        .list-inline3 {
+            @include breakpoint(xs) {
+                padding-left: 0 !important;
+            }
+        }
+
+        .preFerredAirline {
+            margin-right: 0;
+        }
+
+        #airlineDiv {
+            margin-right: 0;
+        }
+
+        .city-airport ul.list-inline li {
+            a {
+                text-decoration: underline;
+
+                &:hover {
+                    text-decoration: none;
+                }
+            }
+        }
+
+        .form-control[readonly],
+        fieldset[disabled] {
+            background: $white;
+
+            @include breakpoint(xs) {
+                padding-left: 0;
+            }
+        }
+
+        .error {
+            background: #ffffb7;
+        }
+    }
+
+    .search-panel {
+        position: absolute;
+        top: 200px;
+        width: 1200px;
+        left: 50%;
+        margin-left: -600px;
+        z-index: 2;
+        color: $white;
+
+        @include breakpoint(md) {
+            top: 100px;
+            width: 100%;
+            left: auto;
+            margin: 0 auto;
+        }
+
+
+        .hotel-des-search {
+            width: 46.0%;
+        }
+
+        @include breakpoint(sm) {
+            width: 100%;
+            left: 0;
+            top: 100px;
+            margin-left: 0;
+        }
+
+
+        [class*='col-md'] {
+            padding-left: 2px;
+            padding-right: 2px;
+
+            .input-lg {
+                padding-left: 0;
+                box-shadow: none;
+                color: #333;
+            }
+        }
+
+        .col-md-1 {
+            width: 5.2%;
+
+            .search-flights {
+                padding: 12px 26px 12px 27px;
+                font-size: 15px;
+            }
+        }
+
+        .col-md-2 {
+            width: 15.2%;
+        }
+
+        .col-md-4 {
+            width: 30.4%;
+        }
+    }
+
+    .search-panel-xs {
+        position: absolute;
+        top: 60px;
+        width: auto;
+        left: auto;
+        margin: 0;
+        z-index: 2;
+        color: $white;
+
+        @include breakpoint(xs) {
+            top: 80px;
+        }
+
+
+        .list-two {
+            @include breakpoint(sm) {
+                margin-left: 15px;
+            }
+        }
+
+        .padd-right-5 {
+            padding-right: 5px;
+        }
+
+        .padd-left-5 {
+            padding-left: 5px;
+        }
+
+        [class*='col-md'] {
+            // padding-left: 2px;
+            // padding-right: 2px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+
+            .input-lg {
+                padding-left: 0;
+            }
+        }
+
+        .col-md-1 {
+            .search-flights {
+                padding: 10px 19px 10px 20px;
+            }
+        }
+
+        .col-md-2 {}
+    }
+
+    @include breakpoint(sm) {
+        .input-group {
+            width: 100%;
+
+            .search-flights {
+                width: 100%;
+            }
+        }
+    }
+
+
+    .dropdown-menu {
+        width: 260px;
+        padding: 15px 0 0px 0px;
+
+        @include breakpoint(xs) {
+            bottom: 100%;
+            top: initial;
+        }
+
+
+        a:hover {
+            background: none;
+        }
+
+        .subIcon,
+        .addIcon {
+            background: #eee;
+        }
+
+        .input-group-addon {
+            &.name {
+                width: 130px;
+                text-align: left;
+            }
+        }
+    }
+
+    [class*='col-xs'] {
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+}
+
+.travelerClose {
+    width: 100% !important;
+    margin-bottom: 0 !important;
+    font-size: 16px;
+}
+
+.component-search-listpage {
+    .travelerClose {
+        font-size: 12px;
+        color: $black;
+        cursor: pointer;
+        background-color: $red;
+        border: none;
+        color: $white;
+        margin-bottom: 5px;
+        width: 100%;
+
+        .hotel-des-search1 {
+            width: 47.3%;
+        }
+    }
+
+    .preFerredAirline {
+        margin-right: 0;
+    }
+
+    #airlineDiv {
+        margin-right: 0;
+    }
+
+    .city-airport ul.list-inline li {
+        a {
+            text-decoration: underline;
+            color: #fff;
+
+            &:hover {
+                text-decoration: none;
+                color: #ff565c;
+            }
+        }
+    }
+
+    .component-search-engine {
+        padding: 15px;
+
+        @include breakpoint(xs) {
+            width: 100%;
+        }
+
+
+        &.small-bg-home {
+            background-color: #4e4d77;
+            padding: 20px 25px 10px 25px;
+
+            @include breakpoint(xs) {
+                padding: 15px 15px 10px 9px;
+            }
+
+
+            @include breakpoint(sm) {
+                padding: 15px 15px 10px 15px;
+            }
+        }
+
+        &.bg-home {
+            background-color: #4e4d77;
+            padding: 10px 0 1px 0;
+
+            @include breakpoint(md) {
+                padding: 10px 0;
+            }
+
+
+            @include breakpoint(xs) {
+                padding: 10px 0 10px 0;
+                background-color: rgba(78, 77, 119, 0.95);
+            }
+        }
+
+        &.search-for-listing {
+            .list-one {
+                border-bottom: 1px dotted $black;
+
+                @include breakpoint(xs) {
+                    text-align: center;
+                }
+
+
+                .cff-list-tab {
+                    padding-top: 15px;
+                    padding-bottom: 15px;
+                }
+            }
+        }
+
+        .list-inline {
+            margin-left: 0;
+            color: #fff;
+            font-weight: 600;
+            font-size: 13px;
+            
+            @include breakpoint(xs) {
+                padding-left: 0 !important;
+            }
+        }
+
+        .form-control[readonly],
+        fieldset[disabled] {
+            background: $white;
+
+            @include breakpoint(xs) {
+                padding-left: 0;
+            }
+        }
+
+        .form-control:focus {
+            box-shadow: none;
+            -wekit-box-shadow: none;
+        }
+
+        .error {
+            background: #ffffb7;
+        }
+    }
+
+    .small-bg-home {
+        .input-group-addon {
+            padding: 6px 9px !important;
+        }
+
+        .input-group .form-control {
+            padding: 0;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+        }
+    }
+
+    .search-panel {
+        [class*='col-md'] {
+            .input-lg {
+                padding-left: 0;
+            }
+
+            .small-input-lg {
+                padding-left: 0;
+                height: 35px;
+                line-height: 20px;
+                font-size: 12px;
+
+                @include breakpoint(xs) {
+                    padding-left: 0px;
+                    font-size: 11px;
+                }
+            }
+        }
+
+        .col-md-1 {
+            width: 5.2%;
+
+            .search-flights {
+                padding: 12px 19px 12px 20px;
+                font-size: 15px;
+            }
+        }
+
+        .col-md-2 {
+            width: 15.2%;
+        }
+
+        .col-md-4 {
+            width: 30.4%;
+        }
+    }
+
+    .search-panel-xs {
+        //position: absolute;
+        //top: 100px;
+        width: auto;
+        margin-left: auto;
+        background: $label-one-bg;
+
+        .list-two {
+            @include breakpoint(sm) {
+                margin-left: 15px;
+            }
+        }
+
+        .padd-right-5 {
+            padding-right: 5px;
+        }
+
+        .padd-left-5 {
+            padding-left: 5px;
+        }
+
+        [class*='col-md'] {
+            // padding-left: 2px;
+            // padding-right: 2px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+
+            .input-lg {
+                padding-left: 0;
+            }
+        }
+
+        .col-md-1 {
+            .search-flights {
+                padding: 12px 19px 11px 20px;
+            }
+        }
+
+        .col-md-2 {}
+    }
+
+    @include breakpoint(sm) {
+        .input-group {
+            width: 100%;
+
+            .search-flights {
+                width: 100%;
+            }
+        }
+    }
+
+
+    .dropdown-menu {
+        width: 260px;
+        padding: 15px 0 0px 0px;
+
+        a:hover {
+            background: none;
+        }
+
+        .subIcon,
+        .addIcon {
+            background: #eee;
+        }
+
+        .input-group-addon {
+            &.name {
+                width: 130px;
+                text-align: left;
+            }
+        }
+    }
+
+    [class*='col-xs'] {
+        padding-top: 5px;
+        padding-bottom: 5px; 
+    }
+}
+
+.toll-free {
+    font-size:21px;
+    font-weight: bold;
+    font-family: arial;
+    letter-spacing: 1px;
+    color: $orangelight;
+
+    @include breakpoint(screen-xs) {
+        font-size:18px;
+    }
+     
+}
+
+.call-us {
+    font-size: 12px;
+    position: absolute;
+    right: 16px;
+    top: 0;
+    color: $gray;
+    @include breakpoint(screen-sm){right: 10px;}
+}
+
+.toll-free-mobile {
+    //position: fixed;
+    //width: 100%;
+    z-index: 999;
+    font-size: 12px;
+
+    //top:0px;
+    //right: 0px;
+    padding: 0;
+    height: 35px;
+    line-height: 34px;
+    color: $white;
+    background: darken($violet, 10%);
+
+    @include breakpoint(screen-xs){background: #666;}
+
+    a {
+        color: $white;
+    }
+}
+
+.android a {
+    font-size: 22px !important;
+}
+
+/*Engine CSS Start*/
+
+.src-input {
+    width: 100%;
+}
+
+#flightSearch input[type="text"] {
+    color: #333;
+    padding: 7px 20px 7px 30px;
+    box-shadow: none;
+    border: 1px solid #fff;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+
+    &:focus {
+        border: 1px solid #ff565c;
+    }
+
+    @include breakpoint(md) {
+        border: 2px solid #fff;
+
+        &:focus {
+            border: 2px solid #ff565c;
+        }
+    }
+
+
+    @include breakpoint(sm) {
+        border: 2px solid #fff;
+
+        &:focus {
+            border: 2px solid #ff565c;
+        }
+    }
+
+
+    @include breakpoint(xs) {
+        border: 2px solid #fff;
+
+        &:focus {
+            border: 2px solid #ff565c;
+        }
+    }
+}
+
+#flightSearch .src-input .location-icon, #flightSearch .src-input .calender-icon {
+    position: absolute;
+    left: 6px;
+    top: 18px;
+    font-size: 20px;
+    color: #ff565c;
+    pointer-events: none;
+    width: 24px;
+    text-align: center;
+
+    @include breakpoint(sm) {
+        left: 20px;
+    }
+
+
+    @include breakpoint(xs) {
+        left: 20px;
+    }
+}
+
+#flightSearch .src-input .calender-icon {
+    font-size: 20px;
+    color: #999;
+    pointer-events: none;
+}
+
+#flightSearch .src-input input[type="text"]:focus ~ .location-icon, #flightSearch .src-input input[type="text"]:focus ~ .calender-icon {
+    color: #ff565c;
+}
+
+#flightSearch.src-input input[type="text"]:focus {
+    box-shadow: none;
+}
+
+#flightSearch .src-input .input_cont:focus::-moz-placeholder {
+    color: #333;
+}
+
+#searchHotel input[type="text"] {
+    color: #333;
+    padding: 7px 20px 7px 30px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    box-shadow: none;
+    border: 1px solid #fff;
+
+    &:focus {
+        border: 1px solid #ff565c;
+    }
+
+    @include breakpoint(md) {
+        border: 2px solid #fff;
+
+        &:focus {
+            border: 2px solid #ff565c;
+        }
+    }
+
+
+    @include breakpoint(sm) {
+        border: 2px solid #fff;
+
+        &:focus {
+            border: 2px solid #ff565c;
+        }
+    }
+
+
+    @include breakpoint(xs) {
+        border: 2px solid #fff;
+
+        &:focus {
+            border: 2px solid #ff565c;
+        }
+    }
+}
+
+#searchHotel .src-input .location-icon, #searchHotel .src-input .calender-icon {
+    position: absolute;
+    left: 6px;
+    top: 18px;
+    font-size: 20px;
+    color: #ff565c;
+    pointer-events: none;
+    width: 24px;
+    text-align: center;
+
+    @include breakpoint(sm) {
+        left: 20px;
+    }
+
+
+    @include breakpoint(xs) {
+        left: 20px;
+    }
+}
+
+#searchHotel .src-input .calender-icon {
+    font-size: 20px;
+    color: #999;
+    pointer-events: none;
+}
+
+#searchHotel .src-input input[type="text"]:focus ~ .location-icon, #searchHotel .src-input input[type="text"]:focus ~ .calender-icon {
+    color: #ff565c;
+}
+
+#searchHotel.src-input input[type="text"]:focus {
+    box-shadow: none;
+}
+
+#searchHotel .src-input :focus::-moz-placeholder {
+    color: #333;
+}
+
+.pos-left {
+    @include breakpoint(sm) {
+        left: 10px !important;
+    }
+
+
+    @include breakpoint(xs) {
+        left: 10px !important;
+    }
+}
+
+.travelerOpen .dropdown-menu input.form-control {
+    padding: 0 !important;
+    text-align: center;
+}
+
+.travelerOpen .drop-errow {
+    position: static;
+}
+
+.travelerOpen .drop-errow2 {
+    position: static;
+}
+
+.travelerOpen .fa-user {
+    font-size: 20px !important;
+    line-height: 26px;
+}
+
+.src-input .fa-calendar {
+    font-size: 20px !important;
+    line-height: 24px;
+}
+
+.drop-errow {
+    display: block;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+
+.drop-errow:before {
+    color: #333;
+    content: "\f0d7";
+    font-family: "FontAwesome";
+    font-size: 18px;
+    position: absolute;
+    pointer-events: none;
+    right: 5px;
+    top: 10px;
+}
+
+_:-ms-lang(en), .drop-errow:before {
+    display: none;
+}
+
+_:-ms-lang(en), .select-class:before {
+    display: none;
+}
+
+.drop-errow2 {
+    display: block;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+
+.drop-errow2:before {
+    color: #333;
+    content: "\f0d7";
+    font-family: "FontAwesome";
+    font-size: 18px;
+    position: absolute;
+    pointer-events: none;
+    right: 8px;
+    top: 8px;
+}
+
+.travelerOpen .dropdown-menu ul input {
+    padding: 0px !important;
+    text-align: center;
+    font-size: 16px;
+    width: 40px;
+    border: 0 !important;
+}
+
+.travelerOpen .dropdown-menu ul input:focus {
+    padding: 0px !important;
+    text-align: center;
+    width: 40px;
+    border: 0 !important;
+}
+
+.travelerOpen .dropdown-menu ul {
+    padding-right: 10px;
+}
+
+.class-type {
+    padding-left: 30px !important;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+select.input-lg {
+    line-height: inherit !important;
+}
+
+.modify-search {
+    @include breakpoint(sm) {
+        width: 100%;
+        top: 0px;
+        padding-top: 60px !important;
+        position: fixed;
+        z-index: 9;
+        height: 100vh;
+        transition: all 0.5s ease 0s;
+    }
+
+
+    @include breakpoint(xs) {
+        width: 100%;
+        top: 0px;
+        position: fixed;
+        z-index: 9;
+        height: 100vh;
+        transition: all 0.5s ease 0s;
+    }
+}
+
+/*Coupon pop CSS*/
+
+.coupon-bg {
+    background: #ffce00;
+    color: #594800;
+    padding: 10px 0;
+    line-height: 18px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    animation: fadein 2s;
+    -moz-animation: fadein 2s;
+    -webkit-animation: fadein 2s;
+    -o-animation: fadein 2s;
+
+    &:hover {
+        color: #000;
+    }
+
+    @include breakpoint(xs) {
+        padding: 7px 0;
+        font-size: 14px;
+    }
+}
+
+.dis-block {
+    @include breakpoint(xs) {
+        display: block;
+    }
+}
+
+#close {
+    float: right;
+    cursor: pointer;
+    font-size: 14px;
+    display: inline-block;
+    line-height: 18px;
+
+    &:hover {
+        color: #ff565c;
+    }
+
+    @include breakpoint(xs) {
+        font-size: 14px;
+        line-height: 34px;
+    }
+
+
+    .fa-times-circle {
+        font-size: 18px;
+        display: inline-block;
+
+        @include breakpoint(xs) {
+            font-size: 16px;
+        }
+    }
+}
+
+.travelerdropdown {
+    display: none;
+}
+
+.travelerdropdown.open {
+    display: block;
+}
+
+.glyphicon-minus-sign, .glyphicon-plus-sign {
+    cursor: pointer;
+}
+
+.ui-datepicker {
+    z-index: 99 !important;
+}
+
+.src-pad-hide #searchPad {
+    display: none;
+}
+
+.navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
+    background-color: transparent !important;
+}
+
+/*Pop css*/
+
+#fvpp-blackout {
+    display: block;
+    z-index: 12;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: #000;
+    opacity: 0.4;
+}
+
+#my-welcome-message {
+    display: none;
+    z-index: 13;
+    position: fixed;
+    width: auto;
+    left: 50%;
+    top: 50%;
+    margin-top: -250px;
+    margin-left: -300px;
+
+    @include breakpoint(xs) {
+        width: 100%;
+        margin-left: 0px;
+        margin-top: 0px;
+        left: 0px;
+        padding: 10px;
+        top: 25%;
+    }
+}
+
+a#fvpp-close { 
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    color: #ffffff !important;
+    cursor: pointer;
+    position: absolute;
+    top:0;
+    right:0;
+    text-align: center;
+    font-size: 20px;
+    line-height: 30px;
+    opacity: 1 !important;
+
+    @include breakpoint(xs) {
+        top:10px;
+        right:10px;
+    }
+
+
+    &:hover { 
+        color: #ffc000 !important;
+    }
+
+    &:focus { 
+        color: #ffc000 !important;
+    }
+}
+
+/*Midum page Dot blinker*/
+.dot span {
+    font-size: 50px;
+    line-height: 0;
+    animation-name: blink;
+    animation-duration: 1.4s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: both;
+    font-family: Georgia;
+}
+
+.dot span:nth-child(2) {
+    animation-delay: .2s;
+}
+
+.dot span:nth-child(3) {
+    animation-delay: .4s;
+}
+
+@keyframes blink {
+    0% {
+        opacity: .2;
+    }
+
+    20% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: .2;
+    }
+}
+
+/*Coupon Apply*/
+.coupon-apply {
+    position: absolute;
+    margin-left: 32%;
+    margin-top: -130px;
+    position: absolute;
+
+    .content {
+        background: #ffd200;
+        border: 1px solid #ffd200;
+        padding: 10px 20px 15px 20px;
+        font-family: 'Roboto', sans-serif;
+        font-size: 14px;
+        width: 340px;
+        color: #333;
+
+        .btn-apply {
+            font-size: 14px;
+            background: #f65b63;
+            color: #fff;
+            padding: 2px 20px;
+            margin-top: 5px;
+            float: right;
+            cursor: pointer;
+
+            &:hover {
+                background: #333;
+                color: #fff;
+            }
+
+            @include breakpoint(xs) {
+                width: 66px;
+                height: 46px;
+                line-height: 40px;
+                margin-top: -23px;
+                background: #ffd200;
+                color: #333;
+
+                &:hover {
+                    background: #f65b63;
+                    color: #fff;
+                }
+
+                &:focus {
+                    background: #f65b63;
+                    color: #fff;
+                }
+            }
+        }
+
+        @include breakpoint(xs) {
+            background: none;
+            padding: 6px 0 6px 10px;
+            color: #ffd200;
+            width: 100%;
+            font-size: 12px;
+        }
+    }
+
+    .content:before {
+        content: "\f0dd";
+        font-family: FontAwesome;
+        left: 170px;
+        font-size: 30px;
+        position: absolute;
+        bottom: -18px;
+        color: #ffd200;
+
+        @include breakpoint(xs) {
+            font-size: 0;
+        }
+    }
+
+    @include breakpoint(sm) {
+        margin-top: -185px;
+        margin-left: 28%;
+    }
+
+
+    @include breakpoint(xs) {
+        position: relative;
+        margin: 10px 0;
+    }
+
+
+    .coupon-close {
+        position: absolute;
+        right: -13px;
+        top: -13px;
+        font-size: 12px;
+        text-shadow: none;
+        opacity: 1;
+        background: #000000 !important;
+        height: 26px;
+        width: 26px;
+        border-radius: 50%;
+        color: #fff;
+        z-index: 5;
+        line-height: 26px;
+        text-align: center;
+        cursor: pointer;
+
+        &:hover {
+            background: $red !important;
+        }
+
+        &:focus {
+            background: $red !important;
+        }
+    }
+}
+
+.coupon-txt {
+    position: absolute;
+    margin-left: 38%;
+    margin-top: -87px;
+    position: absolute;
+    font-family: 'Roboto', sans-serif;
+
+    .apply-txt {
+        border: 1px solid #ffd200;
+        padding: 5px 10px;
+        font-size: 14px;
+        txt-align: center;
+        font-weight: 400;
+        color: #ffd200;
+
+        @include breakpoint(xs) {
+            text-align: center;
+        }
+    }
+
+    @include breakpoint(sm) {
+        margin-top: -150px;
+    }
+
+
+    @include breakpoint(xs) {
+        position: relative;
+        margin: 10px 0;
+    }
+}
+
+.result-coupon-txt {
+    position: absolute;
+    margin-left: 38%;
+    margin-top: 0;
+    position: absolute;
+    font-family: 'Roboto', sans-serif;
+
+    .apply-txt {
+        border: 1px solid #ffd200;
+        background: #ffd200;
+        padding: 5px 10px;
+        font-size: 14px;
+        font-weight: 400;
+        color: #333;
+
+        @include breakpoint(xs) {
+            margin-left: 40px;
+        }
+    }
+
+    @include breakpoint(sm) {
+        margin-top: 0;
+    }
+
+
+    @include breakpoint(xs) {
+        position: relative;
+        margin: 10px 0;
+    }
+}
+
+.gift-img {
+    vertical-align: middle;
+    position: absolute;
+    margin-left: -55px;
+    margin-top: -10px;
+    width: 35px;
+    height: 35px;
+
+    @include breakpoint(xs) {
+        position: relative;
+        float: left;
+        margin: (-10px) 0 0 0;
+    }
+}
+
+/* New Engine Code */
+#searchEngine{
+    background: #43436d;
+    &.flight{
+        background: url(#{$assetPath}/main-image-1440.jpg) no-repeat top center #43436d; 
+		
+		@include breakpoint(xxlg) { 
+		background: url(#{$assetPath}/main-image-2.jpg) no-repeat top center #fff; background-size:contain;	 
+		}
+		@include breakpoint(xlg) { 
+		background: url(#{$assetPath}/main-image-2.jpg) no-repeat top center #43436d; 
+		}
+		@include breakpoint(sm) { 
+		background: url(#{$assetPath}/main-image-768.jpg) no-repeat top center #43436d; 
+		}
+        @include breakpoint(xs) { 
+            background: $violet;
+        }
+    }
+
+    &.hotel{
+        background: url(#{$assetPath}/main-image-4.jpg) no-repeat top center #43436d;
+        @include breakpoint(xs) { 
+            background: $violet;
+        }
+    }
+    &.car{
+        background: url(#{$assetPath}/main-image-3.jpg) no-repeat top center #43436d;
+        @include breakpoint(xs) { 
+            background: $violet;
+        }
+    }
+	
+	@include breakpoint(xs) {  background: $violet !important; }
+}
+
+.header-section {
+    padding: 0;
+
+    .header-background {
+        height: 500px;
+        padding: 200px 0 100px 0;
+
+
+        @include breakpoint(md) {
+            background-position: -400px 0;
+        }
+
+
+        @include breakpoint(sm) {
+            background-position: -500px 0;
+        }
+
+
+        @include breakpoint(xs) {
+            padding: 10px 0;
+            background: $violet;
+        }
+    }
+
+    @include breakpoint(xs) {
+        padding: 0 10px;
+    }
+}
+
+.error {
+    background: #ffffb7 !important;
+    color: $red !important;
+    border: 1px solid $red !important;
+}
+
+.no-padding {
+    padding: 0;
+}
+
+.pad03px {
+    padding: 0 2px;
+
+    @include breakpoint(sm) {
+        margin: 5px 0;
+    }
+
+
+    @include breakpoint(xs) {
+        margin: 4px 0;
+    }
+}
+
+.search-icon {
+    color: #ff565c;
+    font-size: 22px;
+    left: 6px;
+    pointer-events: none;
+    position: absolute;
+    text-align: center;
+    top: 10px;
+    width: 24px;
+}
+
+.flight-search {
+    background: $red;
+    border: 1px solid $red;
+    color: #fff;
+    text-shadow: none;
+    font-size: 16px;
+    height: 46px; 
+    line-height: 46px;
+    width: 100%;
+
+    @include breakpoint(xs) {
+        margin-bottom: 60px;
+    }
+
+			&:hover { 
+				color:#000;
+			}
+
+			&:focus { 
+			   color:#000;
+			}
+
+}
+
+.flight-search-modify {
+    background: $red;
+    border: 1px solid $red;
+    color: #fff;
+    text-shadow: none;
+    font-size: 12px;
+	font-weight:bold;
+    height: 46px;
+    line-height: 46px;
+    width: 100%;
+
+    @include breakpoint(xs) {
+        margin-bottom: 60px;
+    }
+	
+	&:hover { 
+				color:#000;
+			}
+
+			&:focus { 
+			   color:#000;
+			}
+} 
+
+.list-one {
+    border-bottom: 1px dashed rgba(255, 255, 255, 0.7);
+
+    @include breakpoint(xs) {
+        text-align: left;
+    }
+
+
+    .cff-list-tab {
+        background: $white;
+        font-size: 16px;
+        padding: 10px 15px;
+
+        &.active {
+            background: $red;
+            padding: 10px;
+
+            a {
+                color: $white;
+            }
+        }
+
+        a, a:hover {
+            color: #000;
+        }
+    }
+}
+
+.trip-type ul li {
+    font-size: 14px;
+    color: #fff;
+    float: left;
+    margin-right: 20px;
+}
+
+.trip-tab ul li {
+    float: left;
+    margin-right: 20px;
+}
+
+.adva-option, .drop-off-loc, .adva-option:hover, .drop-off-loc:hover, .adva-option:focus, .drop-off-loc:focus {
+    font-size: 14px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.adva-option:hover, .drop-off-loc:hover, .adva-option:focus, .drop-off-loc:focus {
+    text-decoration: underline;
+}
+
+.mtp-10 {
+    margin-top: 10px;
+}
+
+.mbt-10 {
+    margin-bottom: 10px;
+}
+
+.pdlt-30 {
+    padding-left: 30px;
+}
+
+.pd0 {
+    padding: 0px;
+}
+
+.cloc {
+    position: absolute;
+    top: 13px;
+    left: 10px;
+    color: #ff565c;
+    font-size: 20px;
+}
+
+.javengine-txt {
+    padding: 10px 0;
+
+    @include breakpoint(xs) {
+        padding: 5px 0 10px 0;
+    }
+}
+
+.javengine-txt a {
+    color: #fff;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.javengine-txt a:hover {
+    text-decoration: underline;
+}
+
+.javengine-txt span {
+    color: #fff;
+    font-weight: 600;
+}
+
+.list-two .inputSet2 span {
+    color: #fff;
+    font-size: 14px;
+}
+
+.date-picker {
+    background: #fff !important;
+}
+
+#person, #guestform {
+    background: #fff !important;
+}
+
+.input-group-addon.name {
+    text-align: left;
+    width: 80%;
+}
+
+.dropdown-menu .form-group .input-group input {
+    background: #fff;
+}
+
+#error {
+    color: $yellow;
+    font-weight: bold;
+}
+
+.inner-hotel-engine-bg {
+    background: $violet;
+    clear: both;
+    padding: 10px 0;
+
+    @include breakpoint(xs) {
+        padding: 10px 0;
+    }
+}
+
+.inner-engine-bg {
+    background: rgba(67, 67, 109, 0.95);
+    clear: both;
+    padding: 10px 0;
+
+    @include breakpoint(xs) {
+        padding: 10px 15px;
+        overflow: auto;
+        height: calc();
+    }
+}
+
+.change-search {
+    color: #ffd200;
+    margin-bottom: 10px;
+}
+
+.traveller-input-set {
+    width: 40px !important;
+    padding: 10px !important;
+    text-align: center  !important;
+}
+
+#unaccompaniedText .close {
+    position: absolute;
+    right: 5px;
+    top: 0;
+    color: #666;
+    opacity: 0.7;
+}
+
+.search_history {
+    border: 0 none;
+    left: 0 !important;
+    padding: 0;
+    width: 330px;
+}
+
+.search_history a {
+    border-bottom: 1px dashed #999;
+    float: left;
+    height: auto;
+    min-height: 75px;
+    padding: 5px !important;
+    position: relative;
+    width: 100%;
+}
+
+.top_menu li .search_history a:hover {
+    background: #eee none repeat scroll 0 0 !important;
+    color: #000 !important;
+}
+
+.search_history li:last-child a {
+    border: medium none;
+}
+
+.history_icon {
+    color: #ff565c;
+    float: left;
+    margin: 6px 0 0 8px;
+    width: 40px;
+}
+
+.history_drop-icon {
+    font-size: 50px;
+    height: 15px;
+    position: absolute;
+    top: -30px;
+    left: 50px;
+    color: #fff;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+    .history_drop-icon {
+        margin: -40px 0 0 179px;
+    }
+}
+
+.history_info {
+    float: left;
+    padding: 10px 0 0 17px;
+    text-transform: capitalize;
+    width: 271px;
+}
+
+.history_click {
+    color: #999;
+    font-size: 20px;
+    margin-top: -15px;
+    position: absolute;
+    right: 20px;
+    top: 50%;
+}
+
+.item-round-tri {
+    margin: 0;
+    padding-left: 0;
+    color: #999;
+    font-size: 12px;
+}
+
+.item-date {
+    margin: 0;
+    padding-left: 10px;
+    color: #4d4d77;
+}
+
+.item-title {
+    color: #0081da;
+    font-size: 16px;
+    padding-left: 10px;
+}
+
+.history-show {
+    background-color: red;
+    border-radius: 50%;
+    color: #fff;
+    display: inline-block;
+    height: 20px;
+    text-align: center;
+    width: 20px;
+}
+
+.dropdown_menu {
+    display: none;
+    left: 0;
+    position: absolute;
+    top: 55px;
+    width: 100%;
+    z-index: 1;
+}
+
+.dropdown_menu .inner {
+    background-color: white;
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.5);
+    height: auto;
+    overflow-x: hidden;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+.heading-h1 {
+    color: #fff;
+    font-size: 24px !important;
+}
+
+.dropdown_menu a {
+    color: #818181;
+    display: block;
+    font-size: 36px;
+    padding: 8px;
+    text-decoration: none;
+    transition: all 0.3s ease 0s;
+}

@@ -1,0 +1,36 @@
+.deal-block ul { margin: 0px; padding: 0px;}
+.hotel-most-popular-destination {width:100%;overflow:hidden}@media(max-width:1023px){.hotel-most-popular-destination .row{margin:0 -8px}}@media(max-width:1023px){.hotel-most-popular-destination .row [class*=col]{padding:0 8px}}@media(max-width:1023px){.hotel-most-popular-destination h2{font-size:20px}}.hotel-most-popular-destination .item{width:100%;border:1px solid #cecece;margin-bottom:30px;position:relative;overflow:hidden}@media(max-width:767px){.hotel-most-popular-destination .item{margin-bottom:12px}}.hotel-most-popular-destination .item figure{margin:-1px}.hotel-most-popular-destination .item .figure{position:relative}.hotel-most-popular-destination .item figure img {width: 100%;}.hotel-most-popular-destination .item .hotel-deal{padding:0 26px;overflow:hidden}@media(max-width:767px){.hotel-most-popular-destination .item .hotel-deal{width:100%;height:100%;position:absolute;left:0;top:0;text-align:center;background:rgba(0,0,0,.5)}}.hotel-most-popular-destination .item .hotel-deal h3{float:left;color:#43436d;margin:17px 0}@media(max-width:767px){.hotel-most-popular-destination .item .hotel-deal h3{color:#fff;margin:0;width:100%;position:absolute;left:50%;top:50%;transform:translate(-50%,-50%)}}.hotel-most-popular-destination .item .hotel-deal .deal-button{float:right;font-size:14px;display:block;color:#3b3b3b;margin-top:20px;padding-right:20px;position:relative}.hotel-most-popular-destination .item .hotel-deal .deal-button:after{position:absolute;right:0;top:-4px;font-family:fontawesome;content:"\f105";font-size:20px}.hotel-most-popular-destination .item .deal-block{width:100%;background:rgba(255,255,255,.9);position:absolute;left:0;bottom:-200%;height:100%;transition:all .5s}@media(max-width:767px){.hotel-most-popular-destination .item .deal-block{position:static;margin-top:2px}}.hotel-most-popular-destination .item .deal-block li{padding:8px 15px;overflow:hidden;border-bottom:1px solid #e4e4e4}@media(max-width:1023px){.hotel-most-popular-destination .item .deal-block li{padding:7px 10px 5px}}.hotel-most-popular-destination .item .deal-block li:last-child{border:none}.hotel-most-popular-destination .item .deal-block li:hover{background:#fff}.hotel-most-popular-destination .item .deal-block li h4{font-size:16px;margin:0;white-space:nowrap;text-overflow:ellipsis;overflow:hidden}@media(max-width:1023px){.hotel-most-popular-destination .item .deal-block li h4{font-size:13px}}.hotel-most-popular-destination .item .deal-block li .hotel-price{font-size:20px;float:right}@media(max-width:1023px){.hotel-most-popular-destination .item .deal-block li .hotel-price{font-size:15px}}.hotel-most-popular-destination .item .deal-block li .discount{padding:2px;display:inline-block;font-size:14px;color:#ff565c;position:absolute;right:10px;top:-10px}@media(max-width:1023px){.hotel-most-popular-destination .item .deal-block li .discount{font-size:13px;top:-6px}}@media(max-width:479px){.hotel-most-popular-destination .item .deal-block li .discount{margin-left:-20px}}.hotel-most-popular-destination .item .deal-block li a{display:block;color:#333}.hotel-most-popular-destination .item .deal-block li .address{padding:5px 0;white-space:nowrap;text-overflow:ellipsis;overflow:hidden}@media(max-width:1023px){.hotel-most-popular-destination .item .deal-block li .address{font-size:12px;padding:3px 0 0}}.hotel-most-popular-destination .item .deal-block li .starting{padding-top:14px;font-size:12px}.hotel-most-popular-destination .item .deal-block li .htl-stars{margin:0}.hotel-most-popular-destination .item:hover .deal-block{bottom:0}.hotel-search-Engin .engin-bg{padding:20px 0 10px;width:100%;background:#43436d}@media(max-width:767px){.hotel-search-Engin .engin-bg{padding:0}}.hotel-search-Engin .header-section{height:337px}@media(max-width:1023px){.hotel-search-Engin .header-section{height:250px}}    
+    @media(max-width:767px){.slider-for-deal .slick-list.draggable{padding:0 80px 0 0!important}}.hotel-most-popular-destination.hotel-deal-home{width:100%}.hotel-most-popular-destination.hotel-deal-home .item:hover .deal-block{bottom:-200%}@media(min-width:1025px){.hotel-most-popular-destination.hotel-deal-home .item:hover .deal-block{bottom:0}}.hotel-most-popular-destination.hotel-deal-home h2{font-size:30px;padding-top:35px;margin-bottom:0}@media(max-width:767px){.hotel-most-popular-destination.hotel-deal-home h2{font-size:21px;padding-top:10px;margin-bottom:10px}}.hotel-most-popular-destination.hotel-deal-home h3{font-size:21px;padding-bottom:8px}@media(max-width:1169px){.hotel-most-popular-destination.hotel-deal-home .deal-block li{padding:14px 10px}}@media(max-width:1023px){.hotel-most-popular-destination.hotel-deal-home .deal-block li{padding:10px}}.hotel-most-popular-destination.hotel-deal-home .deal-block li h4{font-weight:500}@media(max-width:1169px){.hotel-most-popular-destination.hotel-deal-home .deal-block li h4{font-size:18px}}@media(max-width:1023px){.hotel-most-popular-destination.hotel-deal-home .deal-block li h4{font-size:16px}}@media(max-width:767px){.hotel-most-popular-destination.hotel-deal-home .deal-block li h4{font-size:14px;font-weight:600}}@media(max-width:1169px){.hotel-most-popular-destination.hotel-deal-home .deal-block li .address{font-size:14px;padding:9px 0}}@media(max-width:1023px){.hotel-most-popular-destination.hotel-deal-home .deal-block li .address{padding:6px 0}}@media(max-width:1023px){.hotel-most-popular-destination.hotel-deal-home .deal-block li .address{font-size:12px}}
+
+
+.tripadvisor_div {
+    white-space: nowrap;
+}
+.tripadvisor_div .advisor-image {
+    background: url(/resources/images/hotels/ratingReview.png) 0 0 no-repeat;
+    padding-left: 38px;
+    height: 21px;
+}
+.tripadvisor_div .advisorCircle {
+    background: url(/resources/images/hotels/trip_rating.png) 0 -15px repeat-x;
+    height: 16px;
+    width: 80px;
+    display: inline-block;
+    cursor: pointer;
+    position: relative;
+    top: 3px;
+    overflow: hidden;
+}
+.tripadvisor_div .advisorCircle span {
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: url(/resources/images/hotels/trip_rating.png) 0 0 repeat-x;
+    display: block;
+    height: 16px;
+}
+.tripadvisor_div .trip-rating {
+    border: 1px solid #eaeaea;
+    padding: 2px 5px;
+    color: #00a680;
+}
