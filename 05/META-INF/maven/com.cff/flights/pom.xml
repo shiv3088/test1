@@ -12,7 +12,7 @@
 		<SpringVersion>4.0.6.RELEASE</SpringVersion>	
 		<jackson.version>1.9.10</jackson.version>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		 <jackson.databind-version>2.2.3</jackson.databind-version>
+		 <jackson.databind-version>2.12.7.1</jackson.databind-version>
 		 <hibernate.validator.version>5.1.2.Final</hibernate.validator.version>
 		<javax.validation.version>1.1.0.Final</javax.validation.version>	
 		<servlet.api.version>3.1.0</servlet.api.version>  
